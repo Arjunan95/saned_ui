@@ -295,15 +295,26 @@
       </div>
       <div style="margin-left: 17px;margin-top: -150px" dir="ltl">
         <br><br>
-        <input type="radio" [value]="false" routerLink="/register-form-arabic" checked="checked" />
-        <font color="#F90E35"> عربى
-        </font>
-        &nbsp; &nbsp; <input style="color:#ff0000;" type="radio" [value]="true" routerLink="/privacy" />
-        <font style="color:white">English</font> &nbsp; &nbsp; &nbsp;
-        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
-          class="btn Rectangle-5-Copy">
-          <font color="white">تسجيل</font>
-        </button>
+        <a class="btn mb-1" routerLink="login" style="font-family: Roboto-Regular;font-size: 21px;
+      ">
+              <font color="white" class="Sign-Out">تسجيل الدخول </font>
+            </a>
+      <button button type="submit" style="background-color: #ff0000; width: 123px;padding: 8px 20px;" routerLink="/register-form-arabic"
+        class="btn Rectangle-5-Copy" routerLink="register-form-arabic">
+        <font color="white">تسجيل</font>
+      </button>
+
+      &nbsp;
+      <font style="color:white">English</font> &nbsp;
+      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"
+        routerLink="/contactus" />
+
+
+
+      <font color="#F90E35"> عربى
+      </font>
+      <input type="radio" checked />
+
       </div>
     </div>
     <!-- <div class="full-bg-img"> -->
@@ -312,7 +323,7 @@
     <!-- <div class="col-md-6 text-center"> -->
     <br><br><br><br><br><br>
     <div class="text-center">
-      <h1 style="font-size: 60px;font-family: GeezaPro;color: black;">
+      <h1 style="font-size: 50px;font-family: GeezaPro;color: black;">
         <font color="white">سياسة خاصة </font>
       </h1>
 
@@ -337,7 +348,7 @@
               <li style="background: red;"><a href="#">Link 4</a></li> -->
         </ul>
       </li>
-      <li><a routerLink="/supplier-register-arabic">الموردين</a></li>
+      <li><a routerLink="supplier-register-arabic">الموردين</a></li>
       <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
       <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
       <li>
@@ -742,38 +753,38 @@
 
   <!-- =============footer arabic start====== -->
   <div class="container1 col-md-12" dir="rtl">
-    <br><br>
-    <div class="row">
+      <br><br>
+      <div class="row">
 
-      <div class="col-sm-2">
-        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+        <div class="col-sm-2">
+          <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
            ./assests/logo-1-copy@3x.png 3x"
-          class="img-thumbnail">
-      </div>
+            class="img-thumbnail">
+        </div>
 
-      <div class="col-md-2">
-        <h5 class="home" style="color:white">الملاحة</h5>
-        <ul class="list-unstyled quick-links">
+        <div class="col-md-2">
+          <h5 class="navfooter" style="color:white">الملاحة</h5>
+          <ul class="list-unstyled quick-links footer1">
 
-          <li><a routerLink="/aboutus-arabic" class="about">
-              <font color="white">معلومات عنا</font>
-            </a></li>
-          <li><a routerLink="/amanservices-arabic">
-              <font color="white">خدمات</font>
-            </a></li>
-          <li><a routerLink="/sitemap-arabic">
-              <font color="white">خريطة الموقع</font>
-            </a></li>
-          <li><a routerLink="/contactus-arabic">
-              <font color="white">اتصل بنا</font>
-            </a></li>
-          <li><a routerLink="/privacy-arabic">
-              <font color="white">سياسة خاصة</font>
-            </a></li>
-        </ul>
-      </div>
+            <li><a routerLink="/aboutus-arabic" class="about">
+                <font color="white">معلومات عنا</font>
+              </a></li>
+            <li><a routerLink="/amanservices-arabic">
+                <font color="white">خدمات</font>
+              </a></li>
+            <li><a routerLink="/sitemap-arabic">
+                <font color="white">خريطة الموقع</font>
+              </a></li>
+            <li><a routerLink="/contactus-arabic">
+                <font color="white">اتصل بنا</font>
+              </a></li>
+            <li><a routerLink="/privacy-arabic">
+                <font color="white">سياسة خاصة</font>
+              </a></li>
+          </ul>
+        </div>
 
-      <!-- <div class="col-sm-3">
+        <!-- <div class="col-sm-3">
              <h5 class="home">Support</h5>
              <ul class="list-unstyled quick-links">
                <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -783,68 +794,75 @@
   
              </ul>
            </div> -->
-      <div class="col-md-3">
-        <h5 class="home" style="color:white">عنوان الشركة:</h5>
-        <ul class="list-unstyled quick-links">
-          <li>
-            <p class="about">
-              <font color="white">برج 400 12th أرضية,</font>
-              <br>
-              <font color="white"> طريق الميناء الشارقة,</font>
-              <br>
-              <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
-              <br>
+        <div class="col-md-3">
+          <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
+          <ul class="list-unstyled quick-links footer2">
+            <li>
+              <p class="about">
+                <font color="white">برج 400 18th أرضية,</font>
+                <br>
+                <font color="white"> طريق الميناء الشارقة,</font>
+                <br>
+                <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
+                <br>
 
-              <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
-              <br>
-              <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-              <br>
-              <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
-              <br>
-              <a routerLink="/login-arabic">
-                <font color="white">www.saned.ae</font>
-              </a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-2">
-        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
+                <br>
+                <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+                <br>
+                <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+                <br>
+                <a routerLink="login-arabic">
+                  <font color="white">www.saned.ae</font>
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
                ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-          class="img-thumbnail">
-      </div>
-      <div class="col-sm-3">
-        <p style="color:white">تابعنا
-          <a href="https://twitter.com/bootsnipp"><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-          <a href="https://www.instagram.com/bootsnipp"><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-          <h6 style="color:white">اشترك في صحيفتنا الإخبارية</h6>
-          <div class="input-group mb-3">
+            class="img-thumbnail">
+        </div>
+        <div class="col-sm-3">
+          <p style="color:white;font-family: GeezaPro;">تابعنا
+            <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+            <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+            <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+            <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+            <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
+            <div class="input-group mb-3">
 
-            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                border-color: #6c757d;vertical-align:9px;color:#bbb"
-              class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
-            <div class="input-group-append">
+              <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
+                class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
 
-              <button class="btn btn-outline-secondary" type="button" (click)="newsletter(model)">الاشتراك</button>
+                <button class="btn btn-outline" style="border-color: white;" type="button" >
+                  <font style="color:#ff0000;">الاشتراك</font>
+                </button>
+              </div>
             </div>
-          </div>
-      </div>
-      <hr class="col-md-8" style="background:white">
-    </div>
-
-
-    <div class="footer">
-      <div>
-        <p>من خلال الاستمرار عبر هذه الصفحة ، فإنك توافق على بنود الخدمة وسياسة ملفات تعريف الارتباط وسياسة الخصوصية
-          وسياسات المحتوى الخاصة بنا. © 2019.</p>
+        </div>
+        <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div> 
+        <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
       </div>
 
+
+      <div class="lastfoot text-center">
+        <div>
+          <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
+            فإنك توافق على
+            بنود الخدمة وسياسة
+            ملفات تعريف الارتباط وسياسة
+            الخصوصية
+            وسياسات المحتوى الخاصة بنا. © 2019.</p>
+        </div>
+
+      </div>
+      <br>
     </div>
-    <br>
-  </div>
 
   <!-- ========footer arabic end====== -->
 </div>
