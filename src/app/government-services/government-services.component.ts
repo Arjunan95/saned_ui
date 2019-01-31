@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./government-services.component.css']
 })
 export class GovernmentServicesComponent implements OnInit {
-  
 
+  model: any = {};
+  pow: any = {};
   constructor() { }
 
   ngOnInit() {

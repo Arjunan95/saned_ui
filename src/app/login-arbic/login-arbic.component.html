@@ -35,7 +35,7 @@
                                            padding: 10px 100px;
                                            box-sizing: border-box;
                                        }
-                                       section{
+                                       section.card{
                                            width: 100%;
                                            height: 100vh;
                                        }
@@ -56,7 +56,7 @@
                                        }
                                        
                                        .navbar a:hover, .dropdown:hover .dropbtn {
-                                         background-color: red;
+                                         /* background-color: red; */
                                        }
                                        
                                        .dropdown-content {
@@ -92,7 +92,7 @@
                                        }
                                        .navigation {
                                          background-color: #35353500;
-                                         width: 75%;
+                                         /* width: 75%; */
                                          margin: 20px auto;
                                          min-height: 50px;
                                        }
@@ -175,7 +175,7 @@
                                            display: flex;
                                            margin: 0px;
                                            padding: 0px;
-                                           float: right;
+                                           float: left;
                                        }
                                        nav ul li{
                                            list-style: none;
@@ -192,7 +192,7 @@
                                        nav ul li a{
                                            display:block;
                                            color: #fff;
-                                           padding: 0 20px;
+                                           padding: 0 17px;
                                            text-decoration: none;
                                            text-transform: uppercase;
                                            font-weight: bold;
@@ -265,15 +265,15 @@
 <!-- <header>
                                    <img src="Group.png" style="flex:left">
                                    </header> -->
-<div>
 
 
 
 
 
-  <!-- ==================Arabic -->
-  <div>
-    <!-- <div class="row ">
+
+<!-- ==================Arabic -->
+
+<!-- <div class="row ">
                                <div class="col-md-12 ft_right pt_absolute">
                                    <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
                                    <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
@@ -281,447 +281,467 @@
                           
                           
                            </div> -->
-    <div class="row">
-      <!--<h1>Arabic</h1>-->
-      <!--Main Navigation-->
+
+<!--<h1>Arabic</h1>-->
+<!--Main Navigation-->
 
 
-      <!--Navbar-->
+<!--Navbar-->
 
 
-      <!--Intro Section-->
-      <section dir="rtl" class=" bb hm-gradient">
+<!--Intro Section-->
+<section dir="rtl" class=" bb hm-gradient" style="width: 100%;
+height: 100vh;">
 
-        <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+  <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
                                    assests/lawyer-today-1@3x.png 3x"
                           class="NEM mt-3"> -->
-        <div dir="rtl" class="row">
-          <div class="col-md-8">
-            <img src="./assets/group.png" class="img-responsive" style="margin-left: 510px;">
+  <div dir="rtl" class="row">
+    <div class="col-md-1">
+      <img src="./assets/group.png" class="img-responsive" style="margin-left: 510px;">
 
-          </div>
-          <div class="col-md-4">
+    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-6 mt-5" dir="ltr">
 
-            <div id="login" style="margin-left: 17px;">
-              <br><br>
-              <a class="btn mb-1"  style="font-family: GeezaPro">
-                <font color="white">تسجيل الدخول </font>
-              </a>
-              <button button type="submit" style="background-color: #ff0000; width: 123px;height:41px;"
-                class="btn Rectangle-5-Copy" >
-                <font color="white">تسجيل</font>
-              </button>
-              <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
+      <div id="login">
 
-              &nbsp; &nbsp; &nbsp;
-              <font style="color:white;font-size: 14px;">English</font>
-              <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/login"
-                [checked]="Lang" />
-              &nbsp; &nbsp; &nbsp;
-              <font style="color:#ff0000;font-size: 14px;">عربى</font>
-              <input type="radio" style="margin-left: 25px;" checked />
+        <a class="btn mb-1" style="font-family: GeezaPro;font-size: 14px">
+          <font color="white">تسجيل الدخول </font>
+        </a>
+        <button button type="submit" style="background-color: #ff0000; width: 97px;
+              height: 37px; padding: 2px 20px;margin-top: -6px;"
+          class="btn Rectangle-5-Copy">
+          <font color="white">تسجيل</font>
+        </button>
+        <!-- <button class="buttonrreg" routerLink="/register-form"><b>REGISTER</b></button> -->
 
-              &nbsp;
+        &nbsp;
+        <font style="color:white;font-size: 14px;">English</font>&nbsp;
+
+        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/login"
+          [checked]="Lang" />
 
 
-            </div>
-            <div id="logout" style="display:none">
-              <br><br>
+        <font style="color:#ff0000;font-size: 14px;">عربى</font> &nbsp;
+        <input type="radio" checked />
 
-              <input type="radio" routerLink="/login-arbic" />
-              <font color="white">عربى</font>
-              &nbsp; &nbsp;
-              <font style="color:#F90E35">English</font>
-              <input type="radio" checked />
-              &nbsp; &nbsp; &nbsp;
 
-              &nbsp;
-              <font color="white">تسجيل</font>
-              <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form-arabic"
-                class="btn Rectangle-5-Copy">
 
-              </button>
 
-              <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
-                routerLink="/login-arbic" style="font-family: GeezaPro;font-size: 21px;
+      </div>
+      <div id="logout" style="display:none">
+        <br><br>
+
+        <input type="radio" routerLink="/login-arbic" />
+        <font color="white">عربى</font>
+        &nbsp; &nbsp;
+        <font style="color:#F90E35">English</font>
+        <input type="radio" checked />
+        &nbsp; &nbsp; &nbsp;
+
+        &nbsp;
+        <font color="white">تسجيل</font>
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form-arabic"
+          class="btn Rectangle-5-Copy">
+
+        </button>
+
+        <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
+          routerLink="/login-arbic" style="font-family: GeezaPro;font-size: 21px;
                             ">
-                <font color="white">خروج </font>
-              </a>
+          <font color="white">خروج </font>
+        </a>
 
-            </div>
+      </div>
 
-            <div id="id01" class="modal">
+      <div id="id01" class="modal">
 
-              <form class="col-md-4 modal-content animate">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <br>
-                  <a class="Welcome-To-Aman">{{'مرحبًا بك في SANED'| translate:user}}</a>
-                </div>
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">{{'مرحبًا بك في SANED'| translate:user}}</a>
+          </div>
 
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label class="col-md text-left"><b>عنوان الايميل</b></label>
-                      <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name"
-                        #name="ngModel">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="col-md text-left"><b>عنوان الايميل</b></label>
+                <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name" #name="ngModel">
 
-                      <label class="col-md text-left"><b>كلمه السر</b> </label>
-                      <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
-                        #password="ngModel">
+                <label class="col-md text-left"><b>كلمه السر</b> </label>
+                <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
+                  #password="ngModel">
 
-                      <label class="col-md text-left">
-                        <input type="checkbox" class="Rectangle-4 "> تذكرنى
+                <label class="col-md text-left">
+                  <input type="checkbox" class="Rectangle-4 "> تذكرنى
 
-                        <a onclick="document.getElementById('id02').style.display='block'" class="ml-5">هل نسيت كلمة
-                          المرور؟</a></label>
-                      <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
+                  <a onclick="document.getElementById('id02').style.display='block'" class="ml-5">هل نسيت كلمة
+                    المرور؟</a></label>
+                <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
                                          color: white;
                                          height: 47px;"><a
-                          class="">خضع</a></button>
-                      <p>جديد في أمان؟<a routerLink="/register-form" class="Mask ml-2">
-                          <font color="#f34235">سجل هنا</font>
-                        </a></p>
-                    </div>
-                  </div>
-                </div>
-
-
-              </form>
+                    class="">خضع</a></button>
+                <p>جديد في أمان؟<a routerLink="/register-form" class="Mask ml-2">
+                    <font color="#f34235">سجل هنا</font>
+                  </a></p>
+              </div>
             </div>
-
-            <div id="id02" style="display:none" class="modal">
-
-              <form class="col-md-4 modal-content animate">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <br>
-                  <a class="Welcome-To-Aman">هل نسيت كلمة المرور</a>
-                </div>
-                <br>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label class="col-md text-left"><b>البريد الإلكتروني</b></label>
-                      <input type="text" class="w3-input" id="email_id" required [(ngModel)]="model.email_id" name="name"
-                        #name="ngModel">
-
-                      <label class="col-md text-left"><b>كلمة السر الجديدة</b> </label>
-                      <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
-                        #password="ngModel">
-
-                      <label class="col-md text-left"><b>تأكيد كلمة المرور</b></label>
-                      <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
-                        name="name" #name="ngModel">
+          </div>
 
 
-                      <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
-                        (click)="forgetpassword(model)" style="background: red;
+        </form>
+      </div>
+
+      <div id="id02" style="display:none" class="modal">
+
+        <form class="col-md-4 modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <br>
+            <a class="Welcome-To-Aman">هل نسيت كلمة المرور</a>
+          </div>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="col-md text-left"><b>البريد الإلكتروني</b></label>
+                <input type="text" class="w3-input" id="email_id" required [(ngModel)]="model.email_id" name="name"
+                  #name="ngModel">
+
+                <label class="col-md text-left"><b>كلمة السر الجديدة</b> </label>
+                <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
+                  #password="ngModel">
+
+                <label class="col-md text-left"><b>تأكيد كلمة المرور</b></label>
+                <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
+                  name="name" #name="ngModel">
+
+
+                <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
+                  (click)="forgetpassword(model)" style="background: red;
                                    color: white;
                                    height: 47px;"><a
-                          class="">خضع</a></button>
+                    class="">خضع</a></button>
 
-                    </div>
-                  </div>
-                </div>
-
-
-              </form>
+              </div>
             </div>
+          </div>
 
-            <!-- ===========otp start========= -->
-            <div id="id03" class="modal">
 
-              <form class="modal-content animate col-md-4">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id03').style.display='none'" class="ml-4 close" title="close">&times;</span>
-                  <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
-                  <br>
-                  <br>
-                  <h3>أدخل كلمة المرور مرة واحدة</h3>
-                </div>
+        </form>
+      </div>
 
-                <div class="">
-                  <p for="uname" style="font-size: 18px;text-align:center" class="text-center">تم إرسال كلمة السر لمرة
-                    واحدة إلى عنوان بريدك الإلكتروني ورقم هاتفك المحمول</p>
-                  <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-                  <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
-                  <!-- <input type="text" class="form-control col-md-4 inline" id="otp"
+      <!-- ===========otp start========= -->
+      <div id="id03" class="modal">
+
+        <form class="modal-content animate col-md-4">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="ml-4 close" title="close">&times;</span>
+            <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
+            <br>
+            <br>
+            <h3>أدخل كلمة المرور مرة واحدة</h3>
+          </div>
+
+          <div class="">
+            <p for="uname" style="font-size: 18px;text-align:center" class="text-center">تم إرسال كلمة السر لمرة
+              واحدة إلى عنوان بريدك الإلكتروني ورقم هاتفك المحمول</p>
+            <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
+            <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+            <!-- <input type="text" class="form-control col-md-4 inline" id="otp"
                                                                       required
                                                                       [(ngModel)]="model.otp" name="name"
                                                                       #name="ngModel"> -->
 
-                  <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+            <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
 
-                  <div id="divOuter" style="align:center">
-                    <div id="divInner" class="col-md-12" style="text-align:center">
-                      <input id="partitioned" type="text" maxlength="4" />
-                    </div>
-                  </div>
-                  <br>
-                  <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                                           <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                                           <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
-                  <!-- <label for="psw"><b>Password</b></label>
-                                           <input type="password" placeholder="Enter Password" name="psw" required> -->
-
-                  <button style="background-color: #ff0000;margin-left: 175px" (click)="forgetotpverification(model)"
-                    type="submit">
-                    <font style="color:white">خضع</font>
-                  </button>
-                  <br>
-                  <br>
-
-
-
-                  <!-- <label>
-                                             <input type="checkbox" checked="checked" name="remember"> Remember me
-                                           </label> -->
-                </div>
-
-                <!-- <div class="container" style="background-color:#f1f1f1">
-                                           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                           <span class="psw">Forgot <a href="#">password?</a></span>
-                                         </div> -->
-              </form>
-            </div>
-            <!-- ======otp end========== -->
-
-          </div>
-        </div>
-
-
-
-
-
-        <div class="mt">
-          <div class="row ml-4">
-
-            <div class="col-md-7">
-
-              <div class="full-bg-img">
-
-                <div class="container flex-center">
-
-                  <div class="row flex-center pt-4 ">
-                    <div class="col-md-12 text-center text-md-left margins">
-                      <!-- <section class="logov2"></section> -->
-
-
-                      <div class="white-text mt-2">
-                        <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
-                          <font color="white"><b>مرحباً بك في SANED</b> - نحن ندير وندير منشآتك العقارية والتقنية
-                            ونساندك
-                            في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات.</font>
-                        </a>
-                        <br>
-                        <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-
-                        <br>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div id="divOuter" style="align:center">
+              <div id="divInner" class="col-md-12" style="text-align:center">
+                <input id="partitioned" type="text" maxlength="4" />
               </div>
             </div>
             <br>
+            <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+                                           <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+                                           <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
+            <!-- <label for="psw"><b>Password</b></label>
+                                           <input type="password" placeholder="Enter Password" name="psw" required> -->
 
-            <hr style="color:red;">
+            <button style="background-color: #ff0000;margin-left: 175px" (click)="forgetotpverification(model)" type="submit">
+              <font style="color:white">خضع</font>
+            </button>
+            <br>
+            <br>
+
+
+
+            <!-- <label>
+                                             <input type="checkbox" checked="checked" name="remember"> Remember me
+                                           </label> -->
+          </div>
+
+          <!-- <div class="container" style="background-color:#f1f1f1">
+                                           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                           <span class="psw">Forgot <a href="#">password?</a></span>
+                                         </div> -->
+        </form>
+      </div>
+      <!-- ======otp end========== -->
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="mt">
+    <div class="row ml-4">
+
+      <div class="col-md-7">
+
+        <div class="full-bg-img">
+
+          <div class="container flex-center">
+
+            <div class="row flex-center pt-4 ">
+              <div class="col-md-12 text-center text-md-left margins">
+                <!-- <section class="logov2"></section> -->
+
+
+                <div class="white-text mt-2">
+                  <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
+                    <font color="white"><b>مرحباً بك في SANED</b> - نحن ندير وندير منشآتك العقارية والتقنية
+                      ونساندك
+                      في أعمالك الأساسية من خلال مجموعتنا الواسعة من الخدمات.</font>
+                  </a>
+                  <br>
+                  <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+
+                  <br>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <br>
+
+      <hr style="color:red;">
+    </div>
+  </div>
 
 
-      </section>
-      <nav style="    margin-top: -79px;background: rgba(0, 0, 0, 0.20); ">
-        <ul class="navigation" style="margin-right: 455px;font-size: 18px;" dir="rtl">
-          <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
-          <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
-          <li class="menu">
-            <a>خدمات</a>
-            <ul class="submenu">
-              <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
-              <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
-              <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                                        <li style="background: red;"><a href="#">Link 4</a></li> -->
-            </ul>
-          </li>
-          <li><a routerLink="supplier-register-arabic">الموردين</a></li>
-          <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
-          <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
-          <li>
-            <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                                      margin-right: -46px;"></i></font>
-          </li>
-        </ul>
-      </nav>
-      <br><br>
-      <!-- <app-navbarv2></app-navbarv2> -->
+</section>
 
 
 
-      <div class="container col-md-12" dir="rtl">
-        <div class="card col-md-12" style="border-radius: 18px;margin-top: -79px;
-                          background: white;margin-top: -91px;">
-          <div class="">
-            <div class="row" dir="rtl">
-              <div class="col-sm-6">
-                <br><br>
-                <div class="col-sm-7 ">
-                  <!-- <a routerLink="/amanservices-arabic">
+<nav class="navbar navbar-expand-md navbar-dark" dir="rtl" style="margin-top: -55px;background: rgba(0, 0, 0, 0.27);">
+
+
+  <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+  <!-- </a> -->
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div dir="ltr" class="mr-5">
+    <div class="collapse navbar-collapse mr-5" dir="rtl" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navigation mt-2 col-md-12 mr-5 navbar-nav nav-bg mt-414 pt-120" dir="rtl" style="font-size: 18px; color: black;">
+
+        <li class="nav-item col-md-3">
+
+          <a routerLink="/login-arbic" class=" nav-link pd_0 ">الصفحة الرئيسية</a>
+        </li><br>
+
+        <li class="nav-item col-md-3">
+          <a routerLink="/aboutus-arabic" class="nav-link">معلومات عنا</a>
+        </li><br>
+
+        <li class="menu nav-item col-md-2 mt_7">
+          <a>خدمات</a>
+          <ul class="submenu" style="font-weight:bold;">
+            <li style="background:  #252323;"><a routerLink="/amanservices-arabic">رجل</a></li>
+            <li style="background:  #252323;"><a routerLink="/salamaservices-arabic">سلامة
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item col-md-1">
+          <a routerLink="/supplier-register" class="nav-link">الموردين</a>
+        </li>
+        <li class="nav-item col-md-3">
+          <a routerLink="/contactus-arabic" class="nav-link">اتصل بنا</a>
+        </li>
+        <li dir="rtl">
+          <font style="color:white"><i class="fa fa-search ml-4" style="margin-top: -10px;
+                         "></i></font>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+<br><br>
+<!-- <app-navbarv2></app-navbarv2> -->
+
+
+
+<div class="" dir="rtl">
+  <div class="card col-md-12" style="border-radius: 18px;margin-top: -42px;
+                          background: white;">
+    <div class="">
+      <div class="row" dir="rtl">
+        <div class="col-sm-6">
+          <br><br>
+          <div class="col-sm-8 ">
+            <!-- <a routerLink="/amanservices-arabic">
                     <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
                                              /assets/002-fire-extinguisher@3x.png 3x"
                       class="fire-extinguisher" style="margin-left: 237px;"></a> -->
-                  <br>
-                  <br>
-                  <a class="WHAT-IS-Aman-" >ما هو أمان؟</a>
-                </div>
+            <br>
+            <br>
+            <p class="text-justify ml-3" style="font-size: 35px;"><b>ما هو أمان؟</b></p>
+          </div>
 
-                <p class="col-sm-12 text-justify " style="font-size:18px"> {{'تهدف أمان إلى دمج جميع أنظمة إنذار الحريق
-                  القائمة في جميع أنواع
-                  العقارات في الشارقة مع غرفة التحكم في الدفاع المدني.'|translate:user}}
-                  <br>
-                  <br>
-                  <!-- <a routerLink=""/><font color="red" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
-                  <!-- <a routerLink=""/> <img  src="./assets/tail-left-copy.png"
+          <p class="col-sm-9 text-justify " style="font-size:16px"> {{'تهدف أمان إلى دمج جميع أنظمة إنذار الحريق
+            القائمة في جميع أنواع
+            العقارات في الشارقة مع غرفة التحكم في الدفاع المدني.'|translate:user}}
+            <br>
+            <br>
+            <!-- <a routerLink=""/><font color="red" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
+            <!-- <a routerLink=""/> <img  src="./assets/tail-left-copy.png"
                                 srcset="./assets/tail-left-copy@2x.png 2x,
                                         ./assets/tail-left-copy@3x.png 3x"
                                 class="tail-left-copy" style="margin-left: 85px;"></a> -->
-                </p>
-              </div>
-              <br>
-              <!-- <div class="col-sm-1"></div> -->
-              <div class="col-md-6">
-                <br><br>
-                <!-- <div class="col-sm-5"> -->
-                <!-- <a routerLink="/salamaservices-arabic">
+          </p>
+        </div>
+        <br>
+        <!-- <div class="col-sm-1"></div> -->
+        <div class="col-md-6">
+          <br><br>
+          <!-- <div class="col-sm-5"> -->
+          <!-- <a routerLink="/salamaservices-arabic">
                   <img src="./assets/salama-logo.png" srcset="./assets/salama-logo@2x.png 2x,
                                              ./assets/salama-logo@3x.png 3x"
                     class="salama-logo" style="margin-left: 509px;"></a> -->
-                <br>
-                <br>
-                <a class="benefits">ما هو السلام؟</a>
+          <br>
+          <br>
+          <p class="col-md-8  text-justify" dir="rtl" style="font-size: 35px;"><b>ما هو السلام؟</b></p>
 
-                <p class="col-md-12 text-justify "> {{'"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات
-                  في إمارة الشارقة.' |
-                  translate:user }}.
-                  <br>
-                  {{'تعظيم كفاءة مراقبة السلامة للممتلكات والأصول.' | translate:user}}
-                  <br>
-                  {{'تحليل البيانات للمساعدة في خدمات الطوارئ.'| translate:user}}
-                  <br>
-                  <br>
-                  <!-- <a href=""><font color="#f34235" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
-                  <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+          <p class="text-justify "> {{'"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات
+            في إمارة الشارقة.' |
+            translate:user }}.
+            <br>
+            {{'تعظيم كفاءة مراقبة السلامة للممتلكات والأصول.' | translate:user}}
+            <br>
+            {{'تحليل البيانات للمساعدة في خدمات الطوارئ.'| translate:user}}
+            <br>
+            <br>
+            <!-- <a href=""><font color="#f34235" class="Know-More">{{'تعرف أكثر'| translate:user}} </font></a> -->
+            <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
                                           srcset="./assets/tail-left-copy@2x.png 2x,
                                                   ./assets/tail-left-copy@3x.png 3x"
                                           class="tail-left-copy"></a> -->
-                </p>
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
-          <section class="details-card">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card-content">
-                    <div class="card-img">
-                      <img src="/assets/shutterstock-220781335.png" srcset="./assets/shutterstock-220781335@2x.png 2x,
-                                                   ./assets/shutterstock-220781335@3x.png 3x"
-                        alt="">
-                      <a href="#" class="btn-card1" style="">مدونة</a>
-                    </div>
-                    <div class="card-desc text-justify" dir="rtl">
-                      <!-- <span class="blog"><h4>Blog</h4></span> -->
-                      <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                                  مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                                  من 120 ثانية.'|translate:user}}</p> -->
-                      <!-- <a href="#" class="btn-card">blog</a>    -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card-content">
-                    <div class="card-img">
-
-                      <img src="/assets/shutterstock-775043446.png" srcset="./assets/shutterstock-775043446@2x.png 2x,
-                                                   ./assets/shutterstock-775043446@3x.png 3x"
-                        alt="">
-                      <!-- <span><h4>News</h4></span> -->
-                      <a href="#" class="btn-card2" style="">أخبار</a>
-                    </div>
-                    <div class="card-desc text-justify">
-
-                      <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                                  مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                                  من 120 ثانية.'|translate:user}}</p> -->
-                      <!-- <a href="#" class="btn-card">Read</a>    -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card-content">
-                    <div class="card-img">
-                      <img src="/assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
-                                                   ./assets/shutterstock-772324159@3x.png 3x"
-                        alt="">
-                      <!-- <span><h4>Linkedln</h4></span> -->
-                      <a href="#" class="btn-card3" style="">ينكدين</a>
-                    </div>
-                    <div class="card-desc">
-
-                      <!-- <p> {{'حلول سلامة المباني المتطورة التي تحمي الأرواح والممتلكات في جميع أنحاء الشارقة من خلال
-                                                  مشغلي مركز استقبال الإنذار (ARC) الذين يقومون بالتحقق مما إذا كان الإنذار أصلي أو خاطئ في أقل
-                                                  من 120 ثانية.'|translate:user}}</p> -->
-                      <!-- <a href="#" class="btn-card">Read</a>    -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </p>
+          <!-- </div> -->
         </div>
       </div>
-
-
     </div>
-    <!-- =============footer arabic start====== -->
-    <div class="container1 col-md-12" dir="rtl">
-        <br><br>
+    <br>
+    <br>
+    <section class="details-card">
+      <div class="container">
         <div class="row">
+          <div class="col-md-4">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="/assets/shutterstock-220781335.png" srcset="./assets/shutterstock-220781335@2x.png 2x,
+                                                   ./assets/shutterstock-220781335@3x.png 3x"
+                  alt="">
+                <a href="#" class="btn-card1">مدونة</a>
+              </div>
+              <div class="card-desc text-justify" dir="rtl">
 
-          <div class="col-sm-2">
-            <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-content">
+              <div class="card-img">
+
+                <img src="/assets/shutterstock-775043446.png" srcset="./assets/shutterstock-775043446@2x.png 2x,
+                                                   ./assets/shutterstock-775043446@3x.png 3x"
+                  alt="">
+                <!-- <span><h4>News</h4></span> -->
+                <a href="#" class="btn-card2" style="">أخبار</a>
+              </div>
+              <div class="card-desc text-justify">
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-content">
+              <div class="card-img">
+                <img src="/assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
+                                                   ./assets/shutterstock-772324159@3x.png 3x"
+                  alt="">
+                <!-- <span><h4>Linkedln</h4></span> -->
+                <a href="#" class="btn-card3" style="">ينكدين</a>
+              </div>
+              <div class="card-desc">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<br>
+<br>
+
+<!-- =============footer arabic start====== -->
+<div class="container1 col-md-12" dir="rtl">
+  <br><br>
+  <div class="row">
+
+    <div class="col-sm-2">
+      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
              ./assests/logo-1-copy@3x.png 3x"
-              class="img-thumbnail">
-          </div>
+        class="img-thumbnail">
+    </div>
 
-          <div class="col-md-2">
-            <h5 class="navfooter" style="color:white">الملاحة</h5>
-            <ul class="list-unstyled quick-links footer1">
+    <div class="col-md-2">
+      <h5 class="navfooter" style="color:white">الملاحة</h5>
+      <ul class="list-unstyled quick-links footer1">
 
-              <li><a routerLink="/aboutus-arabic" class="about">
-                  <font color="white">معلومات عنا</font>
-                </a></li>
-              <li><a routerLink="/amanservices-arabic">
-                  <font color="white">خدمات</font>
-                </a></li>
-              <li><a routerLink="/sitemap-arabic">
-                  <font color="white">خريطة الموقع</font>
-                </a></li>
-              <li><a routerLink="/contactus-arabic">
-                  <font color="white">اتصل بنا</font>
-                </a></li>
-              <li><a routerLink="/privacy-arabic">
-                  <font color="white">سياسة خاصة</font>
-                </a></li>
-            </ul>
-          </div>
+        <li><a routerLink="/aboutus-arabic" class="about">
+            <font color="white">معلومات عنا</font>
+          </a></li>
+        <li><a routerLink="/amanservices-arabic">
+            <font color="white">خدمات</font>
+          </a></li>
+        <li><a routerLink="/sitemap-arabic">
+            <font color="white">خريطة الموقع</font>
+          </a></li>
+        <li><a routerLink="/contactus-arabic">
+            <font color="white">اتصل بنا</font>
+          </a></li>
+        <li><a routerLink="/privacy-arabic">
+            <font color="white">سياسة خاصة</font>
+          </a></li>
+      </ul>
+    </div>
 
-          <!-- <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
                <h5 class="home">Support</h5>
                <ul class="list-unstyled quick-links">
                  <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -731,82 +751,82 @@
     
                </ul>
              </div> -->
-          <div class="col-md-3">
-            <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
-            <ul class="list-unstyled quick-links footer2">
-              <li>
-                <p class="about">
-                  <font color="white">برج 400 18th أرضية,</font>
-                  <br>
-                  <font color="white"> طريق الميناء الشارقة,</font>
-                  <br>
-                  <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
-                  <br>
+    <div class="col-md-3">
+      <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
+      <ul class="list-unstyled quick-links footer2">
+        <li>
+          <p class="about">
+            <font color="white">برج 400 18 أرضية,</font>
+            <br>
+            <font color="white"> طريق الميناء الشارقة,</font>
+            <br>
+            <font color="white">صندوق بريد 4648 الشارقة - الإمارات العربية المتحدة</font>
+            <br>
 
-                  <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
-                  <br>
-                  <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-                  <br>
-                  <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
-                  <br>
-                  <a routerLink="login-arabic">
-                    <font color="white">www.saned.ae</font>
-                  </a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+            <font color="white" dir="rtl"> رقم الهاتف: 6555 506 6 971+ </font>
+            <br>
+            <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+            <br>
+            <font color="white">البريد الإلكتروني: helpdesk@saned.ae</font>
+            <br>
+            <a routerLink="login-arabic">
+              <font color="white">www.saned.ae</font>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-2">
+      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
                  ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-              class="img-thumbnail">
-          </div>
-          <div class="col-sm-3">
-            <p style="color:white;font-family: GeezaPro;">تابعنا
-              <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-              <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-              <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-              <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-              <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
-              <div class="input-group mb-3">
+        class="img-thumbnail">
+    </div>
+    <div class="col-sm-3">
+      <p style="color:white;font-family: GeezaPro;">تابعنا
+        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+        <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
+        <div class="input-group mb-3">
 
-                <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
                   border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
-                  class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-                  aria-describedby="basic-addon2">
-                <div class="input-group-append">
+            class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
 
-                  <button class="btn btn-outline" style="border-color: white;" type="button" >
-                    <font style="color:#ff0000;">الاشتراك</font>
-                  </button>
-                </div>
-              </div>
+            <button class="btn btn-outline" style="border-color: white;" type="button">
+              <font style="color:#ff0000;">الاشتراك</font>
+            </button>
           </div>
-          <div class="col-md-14" style="margin-right: 574px;color: white">الموقع في وضع البناء</div> 
-          <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
         </div>
-
-
-        <div class="lastfoot text-center">
-          <div>
-            <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
-              فإنك توافق على
-              بنود الخدمة وسياسة
-              ملفات تعريف الارتباط وسياسة
-              الخصوصية
-              وسياسات المحتوى الخاصة بنا. © 2019.</p>
-          </div>
-
-        </div>
-        <br>
-      </div>
-
-    <!-- ========footer arabic end====== -->
-
+    </div>
+    <div class="col-md-14" style="margin-right: 574px;color: white">الموقع في وضع البناء</div>
+    <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
   </div>
 
 
+  <div class="lastfoot text-center">
+    <div>
+      <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
+        فإنك توافق على
+        بنود الخدمة وسياسة
+        ملفات تعريف الارتباط وسياسة
+        الخصوصية
+        وسياسات المحتوى الخاصة بنا. © 2019.</p>
+    </div>
+
+  </div>
+  <br>
 </div>
+
+<!-- ========footer arabic end====== -->
+
+
+
+
+
 
 
 <script>

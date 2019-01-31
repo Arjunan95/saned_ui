@@ -10,8 +10,15 @@ import { SimpleGlobal } from 'ng2-simple-global';
   styleUrls: ['./contactus-arabic.component.css']
 })
 export class ContactusArabicComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
   model: any = {};
   data: any = {};
+  Lang: any = {};
   constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }
 
   ngOnInit() {

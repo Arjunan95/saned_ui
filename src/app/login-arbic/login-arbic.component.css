@@ -145,7 +145,7 @@
   }
   
   /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
+  /* @media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
@@ -153,7 +153,7 @@
     .cancelbtn {
        width: 100%;
     }
-  }
+  } */
   /* ========login form end====== */
   .intro-3{
     background: url("/assets/loginsaned1.png")no-repeat center center;
@@ -167,7 +167,7 @@
     width: 699px;
     height: 168px;
     font-family: Roboto;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -414,13 +414,9 @@
     background-color: #424f95 !important;
   }
   .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    /* background: transparent !important; */
   }
-  @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #424f95 !important;
-    }
-  }
+ 
   h6 {
     line-height: 1.7;
   }
@@ -814,4 +810,100 @@
   background-color: #ff0000;
 }
 
+.mr-5{
+  margin-right: 3rem !important;
+}
+
 /* ========== navabar end=========== */
+/* ===Mobile navbar start=========== */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+
+
+  
+  .pt-120{
+    position: relative !important;
+    left: 143px !important;
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+.pad_12{
+  padding: 0 12px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+
+
+  .pt-120{
+    position: relative !important;
+    left: 232px 
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+
+
+
+li[_ngcontent-c1] {
+  float: left;
+  padding: 0 12px !important;
+}
+
+
+}
+
+@media screen and (max-width: 1024px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+
+
+  .pt-120{
+    position: relative !important;
+    left: 232px 
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+
+
+
+li[_ngcontent-c1] {
+  float: left;
+  padding: 0 12px !important;
+}
+
+
+}
+
+/* =========Mobile navbar End========== */

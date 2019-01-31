@@ -11,8 +11,17 @@ import swal from 'sweetalert2';
   styleUrls: ['./supplier-register.component.css']
 })
 export class SupplierRegisterComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+      this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
   model: any = {};
   data: any = {};
+  submitted: any = {};
+  newVar: any = {};
+  onSubmit: any = {};
   minDate: Date;
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) {
     this.minDate = new Date();

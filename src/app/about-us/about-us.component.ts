@@ -10,6 +10,14 @@ import { SimpleGlobal } from 'ng2-simple-global';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+      this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
+
+
   model: any = {};
   data: any = {};
   constructor(private translate: TranslateService,private  apiService:  APIService,private router: Router,private sg: SimpleGlobal) { }

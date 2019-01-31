@@ -1,115 +1,357 @@
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 .intro-2 {
-    background: url("/assets/hero_image1.png")no-repeat center center;
-    background-size: cover;
-    height: 623px;
- }
- .alert {
-    position: relative;
-    /* padding: .75rem 1.25rem; */
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-  }
-  .Home-About-Us-Suppli {
-    width: 163px;
-    height: 288px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-    margin-left: 69px;
-  }
-  Home-About-Us-Suppl1 {
-    width: 163px;
-    height: 288px;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-    margin-left: 69px;
-  }
-  .card{
-    
-    
-    left:50%;
-    transform:translate(-50%,-50%);
-   
-    min-height:400px;
-    background:#fff;
-    box-shadow:0 20px 50px rgba(0,0,0,.1);
-    border-radius:10px;
-    transition:0.5s;
+  background: url("/assets/hero_image1.png")no-repeat center center;
+  background-size: cover;
+  height: 635px;
 }
-.card:hover {
-    box-shadow:0 30px 70px rgba(0,0,0,.2);
+
+.aboutus {
+  background: url("/assets/group-4.png")no-repeat center center;
+  /* background-size: cover; */
+  height: 330px;
+  border-radius: 18px;
+  
 }
-.card .box {
-    position:absolute;
-    top:50%;
-    left:0;
-    transform:translateY(-50%);
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
-    width:100%;
+/* ===========aliign start============ */
+/* ====================responsive================= */
+.mt_20{
+margin-top: 0px;
 }
-.card .box .img {
-    width:120px;
-    height:120px;
-    margin:0 auto;
-    border-radius:50%;
-    overflow:hidden;
+.wt_237{
+width: 237px;
 }
-.card .box .img img {
-    width:100%;
-    height:100%;
+.wt-con{
+width: 232px;
 }
-.card .box h2 {
-    font-size:20px;
-    color:#262626;
-    margin:20px auto;
+.wt_140{
+width: 140% !important;
 }
-.card .box h2 span {
-    font-size:14px;
-    background:#e91e63;
-    color:#fff;
-    display:inline-block;
-    padding:4px 10px;
-    border-radius:15px;
+/* mobile media query */
+@media screen and (min-device-width: 320px) and (max-device-width: 760px){
+.nav-bg {
+background-color: rgba(0, 0, 0, 0.65) !important;
 }
-.card .box p {
-    color:#262626;
+
+.pt-120{
+position: relative;
+left: 15px;
 }
-.card .box span {
-    display:inline-flex;
+.mt-414{
+margin-top: 0px !important;
 }
-.card .box ul {
-    margin:0;
-    padding:0;
+.ft_18 {
+font-size: 18px;
 }
-.card .box ul li {
-    list-style:none;
-    float:left;
+
+
+
 }
-.card .box ul li a {
-    display:block;
-    color:#aaa;
-    margin:0 10px;
-    font-size:20px;
-    transition:0.5s;
-    text-align:center;
+/* css for ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1022px){
+.nav-bg {
+/* background-color: rgba(0, 0, 0, 0.65) !important; */
 }
-.card .box ul li:hover a {
-    color:#e91e63;
-    transform:rotateY(360deg);
+.maxwt_19{
+max-width: 19%;
+}
+.wt_135{
+width: 135px !important;
+}
+.map_wt{
+width: 175px !important;
+}
+.logo_wt{
+width: 109px;
+}
+.col-sm-2{
+width : 0% ! important;
+}
+
+.mt_20{
+
+  margin-top: 4px !important; 
+
+shape-margin: 0px !important;
+}
+
+.ht_80{
+height:54px !important
+}
+
+.pt-120{
+position: relative;
+left: 11px
+}
+.mt-414{
+margin-top:0px !important;
+}
+
+.ml-5, .mx-5 {
+margin-left: 2.2rem !important;
+}
+
+.pad_0{
+padding:0 0px !important;
+}
+.ft_18 {
+font-size: 30px;
+}
+
+.wt_106{
+width: 106% !important;
+}
+
+
+}
+
+.Sign-In {
+width: 57px;
+height: 24px;
+font-family: Roboto;
+font-size: 15px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+
+.Rectangle-2-Copy-2 {
+width: 1440px;
+height: 311px;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+background-image: linear-gradient(65deg, var(--black), var(--black));
+}
+.Subscribe {
+width: 54px;
+height: 14px;
+opacity: 0.82;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ff0000;
+}
+.Enter-your-mail-id {
+width: 92px;
+height: 14px;
+opacity: 0.82;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 300;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.Shape {
+width: 17px;
+height: 17px;
+background-color: #ffffff;
+}
+.arabic{
+width: 28px;
+height: 49px;
+font-family: GeezaPro;
+font-size: 12px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.Oval {
+width: 9px;
+height: 9px;
+background-color: #ff1100;
+}
+.English {
+width: 40px;
+height: 28px;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ff1100;
+}
+
+/* ===========navbar start========= */
+.Rectangle-2 {
+height: 35px;
+  width: 100px;
+  padding: 0;
+border-radius: 5px;
+background-color: #ff0000;
+}
+.Contact-Us {
+width: 90px;
+height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.Suppliers {
+width: 77px;
+height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.Services {
+width: 70px;
+height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.About-Us-Copy {
+width: 75px;
+height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+.Home-Copy {
+width: 49px;
+height: 24px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+}
+
+
+/* ======navbar end===== */
+.Rectangle-5-Copy {
+width: 292px;
+height: 59px;
+border-radius: 8px;
+background-color: #f34235;
+}
+.Mission {
+width: 79px;
+height: 48px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+line-height: 2.22;
+letter-spacing: normal;
+color: var(--black);
+}
+.Utilizing-the-latest {
+/* width: 518px; */
+height: 100px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: var(--black);
+}
+.To-be-among-the-best {
+/* width: 519px; */
+height: 81px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+color: var(--black);
+}
+.Vision {
+width: 65px;
+height: 40px;
+font-family: Roboto;
+font-size: 18px;
+font-weight: bold;
+font-style: normal;
+font-stretch: normal;
+line-height: 2.22;
+letter-spacing: normal;
+color: var(--black);
+}
+.Sharjah-Asset-Manage {
+/* width: 535px; */
+height: 283px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+/* color: black */
+}
+.reg{
+background-color: #ff0000; 
+width: min-content;
+padding: 8px 20px;
+        margin-left:14px;
+        margin-top: -10px;
+        width:123px;
+        height: 41px;
+        border-radius: 5px;
+}
+/* ===========align end============== */
+.spacer {
+height: 100px;
+}
+
+.Who-We-Are-Aman-is-a {
+  /* width: 733px; */
+  height: 459px;
+  font-family: Roboto;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.Who-We-Are-Aman-is-a .text-style-1 {
+  font-size: 24px;
+}
+.bb_3{
+  border-bottom: 3px solid transparent;
 }

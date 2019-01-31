@@ -48,7 +48,7 @@ section{
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .dropdown-content {
@@ -84,12 +84,12 @@ ul li a {
 }
 .navigation {
   background-color: #35353500;
-  width: 75%;
+  /* width: 100%; */
   margin: 20px auto;
   min-height: 50px;
 }
 .navigation > li {
-  float: left;
+  float: center;
   padding: 0 20px;
 }
 .navigation > li > a {
@@ -167,7 +167,7 @@ nav ul{
     display: flex;
     margin: 0px;
     padding: 0px;
-    float: right;
+    float: center;
 }
 nav ul li{
     list-style: none;
@@ -184,7 +184,7 @@ nav ul{
 nav ul li a{
     display:block;
     color: #fff;
-    padding: 0 20px;
+    padding: 0 21px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -244,7 +244,7 @@ nav ul li a{
   letter-spacing: 0;
   }
   .about{
-    font-family: Roboto-Regular;
+    font-family: GeezaPro;
     font-size: 13px;
     line-height: 15px;
   letter-spacing: 0;
@@ -252,257 +252,221 @@ nav ul li a{
     /* ===========================footer style end===============*/
 
 </style>
-<!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
-&nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
-&nbsp; -->
+
 
 
 <div>
   <!------ Include the above in your HEAD tag ---------->
   <section class="view intro-2 hm-gradient" dir="rtl">
-    <div class="">
-
+    <div class="row">
       <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
                                                              ./assets/group@3x.png 3x"
           class="img-responsive">
       </div>
+      <div class="col-md-5"></div>
+      <div class="col-md-6 mt-5" dir="ltr">
+        &nbsp;
+        <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;margin-left: -15px;">
+          <font color="white">تسجيل الدخول </font>
+        </a>
+
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+          width: 100px;"
+          routerLink="register-form-arabic" class="btn Rectangle">
+          <font color="white">تسجيل</font>
+        </button>
+
+        &nbsp;
+
+        <font style="color:white">English</font>&nbsp;
+        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/salamaservices"
+          [checked]="Lang" />
+        &nbsp;
+        <font color="#F90E35"> عربى </font>
+        <input type="radio" checked>
+
+      </div>
     </div>
-    <div class="col-md-4" style="margin-right: 859px;
-            margin-top: -130px;">
-
-      <a class="btn mb-1" routerLink="login" style="font-family: Roboto-Regular;font-size: 21px;
-">
-        <font color="white" class="Sign-Out">تسجيل الدخول</font>
-      </a>
-
-      <button type="submit" style="background-color: #ff0000; width: 123px;padding: 8px 20px;" routerLink="register-form-arabic"
-        class="btn Rectangle">
-        <font color="white">تسجيل</font>
-      </button> &nbsp; &nbsp;
 
 
-      <font style="color:white">English</font>
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/salamaservices"
-        [checked]="Lang" />
-      &nbsp; &nbsp;
-
-      <font color="#F90E35"> عربى
-      </font>
-      <input type="radio" checked> &nbsp; &nbsp;
-
-
-
-
-
-
-
-
-      <!-- <a class="btn mb-1" routerLink="/login-arbic" style="font-family: Roboto-Regular;font-size: 21px;
-">
-        <font color="white">خروج </font>
-      </a> -->
-    </div>
-    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-    assests/lawyer-today-1@3x.png 3x"
-class="NEM mt-3"> -->
-    <!-- <div class="full-bg-img"> -->
-    <!-- <div class="container flex-center"> -->
-    <!-- <div class="row flex-center pt-5 mt-3"> -->
-    <!-- <div class="col-md-6 text-center"> -->
     <br><br><br><br><br>
     <div class="text-center">
-      <h1 style="font-size:50px">
-        <font color="white" class="title">سلامة</font>
+      <h1>
+        <font color="white" style="font-size: 50px;" class="title">سلامة</font>
       </h1>
 
     </div>
-    <!-- </div> -->
 
-
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
   </section>
-  <nav style="    margin-top: -115px;background: rgba(0, 0, 0, 0.20); ">
-    <ul class="navigation" style="margin-right: 194px;" dir="rtl">
-      <li><a routerLink="/login-arbic" class="homeservice">الصفحة الرئيسية</a></li>
-      <li><a routerLink="/aboutus-arabic" class="about-us1">معلومات عنا</a></li>
-      <li class="menu">
-        <a class="services">خدمات</a>
-        <ul class="submenu">
-          <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
-          <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
-          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                        <li style="background: red;"><a href="#">Link 4</a></li> -->
+  <br>
+  <nav class="navbar navbar-expand-md navbar-dark" dir="rtl" style="margin-top: -74px;background: rgba(0, 0, 0, 0.27);">
+
+
+    <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+    <!-- </a> -->
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div dir="ltr" class="mr-5">
+      <div class="collapse navbar-collapse mr-5" dir="rtl" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navigation mt-2 col-md-12 mr-5 navbar-nav nav-bg mt-414 pt-120" dir="rtl" style="font-size: 18px; color: black;">
+
+          <li class="nav-item col-md-3">
+
+            <a routerLink="/login-arbic" class=" nav-link pd_0 ">الصفحة الرئيسية</a>
+          </li><br>
+
+          <li class="nav-item col-md-3">
+            <a routerLink="/aboutus-arabic" class="nav-link">معلومات عنا</a>
+          </li><br>
+
+          <li class="menu nav-item col-md-2 mt_7">
+            <a>خدمات</a>
+            <ul class="submenu" style="font-weight:bold;">
+              <li style="background:  #252323;"><a routerLink="/amanservices-arabic">رجل</a></li>
+              <li style="background:  #252323;"><a routerLink="/salamaservices-arabic">سلامة
+                </a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item col-md-1">
+            <a routerLink="/supplier-register" class="nav-link">الموردين</a>
+          </li>
+          <li class="nav-item col-md-3">
+            <a routerLink="/contactus-arabic" class="nav-link">اتصل بنا</a>
+          </li>
+          <li dir="rtl">
+            <font style="color:white"><i class="fa fa-search ml-4" style="margin-top: -10px;
+                           "></i></font>
+          </li>
         </ul>
-      </li>
-      <li><a routerLink="supplier-register-arabic" class="supplier">الموردين</a></li>
-      <li><a routerLink="/contactus-arabic" class="contactus">اتصل بنا</a></li>
-      <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
-      <li>
-        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                      margin-right: -46px;"></i></font>
-      </li>
-    </ul>
-  </nav>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <div class="rtl">
-    <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-
-    <div class="card col-md-12" style="border-radius: 18px;
-   background: white;margin-top: 55px;">
-      <br>
-      <div class="row ml-4">
-
-        <div class="col-md-5"></div>
-        <br><br>
-        <div class="col-md-2">
-
-          <!-- <img src="/assets/001-teacher.png" srcset="/assets/001-teacher@2x.png 2x,
-                    /assets/001-teacher@3x.png 3x"
-            class="fire-extinguisher"> -->
-          <div style="margin-left: 20px;">
-            <!-- <h5><b>رجل</b></h5> -->
-          </div> <br><br>
-        </div>
-        <!-- <div class="">
-        <div class="row">
-<div class="col-md-12">
-        <div class="mr-2 ">
-            <img src="/assets/1.png"
-            srcset="/assets/1@2x.png 2x,
-                    /assets/1@3x.png 3x"
-            class="layer">
-            <h5><b>Description</b></h5>
-        </div>
-        <div class="col-md-4">
-   
-  
-   <p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
-
-   </p>
-  </div>
-
-<div class="col-md-5">
-    <img src="/assets/2.png"
-    srcset="/assets/2@2x.png 2x,
-            /assets/2@3x.png 3x"
-    class="layer">
-<h5><b>Objectives</b></h5>
-<p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
-
-</p>
-</div>
-</div>
-
-</div>
-</div> -->
-        <div>
-          <!-- =====test==== -->
-          <div class="row" dir="rtl">
-            <div class="col-md-1">
-              <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
-              /assets/1@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4 ml-3">
-
-
-
-              <h5><b dir="rtl" style="margin-left: 320px;">وصف</b></h5>
-              <p class="text-justify" class="salama">"سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في
-                إمارة الشارقة ،
-                حيث يوفر برامج تدريبية متخصصة في مجال الوقاية والسلامة للعاملين في القطاعين العام والخاص. يقد مركز
-                سلامة دورات أساسية في البداية على أن يتم تطويرها لاحقا لتوفير دورات تدريبية وبرامج تدريبية متقدمة
-                لتتوافق مع المتطلبات في مختلف المجالات. تم اعتماد هذه الفكرة من قبل هيئة الشارقة للوقاية والسلامة
-                بالتعاون مع شركة ســـاند للمساعدة في الحد من الإصابات والحوادث بسبب عدم معرفة احتياطات السلامة الأساسية
-                عند العاملين.
-
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
-                /assets/2@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4" style="margin-left: -8px;">
-
-              <h5> <b style="margin-left: 320px;">الأهداف</b> </h5>
-              <p class="text-justify" class="salama">
-                  قريبا... </p>
-
-            </div>
-          </div>
-
-
-        </div>
-        <!-- ====test======== -->
-
-        <div class="row" dir="rtl">
-          <div class="col-md-1">
-            <img src="/assets/3.png" srcset="/assets/3@2x.png 2x,
-              /assets/3@3x.png 3x" class="layer"
-              style="margin-top: 57px;">
-          </div>
-          <div class="col-md-4 ml-3" style="margin-top:52px">
-
-
-
-            <h5><b style="margin-left: 256px;">معلومات تقنية</b></h5>
-            <p class="text-justify" class="salama">قريبا...  </div>
-          <br>
-          <br>
-          <div class="col-md-1"></div>
-          <div class="col-md-1">
-            <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="layer" style="margin-left: 11px;margin-top: 64px;margin-top: 46px;">
-          </div>
-          <div class="col-md-4" style="margin-left: -8px;margin-top: 64px;">
-
-
-            <h5> <b style="margin-left: 256px;">معلومات تجارية</b> </h5>
-            <p class="text-justify">
-                قريبا...
-            </p>
-
-          </div>
-          <div class="col-md-5"></div>
-          <div class="col-md-7 center">
-
-            <button type="submit" class="Rectangle-5-Copy" routerLink="register-form-arabic">سجل هنا</button>
-
-          </div>
-
-        </div>
-
       </div>
 
 
+    </div>
+  </nav>
+  <br>
+  <br><br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br><br><br><br><br><br><br>
+  <br>
+  <br>
+  <div class="rtl">
+    <!-- <h3 class="col-sm-12 Welcome-to-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+
+    <div class="card col-md-12" style="border-radius: 18px;
+   background: white;">
+      <br>
+      <!-- <div class="row ml-4"> -->
+
+
+
+      <!-- =====test==== -->
+      <div class="row" dir="rtl">
+        <div class="col-md-1">
+          <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
+              /assets/1@3x.png 3x" class="layer">
+        </div>
+        <div class="col-md-4 ml-3">
+
+
+
+          <p class="text-justify" style="font-size: 24px;"><b>وصف</b></p>
+          <p class="text-justify  ">
+            "سلامة" هو أول مركز تدريب من نوعه يهدف إلى خدمة مختلف القطاعات في
+            إمارة الشارقة ،
+            حيث يوفر برامج تدريبية متخصصة في مجال الوقاية والسلامة للعاملين في القطاعين العام والخاص. يقد مركز
+            سلامة دورات أساسية في البداية على أن يتم تطويرها لاحقا لتوفير دورات تدريبية وبرامج تدريبية متقدمة
+            لتتوافق مع المتطلبات في مختلف المجالات. تم اعتماد هذه الفكرة من قبل هيئة الشارقة للوقاية والسلامة
+            بالتعاون مع شركة ســـاند للمساعدة في الحد من الإصابات والحوادث بسبب عدم معرفة احتياطات السلامة الأساسية
+            عند العاملين.
+
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1">
+          <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                /assets/2@3x.png 3x" class="layer">
+        </div>
+        <div class="col-md-4">
+
+          <p class="text-justify" style="font-size: 24px;"><b>الأهداف</b> </p>
+          <p class="text-justify ">قريبا...
+          </p>
+
+        </div>
+      </div>
+      <!-- </div> -->
+
+
+      <!-- ====test======== -->
+
+      <div class="row" dir="rtl">
+        <div class="col-md-1">
+          <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
+              /assets/1@3x.png 3x" class="layer">
+        </div>
+        <div class="col-md-4 ml-3">
+
+
+
+          <p class="text-justify" style="font-size: 24px;"><b>معلومات تقنية</b></p>
+          <p class="text-justify  ">قريبا...
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1">
+          <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                /assets/2@3x.png 3x" class="layer">
+        </div>
+        <div class="col-md-4">
+
+          <p class="text-justify" style="font-size: 24px;"><b>معلومات تجارية</b> </p>
+          <p class="text-justify ">قريبا...
+          </p>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-5"></div>
+        <div class="col-md-7 center">
+
+          <button type="submit" class="Rectangle-5-Copy" routerLink="register-form-arabic">سجل هنا</button>
+
+        </div>
+      </div>
       <br>
 
 
+      <br>
     </div>
   </div>
-</div>
-<!-- =============footer arabic start====== -->
-<!-- =============footer arabic start====== -->
-<div class="container1 col-md-12" dir="rtl">
+  <!-- =============footer arabic start====== -->
+  <div class="container1 col-md-12" dir="rtl">
     <br><br>
     <div class="row">
 
       <div class="col-sm-2">
         <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-         ./assests/logo-1-copy@3x.png 3x"
+           ./assests/logo-1-copy@3x.png 3x"
           class="img-thumbnail">
       </div>
 
       <div class="col-md-2">
-        <h5 class="navfooter" style="color:white">الملاحة</h5>
-        <ul class="list-unstyled quick-links footer1">
+        <h5 class="" style="color:white"><b>الملاحة</b></h5>
+        <ul class="list-unstyled quick-links">
 
           <li><a routerLink="/aboutus-arabic" class="about">
               <font color="white">معلومات عنا</font>
@@ -523,32 +487,32 @@ class="NEM mt-3"> -->
       </div>
 
       <!-- <div class="col-sm-3">
-           <h5 class="home">Support</h5>
-           <ul class="list-unstyled quick-links">
-             <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-             <li><a class="about"><font color="white">Disclaimer</font></a></li>
-             <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-             <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-
-           </ul>
-         </div> -->
+             <h5 class="home">Support</h5>
+             <ul class="list-unstyled quick-links">
+               <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+               <li><a class="about"><font color="white">Disclaimer</font></a></li>
+               <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+               <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+  
+             </ul>
+           </div> -->
       <div class="col-md-3">
         <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
-        <ul class="list-unstyled quick-links footer2">
+        <ul class="">
           <li>
             <p class="about">
-              <font color="white">برج 400 18th أرضية,</font>
+              <font color="white">برج 400 18 أرضية,</font>
               <br>
               <font color="white"> طريق الميناء الشارقة,</font>
               <br>
-              <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
+              <font color="white">صندوق بريد 4648 الشارقة - الإمارات العربية المتحدة</font>
               <br>
 
-              <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
+              <font color="white" dir="rtl"> رقم الهاتف: 6555 506 6 971+ </font>
               <br>
               <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
               <br>
-              <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
+              <font color="white">البريد الإلكتروني: helpdesk@saned.ae</font>
               <br>
               <a routerLink="login-arabic">
                 <font color="white">www.saned.ae</font>
@@ -559,31 +523,31 @@ class="NEM mt-3"> -->
       </div>
       <div class="col-sm-2">
         <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-             ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+               ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
           class="img-thumbnail">
       </div>
       <div class="col-sm-3">
         <p style="color:white;font-family: GeezaPro;">تابعنا
-          <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-          <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-          <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-          <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
           <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
           <div class="input-group mb-3">
 
             <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-              border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
+                border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
               class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
               aria-describedby="basic-addon2">
             <div class="input-group-append">
 
-              <button class="btn btn-outline" style="border-color: white;" type="button" >
+              <button class="btn btn-outline" style="border-color: white;" type="button">
                 <font style="color:#ff0000;">الاشتراك</font>
               </button>
             </div>
           </div>
       </div>
-      <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div> 
+      <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div>
       <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
     </div>
 
@@ -602,7 +566,9 @@ class="NEM mt-3"> -->
     <br>
   </div>
 
-<!-- ========footer arabic end====== -->
+  <!-- ========footer arabic end====== -->
+</div>
+
 
 
 <!-- ===arabic -->

@@ -10,6 +10,12 @@ import { SimpleGlobal } from 'ng2-simple-global';
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+      this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
   model: any = {};
   data: any = {};
   constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }

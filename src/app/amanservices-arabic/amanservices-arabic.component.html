@@ -6,583 +6,559 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  body {font-family: Arial, Helvetica, sans-serif;}
-nav{
-    width: 100%;
-    height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
-    position: sticky;
-    top:0px;
-    z-index: 99;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    /* background: #000; */
-}
-header{
-    padding: 10px 100px;
-    box-sizing: border-box;
-}
-section{
-    width: 100%;
-    height: 100vh;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: red;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-ul li a {
-  text-decoration: none;
-  color: #e74c3c;
-  font-family: Tahoma, Arial;
-}
-.navigation {
-  background-color: #35353500;
-  width: 75%;
-  margin: 20px auto;
-  min-height: 50px;
-}
-.navigation > li {
-  float: left;
-  padding: 0 20px;
-}
-.navigation > li > a {
-  line-height: 50px;
-  color: #FFF;
-}
-.navigation .menu {
-  position: relative
-}
-.navigation .menu .submenu {
-  position: absolute;
-  /* width: 200px; */
-  -webkit-box-shadow: 0px 1px 1px #CCC;
-  box-shadow: 0px 1px 1px #CCC;
-  display: none;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu:hover .submenu {
-  display: block
-}
-.navigation .menu .submenu:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-width: 0 6px 6px 6px;
-  border-style: solid;
-  border-color: #FFF transparent;
-  top: -6px;
-  left: 5px
-}
-.navigation .menu .submenu li {
-  padding: 5px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu .submenu li:hover {
-  background-color: #e74c3c;
-}
-.navigation .menu .submenu li:hover a {
-  color: #FFF;
-  /* padding: 0 11px; */
-}
-
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-section.sec1{
-    background: url(natures-temples.png);
-    background-size: cover;
-}
-section.banner{
-    background: url(Group.png);
-    background-size: cover;
-    margin-left: 15px;
-}
-section.sec2{
-   padding: 100px;
-   box-sizing: border-box;
-}
-nav{
-    width: 100%;
-    height: 50px;
-    background:rgba(0,0,0,.8);
-    border-top: 1px solid rgba(255,255);
-    border-bottom: 1px solid rgba(255,255);
-    position: sticky;
-    top:0px;
-    z-index: 99
-}
-nav ul{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    float: right;
-}
-nav ul li{
-    list-style: none;
-}
-
-
-nav ul{
-    display: flex;
-   
-    padding: 0px;
-    /* float: ; */
-}
-
-nav ul li a{
-    display:block;
-    color: #fff;
-    padding: 0 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 50px;
-
-}
-/* ==============footer style start ========= */
-.footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* height: 75px; */
- }
- .container1{
-   background: black;
-   color: white
- }
- .container{
-   /* background: black; */
-   color: white
- }
- .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.social {
-  -webkit-transform: scale(0.8);
-  /* Browser Variations: */
+    body {font-family: Arial, Helvetica, sans-serif;}
+  nav{
+      width: 100%;
+      height: 50px;
+      background:rgba(0,0,0,.8);
+      border-top: 1px solid rgba(255,255);
+      border-bottom: 1px solid rgba(255,255);
+      position: sticky;
+      top:0px;
+      z-index: 99;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      /* background: #000; */
+  }
+  header{
+      padding: 10px 100px;
+      box-sizing: border-box;
+  }
+  section{
+      width: 100%;
+      height: 100vh;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
   
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.img-thumbnail{
-  background: black;
-  border-color: black
-}
- .home{
-    font-family: Roboto-Bold;
-    font-size: 16px;
-    line-height: 14px;
-  letter-spacing: 0;
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
   }
-  .about{
-    font-family: GeezaPro;
-    font-size: 13px;
-    line-height: 15px;
-  letter-spacing: 0;
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    /* background-color: red; */
   }
-    /* ===========================footer style end===============*/
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  ul li a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-family: Tahoma, Arial;
+  }
+  .navigation {
+    background-color: #35353500;
+    /* width: 75%; */
+    margin: 20px auto;
+    min-height: 50px;
+  }
+  .navigation > li {
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .navigation > li > a {
+    line-height: 50px;
+    color: #FFF;
+  }
+  .navigation .menu {
+    position: relative
+  }
+  .navigation .menu .submenu {
+    position: absolute;
+    /* width: 200px; */
+    -webkit-box-shadow: 0px 1px 1px #CCC;
+    box-shadow: 0px 1px 1px #CCC;
+    display: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .navigation .menu:hover .submenu {
+    display: block
+  }
+  .navigation .menu .submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FFF transparent;
+    top: -6px;
+    left: 5px
+  }
+  .navigation .menu .submenu li {
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .navigation .menu .submenu li:hover {
+    background-color: #e74c3c;
+  }
+  .navigation .menu .submenu li:hover a {
+    color: #FFF;
+    /* padding: 0 11px; */
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  section.sec1{
+      background: url(natures-temples.png);
+      background-size: cover;
+  }
+  section.banner{
+      background: url(Group.png);
+      background-size: cover;
+      margin-left: 15px;
+  }
+  section.sec2{
+     padding: 100px;
+     box-sizing: border-box;
+  }
+  nav{
+      width: 100%;
+      height: 50px;
+      background:rgba(0,0,0,.8);
+      border-top: 1px solid rgba(255,255);
+      border-bottom: 1px solid rgba(255,255);
+      position: sticky;
+      top:0px;
+      z-index: 99
+  }
+  nav ul{
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      justify-content: center;
+  }
+  nav ul li{
+      list-style: none;
+  }
+  
+  
+  nav ul{
+      display: flex;
+     
+      padding: 0px;
+      /* float: ; */
+  }
+  
+  nav ul li a{
+      display:block;
+      color: #fff;
+      padding: 0 21px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 50px;
+  
+  }
+      /* ==============footer style start ========= */
+      .footer {
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      /* height: 75px; */
+   }
+   .container{
+     background: black;
+     color: white
+   }
+   .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .img-thumbnail{
+    background: black;
+    border-color: black
+  }
+  
+   .home{
+      font-family: Roboto-Bold;
+      font-size: 16px;
+      line-height: 14px;
+    letter-spacing: 0;
+    }
+    .about{
+      font-family: Roboto;
+      font-size: 13px;
+      line-height: 15px;
+    letter-spacing: 0;
+    }
+    .container1{
+     background: black;
+     color: white
+   }
+  
+      /* ===========================footer style end================ */
+  
+  </style>
 
-</style>
-<!-- <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
-&nbsp; &nbsp;        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/><<font style="color:#F90E35">English</font>  &nbsp; &nbsp; &nbsp;  
-&nbsp; -->
 
 
-<div>
-  <!------ Include the above in your HEAD tag ---------->
-  <section class="view intro-2 hm-gradient" dir="rtl">
-    <div class="">
-      <div class="col-md-1">
-        <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
-        <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
+
+<!------ Include the above in your HEAD tag ---------->
+<section class="view intro-2 hm-gradient" dir="rtl">
+  <div class="row">
+    <div class="col-md-1">
+      <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
+      <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
                                                              ./assets/group@3x.png 3x"
-          class="img-responsive">
-      </div>
+        class="img-responsive">
     </div>
-    <div class="col-md-4" style="margin-right: 859px;
-            margin-top: -130px;">
+    <div class="col-md-5"></div>
+    <div class="col-md-6 mt-5" dir="ltr">
       &nbsp; &nbsp;
-      <a class="btn mb-1" routerLink="login-arabic" style="font-family: Roboto-Regular;font-size: 21px;">
-        <font color="white">خروج </font>
-      </a>&nbsp; &nbsp;
-      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="register-form-arabic"
-        class="btn Rectangle">&nbsp; &nbsp;
-        <font color="white">تسجيل</font>&nbsp; &nbsp;
-      </button>&nbsp; &nbsp;
+      <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;
+      margin-left: -18px;">
+        <font color="white">تسجيل الدخول </font>
+      </a>&nbsp;&nbsp;
+      <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+          width: 100px;margin-left: -17px"
+        routerLink="register-form-arabic" class="btn Rectangle">&nbsp;
+        <font color="white">تسجيل</font>
+      </button>&nbsp;
 
 
 
-      <font style="color:white">English</font>
+      <font style="color:white">English</font>&nbsp;
+
       <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/amanservices"
-        [checked]="Lang" />&nbsp; &nbsp;
+        [checked]="Lang" />&nbsp;
 
       <font color="#F90E35"> عربى </font>
-      <input type="radio" checked>&nbsp; &nbsp;
+      <input type="radio" checked>&nbsp;
 
 
     </div>
-    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-    assests/lawyer-today-1@3x.png 3x"
-class="NEM mt-3"> -->
-    <!-- <div class="full-bg-img"> -->
-    <!-- <div class="container flex-center"> -->
-    <!-- <div class="row flex-center pt-5 mt-3"> -->
-    <!-- <div class="col-md-6 text-center"> -->
-    <br><br><br><br><br>
-    <div class="text-center">
-      <h1>
-        <font color="white"  style="font-size: 50px;" class="title">رجل</font>
-      </h1>
-
-    </div>
-    <!-- </div> -->
-
-
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-  </section>
-  <nav style="    margin-top: -115px;background: rgba(0, 0, 0, 0.20); ">
-    <ul class="navigation" style="margin-right: 194px;" dir="rtl">
-      <li><a routerLink="/login-arbic" class="homeservice">الصفحة الرئيسية</a></li>
-      <li><a routerLink="/aboutus-arabic" class="about-us1">معلومات عنا</a></li>
-      <li class="menu">
-        <a class="services">خدمات</a>
-        <ul class="submenu">
-          <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
-          <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
-          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                        <li style="background: red;"><a href="#">Link 4</a></li> -->
-        </ul>
-      </li>
-      <li><a routerLink="supplier-register-arabic" class="supplier">الموردين</a></li>
-      <li><a routerLink="/contactus-arabic" class="contactus">اتصل بنا</a></li>
-      <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
-      <li>
-        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                      margin-right: -46px;"></i></font>
-      </li>
-    </ul>
-  </nav>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <div class="rtl">
-    <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
-
-    <div class="card col-md-12" style="border-radius: 18px;
-   background: white;margin-top: 40px;">
-      <br>
-      <div class="row ml-4">
-
-        <div class="col-md-5"></div>
-        <br><br>
-        <div class="col-md-2">
-
-          <!-- <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
-                    /assets/002-fire-extinguisher@3x.png 3x"
-            class="fire-extinguisher"> -->
-          <div style="margin-left: 20px;">
-            <!-- <h5><b>رجل</b></h5> -->
-          </div> <br><br>
-        </div>
-        <!-- <div class="">
-        <div class="row">
-<div class="col-md-12">
-        <div class="mr-2 ">
-            <img src="/assets/1.png"
-            srcset="/assets/1@2x.png 2x,
-                    /assets/1@3x.png 3x"
-            class="layer">
-            <h5><b>Description</b></h5>
-        </div>
-        <div class="col-md-4">
-   
-  
-   <p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
-
-   </p>
   </div>
 
-<div class="col-md-5">
-    <img src="/assets/2.png"
-    srcset="/assets/2@2x.png 2x,
-            /assets/2@3x.png 3x"
-    class="layer">
-<h5><b>Objectives</b></h5>
-<p>
-        AMAN هي أول مشروع مشترك بين شركة الشارقة لإدارة الأصول (SAM) ، الذراع الاستثماري لحكومة الشارقة ، وشركة Apleona HSG (المعروفة سابقًا باسم Bilfinger HSG International Facilty Management) ، وهي شركة عالمية تقدم خدمات إدارة المرافق التي تقدم خدمات على مستوى عالمي في دولة الإمارات العربية المتحدة. 
 
-</p>
-</div>
-</div>
+  <br><br><br><br><br>
+  <div class="text-center">
+    <h1>
+      <font color="white" style="font-size: 50px;" class="title">رجل</font>
+    </h1>
 
-</div>
-</div> -->
-        <div>
-          <!-- =====test==== -->
-          <div class="row" dir="rtl">
-            <div class="col-md-1">
-              <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
+  </div>
+
+</section>
+<br>
+<nav class="navbar navbar-expand-md navbar-dark" dir="rtl" style="margin-top: -71px;background: rgba(0, 0, 0, 0.27);">
+
+
+  <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+  <!-- </a> -->
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div dir="ltr" class="mr-5">
+    <div class="collapse navbar-collapse mr-5" dir="rtl" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navigation mt-2 col-md-12 mr-5 navbar-nav nav-bg mt-414 pt-120" dir="rtl" style="font-size: 18px; color: black;">
+
+        <li class="nav-item col-md-3">
+
+          <a routerLink="/login-arbic" class=" nav-link pd_0 ">الصفحة الرئيسية</a>
+        </li><br>
+
+        <li class="nav-item col-md-3">
+          <a routerLink="/aboutus-arabic" class="nav-link">معلومات عنا</a>
+        </li><br>
+
+        <li class="menu nav-item col-md-2 mt_7">
+          <a>خدمات</a>
+          <ul class="submenu" style="font-weight:bold;">
+            <li style="background:  #252323;"><a routerLink="/amanservices-arabic">رجل</a></li>
+            <li style="background:  #252323;"><a routerLink="/salamaservices-arabic">سلامة
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item col-md-1">
+          <a routerLink="/supplier-register" class="nav-link">الموردين</a>
+        </li>
+        <li class="nav-item col-md-3">
+          <a routerLink="/contactus-arabic" class="nav-link">اتصل بنا</a>
+        </li>
+        <li dir="rtl">
+          <font style="color:white"><i class="fa fa-search ml-4" style="margin-top: -10px;
+                         "></i></font>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+
+<div class="" dir="rtl">
+  <!-- <h3 class="col-sm-12 Welcome-to-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
+
+  <div class="card col-md-12" style="border-radius: 18px;
+   background: white;">
+    <br>
+    <!-- <div class="row ml-4"> -->
+
+
+
+    <!-- =====test==== -->
+    <div class="row" dir="rtl">
+      <div class="col-md-1">
+        <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
               /assets/1@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4 ml-3">
+      </div>
+      <div class="col-md-4 ml-3">
 
 
 
-              <h5><b dir="rtl" style="margin-left: 318px; " class="des">وصف</b></h5>
-              <p class="text-justify AMAN-">يهدف أمان إلى دمج جميع أنظمة إنذار الحريق القائمة في جميع أنواع العقارات في
-                الشارقة مع غرفة التحكم في الدفاع المدني ، والتي ستعمل على تحسين المراقبة وسرعة الاستجابة للحوادث في
-                الوقت الحقيقي وهو أمر ضروري لإنقاذ الأرواح. وتقوم فكرة أمان على توجيه إشارة الإنذار دون تدخل بشري وبدقة
-                عالية باستخدام البنية التحتية للإتصالات الحالية بكلفة معقولة.
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1">
-              <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+        <p class="text-justify" style="font-size: 24px;"><b>وصف</b></p>
+        <p class="text-justify  ">يهدف أمان إلى دمج جميع أنظمة إنذار الحريق القائمة في جميع أنواع العقارات في
+          الشارقة مع غرفة التحكم في الدفاع المدني ، والتي ستعمل على تحسين المراقبة وسرعة الاستجابة للحوادث في
+          الوقت الحقيقي وهو أمر ضروري لإنقاذ الأرواح. وتقوم فكرة أمان على توجيه إشارة الإنذار دون تدخل بشري وبدقة
+          عالية باستخدام البنية التحتية للإتصالات الحالية بكلفة معقولة.
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-1">
+        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
                 /assets/2@3x.png 3x" class="layer">
-            </div>
-            <div class="col-md-4" style="margin-left: -8px;">
+      </div>
+      <div class="col-md-4">
 
-              <h5> <b style="margin-left: 301px;" class="objective">الأهداف</b> </h5>
-              <p class="text-justify AMAN-">قريبا...
-              </p>
-
-            </div>
-          </div>
-
-
-        </div>
-        <!-- ====test======== -->
-
-        <div class="row" dir="rtl">
-          <div class="col-md-1">
-            <img src="/assets/3.png" srcset="/assets/3@2x.png 2x,
-              /assets/3@3x.png 3x" class="layer"
-              style="margin-left: -18px;">
-          </div>
-          <div class="col-md-4 ml-3">
-
-
-
-            <h5><b style="margin-left: 242px;" class="technical">معلومات تقنية</b></h5>
-            <p class="text-justify AMAN-">قريبا... </p>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-1">
-            <img src="/assets/4.png" srcset="/assets/4@2x.png 2x,
-            /assets/4@3x.png 3x" class="layer" style="margin-left: -7px;">
-          </div>
-          <div class="col-md-4" style="margin-left: -8px;">
-
-
-            <h5> <b style="margin-left: 227px;" class="commercial">معلومات تجارية</b> </h5>
-            <p class="text-justify">
-                قريبا...
-            </p>
-
-          </div>
-          <div class="col-md-5"></div>
-          <div class="col-md-7 center">
-
-            <button type="submit" class="Rectangle-5-Copy  " routerLink="register-form-arabic">سجل هنا</button>
-
-          </div>
-
-        </div>
+        <p class="text-justify" style="font-size: 24px;"><b>الأهداف</b> </p>
+        <p class="text-justify ">قريبا...
+        </p>
 
       </div>
-
-
-      <br>
-
-
     </div>
+    <!-- </div> -->
+
+
+    <!-- ====test======== -->
+
+    <div class="row" dir="rtl">
+      <div class="col-md-1">
+        <img src="/assets/1.png" srcset="/assets/1@2x.png 2x,
+              /assets/1@3x.png 3x" class="layer">
+      </div>
+      <div class="col-md-4 ml-3">
+
+
+
+        <p class="text-justify" style="font-size: 24px;"><b>معلومات تقنية</b></p>
+        <p class="text-justify  ">قريبا...
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-1">
+        <img src="/assets/2.png" srcset="/assets/2@2x.png 2x,
+                /assets/2@3x.png 3x" class="layer">
+      </div>
+      <div class="col-md-4">
+
+        <p class="text-justify" style="font-size: 24px;"><b>معلومات تجارية</b> </p>
+        <p class="text-justify ">قريبا...
+        </p>
+
+      </div>
+      <br><br><br><br>
+      <div class="col-md-5"></div>
+      <div class="col-md-7 center">
+
+        <button type="submit" class="Rectangle-5-Copy" routerLink="register-form-arabic">سجل هنا</button>
+
+      </div>
+    </div>
+    <br>
+
+
+    <br>
   </div>
 </div>
 <!-- =============footer arabic start====== -->
 <div class="container1 col-md-12" dir="rtl">
-    <br><br>
-    <div class="row">
+  <br><br>
+  <div class="row">
 
-      <div class="col-sm-2">
-        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-         ./assests/logo-1-copy@3x.png 3x"
-          class="img-thumbnail">
-      </div>
+    <div class="col-sm-2">
+      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+           ./assests/logo-1-copy@3x.png 3x"
+        class="img-thumbnail">
+    </div>
 
-      <div class="col-md-2">
-        <h5 class="navfooter" style="color:white">الملاحة</h5>
-        <ul class="list-unstyled quick-links footer1">
+    <div class="col-md-2">
+      <h5 class="" style="color:white"><b>الملاحة</b></h5>
+      <ul class="list-unstyled quick-links">
 
-          <li><a routerLink="/aboutus-arabic" class="about">
-              <font color="white">معلومات عنا</font>
-            </a></li>
-          <li><a routerLink="/amanservices-arabic">
-              <font color="white">خدمات</font>
-            </a></li>
-          <li><a routerLink="/sitemap-arabic">
-              <font color="white">خريطة الموقع</font>
-            </a></li>
-          <li><a routerLink="/contactus-arabic">
-              <font color="white">اتصل بنا</font>
-            </a></li>
-          <li><a routerLink="/privacy-arabic">
-              <font color="white">سياسة خاصة</font>
-            </a></li>
-        </ul>
-      </div>
+        <li><a routerLink="/aboutus-arabic" class="about">
+            <font color="white">معلومات عنا</font>
+          </a></li>
+        <li><a routerLink="/amanservices-arabic">
+            <font color="white">خدمات</font>
+          </a></li>
+        <li><a routerLink="/sitemap-arabic">
+            <font color="white">خريطة الموقع</font>
+          </a></li>
+        <li><a routerLink="/contactus-arabic">
+            <font color="white">اتصل بنا</font>
+          </a></li>
+        <li><a routerLink="/privacy-arabic">
+            <font color="white">سياسة خاصة</font>
+          </a></li>
+      </ul>
+    </div>
 
-      <!-- <div class="col-sm-3">
-           <h5 class="home">Support</h5>
-           <ul class="list-unstyled quick-links">
-             <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-             <li><a class="about"><font color="white">Disclaimer</font></a></li>
-             <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-             <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+    <!-- <div class="col-sm-3">
+             <h5 class="home">Support</h5>
+             <ul class="list-unstyled quick-links">
+               <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+               <li><a class="about"><font color="white">Disclaimer</font></a></li>
+               <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+               <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+  
+             </ul>
+           </div> -->
+    <div class="col-md-3">
+      <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
+      <ul class="">
+        <li>
+          <p class="about">
+            <font color="white">برج 400 18 أرضية,</font>
+            <br>
+            <font color="white"> طريق الميناء الشارقة,</font>
+            <br>
+            <font color="white">صندوق بريد 4648 الشارقة - الإمارات العربية المتحدة</font>
+            <br>
 
-           </ul>
-         </div> -->
-      <div class="col-md-3">
-        <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
-        <ul class="list-unstyled quick-links footer2">
-          <li>
-            <p class="about">
-              <font color="white">برج 400 18th أرضية,</font>
-              <br>
-              <font color="white"> طريق الميناء الشارقة,</font>
-              <br>
-              <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
-              <br>
+            <font color="white" dir="rtl"> رقم الهاتف: 6555 506 6 971+ </font>
+            <br>
+            <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+            <br>
+            <font color="white">البريد الإلكتروني: helpdesk@saned.ae</font>
+            <br>
+            <a routerLink="login-arabic">
+              <font color="white">www.saned.ae</font>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-2">
+      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+               ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+        class="img-thumbnail">
+    </div>
+    <div class="col-sm-3">
+      <p style="color:white;font-family: GeezaPro;">تابعنا
+        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+        <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
+        <div class="input-group mb-3">
 
-              <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
-              <br>
-              <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-              <br>
-              <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
-              <br>
-              <a routerLink="login-arabic">
-                <font color="white">www.saned.ae</font>
-              </a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-2">
-        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-             ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-          class="img-thumbnail">
-      </div>
-      <div class="col-sm-3">
-        <p style="color:white;font-family: GeezaPro;">تابعنا
-          <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-          <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-          <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-          <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-          <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
-          <div class="input-group mb-3">
+          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
+            class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
 
-            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-              border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
-              class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
-            <div class="input-group-append">
-
-              <button class="btn btn-outline" style="border-color: white;" type="button" >
-                <font style="color:#ff0000;">الاشتراك</font>
-              </button>
-            </div>
+            <button class="btn btn-outline" style="border-color: white;" type="button">
+              <font style="color:#ff0000;">الاشتراك</font>
+            </button>
           </div>
-      </div>
-      <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div> 
-      <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
+        </div>
     </div>
-
-
-    <div class="lastfoot text-center">
-      <div>
-        <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
-          فإنك توافق على
-          بنود الخدمة وسياسة
-          ملفات تعريف الارتباط وسياسة
-          الخصوصية
-          وسياسات المحتوى الخاصة بنا. © 2019.</p>
-      </div>
-
-    </div>
-    <br>
+    <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div>
+    <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
   </div>
 
+
+  <div class="lastfoot text-center">
+    <div>
+      <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
+        فإنك توافق على
+        بنود الخدمة وسياسة
+        ملفات تعريف الارتباط وسياسة
+        الخصوصية
+        وسياسات المحتوى الخاصة بنا. © 2019.</p>
+    </div>
+
+  </div>
+  <br>
+</div>
+
 <!-- ========footer arabic end====== -->
+
+
 
 
 <!-- ===arabic -->

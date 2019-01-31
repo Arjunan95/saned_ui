@@ -8,813 +8,863 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-                  body {
-         margin: 0;
-         margin-top: -58px;
-         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-         font-size: 1rem;
-         margin-top: -20px;
-         font-weight: 400;
-         line-height: 1.5;
-         color: #212529;
-         text-align: right;
-         background-color: #fff;
-        }
-                     body {font-family: Arial, Helvetica, sans-serif;}
-                     nav{
-                         width: 100%;
-                         height: 50px;
-                         background:rgba(0,0,0,.8);
-                         border-top: 1px solid rgba(255,255);
-                         border-bottom: 1px solid rgba(255,255);
-                         position: sticky;
-                         top:0px;
-                         z-index: 99;
-                     }
-                     
-                     header{
-                         padding: 10px 100px;
-                         box-sizing: border-box;
-                     }
-                     section{
-                         width: 100%;
-                         height: 100vh;
-                     }
-                     .dropdown {
-                       float: left;
-                       overflow: hidden;
-                     }
-                     
-                     .dropdown .dropbtn {
-                       font-size: 16px;  
-                       border: none;
-                       outline: none;
-                       color: white;
-                       padding: 14px 16px;
-                       background-color: inherit;
-                       font-family: inherit;
-                       margin: 0;
-                     }
-                     
-                     .navbar a:hover, .dropdown:hover .dropbtn {
-                       background-color: red;
-                     }
-                     
-                     .dropdown-content {
-                       display: block;
-                       position: absolute;
-                       background-color: red;
-                       min-width: 160px;
-                       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                       z-index: 1;
-                     }
-                     
-                     .dropdown-content a {
-                       float: none;
-                       color: black;
-                       padding: 12px 16px;
-                       text-decoration: none;
-                       display: block;
-                       text-align: left;
-                     }
-                     
-                     .dropdown-content a:hover {
-                       background-color: #ddd;
-                     }
-                     ul {
-                       padding: 0;
-                       margin: 0;
-                       list-style: none;
-                     }
-                     ul li a {
-                       text-decoration: none;
-                       color: #e74c3c;
-                       font-family: Tahoma, Arial;
-                     }
-                     .navigation {
-                       background-color: #35353500;
-                       width: 62%;
-                       margin: 20px auto;
-                       min-height: 50px;
-                     }
-                     .navigation > li {
-                       float: left;
-                       padding: 0 20px;
-                     }
-                     .navigation > li > a {
-                       line-height: 50px;
-                       color: #FFF;
-                     }
-                     .navigation .menu {
-                       position: relative
-                     }
-                     .navigation .menu .submenu {
-                       /* position: absolute; */
-                       /* width: 200px; */
-                       /* -webkit-box-shadow: 0px 1px 1px #CCC;
-                       box-shadow: 0px 1px 1px #CCC; */
-                       display: none;
-                       /* -webkit-transition: all .5s ease-in-out;
-                       -moz-transition: all .5s ease-in-out;
-                       transition: all .5s ease-in-out; */
-                     }
-                     .navigation .menu:hover .submenu {
-                       display: block
-                     }
-                     .navigation .menu .submenu:before {
-                       content: "";
-                       /* position: absolute; */
-                       display: block;
-                       border-width: 0 6px 6px 6px;
-                       /* border-style: solid; */
-                       border-color: #FFF ;
-                       top: -6px;
-                       left: 5px
-                     }
-                     .navigation .menu .submenu li {
-                       padding: 5px 10px;
-                       -webkit-transition: all .5s ease-in-out;
-                       -moz-transition: all .5s ease-in-out;
-                       transition: all .5s ease-in-out;
-                     }
-                     .navigation .menu .submenu li:hover {
-                       background-color: #e74c3c;
-                     }
-                     .navigation .menu .submenu li:hover a {
-                       color: #FFF;
-                       /* padding: 0 11px; */
-                     }
-                     
-                     
-                     .dropdown:hover .dropdown-content {
-                       display: block;
-                     }
-                     section.sec1{
-                         background: url(natures-temples.png);
-                         background-size: cover;
-                     }
-                     section.banner{
-                         background: url(Group.png);
-                         background-size: cover;
-                         /* margin-left: 15px; */
-                     }
-                     section.sec2{
-                        padding: 100px;
-                        box-sizing: border-box;
-                     }
-                     nav{
-                         width: 100%;
-                         height: 50px;
-                         background:rgba(0,0,0,.8);
-                         border-top: 1px solid rgba(255,255);
-                         border-bottom: 1px solid rgba(255,255);
-                         position: sticky;
-                         top:0px;
-                         z-index: 99
-                     }
-                     nav ul{
-                         display: flex;
-                         margin: 0px;
-                         padding: 0px;
-                         float: right;
-                     }
-                     nav ul li{
-                         list-style: none;
-                     }
-                     
-                     
-                     nav ul{
-                         display: flex;
-                        
-                         padding: 0px;
-                         /* float: ; */
-                     }
-                     
-                     nav ul li a{
-                         display:block;
-                         color: #fff;
-                         padding: 0 20px;
-                         text-decoration: none;
-                         text-transform: uppercase;
-                         font-weight: bold;
-                         line-height: 50px;
-                     
-                     }
-        
-                      /* ==============footer style start ========= */
-         .footer {
-         /* position: fixed; */
-         left: 0;
-         bottom: 0;
-         width: 100%;
-         background-color: black;
-         color: white;
-         text-align: center;
-         /* height: 75px; */
-        }
-        .container1{
-        background: black;
-        /* color: white */
-        }
-        
-        .social:hover {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        }
-        .social {
-        -webkit-transform: scale(0.8);
-        /* Browser Variations: */
-        
-        -moz-transform: scale(0.8);
-        -o-transform: scale(0.8);
-        -webkit-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        }
-        .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-        }
-        .img-thumbnail{
-        background: black;
-        border-color: black
-        }
-        
-        .home{
-         font-family: sans-serif;
-         font-size: 14px;
-         line-height: 14px;
-        letter-spacing: 0;
-        }
-        .about{
-         font-family:  sans-serif;
-         font-size: 13px;
-         line-height: 15px;
-        letter-spacing: 0;
-        }
-        
-         /* ===========================footer style end================ */
-                    
-                     
-                     </style>
+                                    body {
+                           margin: 0;
+                           margin-top: -58px;
+                           font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                           font-size: 1rem;
+                           margin-top: -20px;
+                           font-weight: 400;
+                           line-height: 1.5;
+                           color: #212529;
+                           text-align: right;
+                           background-color: #fff;
+                          }
+                                       body {font-family: Arial, Helvetica, sans-serif;}
+                                       nav{
+                                           width: 100%;
+                                           height: 50px;
+                                           background:rgba(0,0,0,.8);
+                                           border-top: 1px solid rgba(255,255);
+                                           border-bottom: 1px solid rgba(255,255);
+                                           position: sticky;
+                                           top:0px;
+                                           z-index: 99;
+                                       }
+                                       
+                                       header{
+                                           padding: 10px 100px;
+                                           box-sizing: border-box;
+                                       }
+                                       section.card{
+                                           width: 100%;
+                                           height: 100vh;
+                                       }
+                                       /* section{
+                                           width: 100%;
+                                           height: 100vh;
+                                       } */
+         
+                                       .dropdown {
+                                         float: left;
+                                         overflow: hidden;
+                                       }
+                                       
+                                       .dropdown .dropbtn {
+                                         font-size: 16px;  
+                                         border: none;
+                                         outline: none;
+                                         color: white;
+                                         padding: 14px 16px;
+                                         background-color: inherit;
+                                         font-family: inherit;
+                                         margin: 0;
+                                       }
+                                       .mt_200{
+                                          /* margin: 220px !important; */
+                                        }
+                                       
+                                       .navbar a:hover, .dropdown:hover .dropbtn {
+                                         /* background-color: red; */
+                                       }
+                                       
+                                       .dropdown-content {
+                                         display: block;
+                                         position: absolute;
+                                         background-color: red;
+                                         min-width: 160px;
+                                         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                         z-index: 1;
+                                       }
+                                       
+                                       .dropdown-content a {
+                                         float: none;
+                                         color: black;
+                                         padding: 12px 16px;
+                                         text-decoration: none;
+                                         display: block;
+                                         text-align: left;
+                                       }
+                                       
+                                       .dropdown-content a:hover {
+                                         background-color: #ddd;
+                                       }
+                                       ul {
+                                         padding: 0;
+                                         margin: 0;
+                                         list-style: none;
+                                       }
+                                       ul li a {
+                                         text-decoration: none;
+                                         color: #e74c3c;
+                                         font-family: Tahoma, Arial;
+                                       }
+                                       .navigation {
+                                         background-color: #35353500;
+                                         /* width: 62%; */
+                                         margin: 20px auto;
+                                         min-height: 50px;
+                                        
+                                       }
+                                       .navigation > li {
+                                         float: left;
+                                         padding: 0 20px;
+                                       }
+                                       .navigation > li > a {
+                                         line-height: 50px;
+                                         color: #FFF;
+                                       }
+                                       .navigation .menu {
+                                         position: relative
+                                       }
+                                       .navigation .menu .submenu {
+           position: absolute;
+           /* width: 200px; */
+           -webkit-box-shadow: 0px 1px 1px #CCC;
+           box-shadow: 0px 1px 1px #CCC;
+           display: none;
+           -webkit-transition: all .5s ease-in-out;
+           -moz-transition: all .5s ease-in-out;
+           transition: all .5s ease-in-out;
+         }
+         .navigation .menu:hover .submenu {
+           display: block
+         }
+         .navigation .menu .submenu:before {
+           content: "";
+           position: absolute;
+           display: block;
+           border-width: 0 6px 6px 6px;
+           border-style: solid;
+           border-color: #FFF transparent;
+           top: -6px;
+           left: 5px
+         }
+         .navigation .menu .submenu li {
+           padding: 5px 10px;
+           -webkit-transition: all .5s ease-in-out;
+           -moz-transition: all .5s ease-in-out;
+           transition: all .5s ease-in-out;
+         }
+         .navigation .menu .submenu li:hover {
+           background-color: #e74c3c;
+         }
+         .navigation .menu .submenu li:hover a {
+           color: #FFF;
+           /* padding: 0 11px; */
+         }
+         
+                                       
+                                       .dropdown:hover .dropdown-content {
+                                         display: block;
+                                       }
+                                       section.sec1{
+                                           background: url(natures-temples.png);
+                                           background-size: cover;
+                                       }
+                                       section.banner{
+                                           background: url(Group.png);
+                                           background-size: cover;
+                                           /* margin-left: 15px; */
+                                       }
+                                       section.sec2{
+                                          padding: 100px;
+                                          box-sizing: border-box;
+                                       }
+                                       nav{
+             width: 100%;
+             height: 50px;
+             background:rgba(0,0,0,.8);
+             border-top: 1px solid rgba(255,255);
+             border-bottom: 1px solid rgba(255,255);
+             position: sticky;
+             top:0px;
+             z-index: 99
+         }
+         nav ul{
+             display: flex;
+             margin: 0px;
+             padding: 0px;
+             float: right;
+         }
+         nav ul li{
+             list-style: none;
+         }
+         
+         
+         nav ul{
+             display: flex;
+            
+             padding: 0px;
+             /* float: ; */
+         }
+         
+         nav ul li a{
+             display:block;
+             color: #fff;
+             padding: 0 20px;
+             text-decoration: none;
+             text-transform: uppercase;
+             font-weight: bold;
+             line-height: 50px;
+         
+         }
+                                        /* ==============footer style start ========= */
+                           .footer {
+                           /* position: fixed; */
+                           left: 0;
+                           bottom: 0;
+                           width: 100%;
+                           background-color: black;
+                           color: white;
+                           text-align: center;
+                           /* height: 75px; */
+                          }
+                          .container1{
+                          background: black;
+                          /* color: white */
+                          }
+                          
+                          .social:hover {
+                          -webkit-transform: scale(1.1);
+                          -moz-transform: scale(1.1);
+                          -o-transform: scale(1.1);
+                          }
+                          .social {
+                          -webkit-transform: scale(0.8);
+                          /* Browser Variations: */
+                          
+                          -moz-transform: scale(0.8);
+                          -o-transform: scale(0.8);
+                          -webkit-transition-duration: 0.5s;
+                          -moz-transition-duration: 0.5s;
+                          -o-transition-duration: 0.5s;
+                          }
+                          .fa {
+                          padding: 20px;
+                          font-size: 30px;
+                          width: 30px;
+                          text-align: center;
+                          text-decoration: none;
+                          border-radius: 50%;
+                          }
+                          .img-thumbnail{
+                          background: black;
+                          border-color: black
+                          }
+                          
+                          .home{
+                           font-family: sans-serif;
+                           font-size: 14px;
+                           line-height: 14px;
+                          letter-spacing: 0;
+                          }
+                          .about{
+                           font-family:  sans-serif;
+                           font-size: 13px;
+                           line-height: 15px;
+                          letter-spacing: 0;
+                          }
+                          
+                           /* ===========================footer style end================ */
+                                      
+                                       
+                                       </style>
 
 <!-- <header>
-                 <img src="Group.png" style="flex:left">
-                 </header> -->
-<div>
-
-  <div>
-
-    <div class="">
-
-      <div>
-
-
-        <div class="row">
-          <!--<h1>English</h1>-->
-
-
-
-
-          <!--Intro Section-->
-          <section class="view intro-2 hm-gradient" style="margin-left: 14px;">
-            <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-                     assests/lawyer-today-1@3x.png 3x"
-        class="NEM mt-3"> -->
-            <div class="row">
-              <div class="col-md-8">
-                <img src="./assets/group.png" class="img-responsive">
-
-              </div>
-              <div class="col-md-4">
-
-                <div id="login">
-                  <br><br>
-                  <input type="radio" checked />
-                  <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp; &nbsp; &nbsp;
-                  &nbsp;
-                  <input type="radio" style="margin-left: -9px;" routerLink="/login-arbic" />
-                  <font color="white" style="font-size: 14px;">عربى</font>
-
-                  &nbsp; &nbsp;
-                  <button type="submit" style="background-color: #ff0000; height: 41px;
-                  width: 123px;"
-                    class="btn Rectangle-5-Copy">
-                    <font color="white">Register</font>
-                  </button>
-
-                  <a class="btn mb-1"  style="font-size: 18px; ">
-                    <font color="white" style="font-family: sans-serif;">Sign in </font>
-                  </a>
-
-                </div>
-                <div id="logout" style="display:none">
-                  <br><br>
-                  <input type="radio" routerLink="/login-arbic" />
-                  <font color="white">عربى</font>
-
-                  &nbsp; &nbsp; <input type="radio" checked />
-                  <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
-                  &nbsp; <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;"
-                    routerLink="/register-form" class="btn Rectangle-5-Copy">
-                    <font color="white">Register</font>
-                  </button>
-
-                  <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
-                    routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
-        ">
-                    <font color="white" style="font-family: Roboto;">Sign out </font>
-                  </a>
-
-                </div>
-
-
-                <div id="id01" class="modal">
-
-                  <form class="col-md-4 modal-content animate">
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      <br>
-                      <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
-                    </div>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <label class="col-md text-left"><b>Email ID</b></label>
-                          <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name"
-                            #name="ngModel">
-
-                          <label class="col-md text-left"><b>Password</b> </label>
-                          <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password"
-                            name="password" #password="ngModel">
-
-                          <label class="col-md text-left">
-                            <input type="checkbox" class="Rectangle-4 "> Remember me
-
-                            <a onclick="document.getElementById('id02').style.display='block'" class="ml-5">Forgot
-                              password?</a></label>
-                          <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
-                 color: white;
-                 height: 47px;"><a
-                              class="">Submit</a></button>
-                          <p>New to Saned?<a routerLink="/register-form" class="Mask ml-2">
-                              <font color="#f34235">Register Here</font>
-                            </a></p>
-                        </div>
-                      </div>
-
-                    </div>
-
-
-                  </form>
-                </div>
-                <div id="id02" style="display:none" class="modal">
-
-                  <form class="col-md-4 modal-content animate">
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                      <br>
-                      <a class="Welcome-To-Aman">{{'Forgot password'| translate:user}}</a>
-                    </div>
-                    <br>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <label class="col-md text-left"><b>Email</b></label>
-                          <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="email"
-                            #name="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                          <div [hidden]="name.email || name.pristine" class="alert" style="color: #f54b5e;">
-                            Invalid Email Address
-                          </div>
-                          <!-- <div class="form-group">
-                                     <label>Email</label>
-                                     <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                                     <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                                         <div *ngIf="f.email.errors.required">Email is required</div>
-                                         <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
-                                     </div>
-                                 </div> -->
-
-                          <label class="col-md text-left"><b>New Password</b> </label>
-                          <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password"
-                            name="password" #password="ngModel">
-
-                          <label class="col-md text-left"><b>Confirm Password</b></label>
-                          <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
-                            name="name" #name="ngModel">
-
-                          <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
-                            (click)="forgetpassword(model)" style="background: red;
-                 color: white;
-                 height: 47px;"><a
-                              class="">Submit</a></button>
-
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </form>
-                </div>
-                <!-- ===========otp start========= -->
-                <div id="id03" class="modal">
-
-                  <form class="modal-content animate col-md-4" action="/action_page.php">
-                    <div class="imgcontainer">
-                      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="close">&times;</span>
-                      <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
-                      <h4>Enter One Time Password</h4>
-                    </div>
-
-                    <div class="">
-                      <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password
-                        has
-                        been sent to your email address and mobile number</p>
-                      <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
-                      <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
-                      <input type="text" class="form-control col-md-12 inline" id="otp" required [(ngModel)]="model.otp"
-                        name="name" #name="ngModel">
-
-                      <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
-
-                      <!-- <div id="divOuter">
-                                             <div id="divInner">
-                                                 <input id="partitioned" type="text" maxlength="4" />
-                                             </div>
-                                         </div> -->
-                      <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                 <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
-                 <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
-                      <!-- <label for="psw"><b>Password</b></label>
-                 <input type="password" placeholder="Enter Password" name="psw" required> -->
-
-                      <button style="background-color: #ff0000;height: 47px;
-                 color: white;" class="w3-btn w3-red col-md-12"
-                        (click)="forgetotpverification(model)" type="submit">Submit</button>
-                      <!-- <label>
-                   <input type="checkbox" checked="checked" name="remember"> Remember me
-                 </label> -->
-
-                    </div>
-                    <br><br><br>
-                    <!-- <div class="container" style="background-color:#f1f1f1">
-                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                 <span class="psw">Forgot <a href="#">password?</a></span>
-               </div> -->
-                  </form>
-                </div>
-                <!-- ======otp end========== -->
-
-              </div>
-            </div>
+                                   <img src="Group.png" style="flex:left">
+                                   </header> -->
 
 
 
 
 
-            <div class="mt">
-              <div class="row">
-
-                <div class="col-md-7">
-
-                  <div class="full-bg-img">
-
-                    <div class="container flex-center">
-
-                      <div class="row flex-center pt-4 ">
-                        <div class="col-md-12 text-center text-md-left margins">
-                          <!-- <section class="logov2"></section> -->
 
 
-                          <div class="white-text mt-2">
-                            <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
-                              <font color="white"><b>Welcome to SANED</b> - We manage and run
-                                your real estate and technical facilities and
-                                support you in your core business with our
-                                wide range of services.</font>
-                            </a>
-                            <br>
-                            <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-
-                            <br>
-                            <!-- <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a> -->
-                            <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                                              srcset="./assets/tail-left-copy@2x.png 2x,
-                                                      ./assets/tail-left-copy@3x.png 3x"
-                                              class="tail-left-copy"></a> -->
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-
-                <hr style="color:red;">
-              </div>
-            </div>
-
-          </section>
-          <nav style="    margin-top: -150px;background: rgba(0, 0, 0, 0.20);">
-            <ul class="navigation" style=" font-family: sans-serif;margin-right: 33px;">
-              <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
-              <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
-              <li class="menu">
-                <a>S<font style="text-transform: lowercase;">ervices</font></a>
-                <ul class="submenu">
-                  <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
-                      </font></a></li>
-                  <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
-                    </a></li>
-                  <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                                  <li style="background: red;"><a href="#">Link 4</a></li> -->
-                </ul>
-              </li>
-              <li><a routerLink="supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
-              <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
-              <!-- <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li> -->
-              <li>
-                <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                                margin-left: -43px;"></i></font>
-              </li>
 
 
-            </ul>
-          </nav>
+
+<!--<h1>English</h1>-->
 
 
+
+
+<!--Intro Section-->
+<section class="view intro-2 hm-gradient" style="width: 100%;
+         height: 100vh;" dir="">
+  <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+                                       assests/lawyer-today-1@3x.png 3x"
+                          class="NEM mt-3"> -->
+  <div class="row">
+    <div class="col-md-1">
+      <img src="./assets/group.png" class="img-responsive">
+
+    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-6 mt-2 text-right">
+      <br><br>
+      <input type="radio" checked />&nbsp;
+      <font style="color:#F90E35;font-size: 14px;">English</font> &nbsp;
+      &nbsp;
+      <input type="radio" style="margin-left: -9px;" routerLink="/login-arbic" />&nbsp;
+      <font color="white" style="font-size: 14px;">عربى</font>
+
+      &nbsp;
+      <button type="submit" style="background-color: #ff0000; height: 35px;
+                                    width: 100px; padding: 2px 20px;margin-top: -2px;"
+        class="btn Rectangle-5-Copy">
+        <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
+      </button>
+
+      <a class="btn mb-1">
+        <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
+      </a>
+
+    </div>
+  </div>
+  <div class="col-md-6">
+
+
+    <div id="logout" style="display:none">
+      <br><br>
+      <input type="radio" routerLink="/login-arbic" />
+      <font color="white">عربى</font>
+
+      &nbsp; &nbsp; <input type="radio" checked />
+      <font style="color:#F90E35">English</font> &nbsp; &nbsp; &nbsp;
+      &nbsp; <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="/register-form"
+        class="btn Rectangle-5-Copy">
+        <font color="white">Register</font>
+      </button>
+
+      <a class="btn mb-1" onclick="document.getElementById('login').style.display='block';document.getElementById('logout').style.display='none'"
+        routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
+                          ">
+        <font color="white" style="font-family: Roboto;">Sign out </font>
+      </a>
+
+    </div>
+
+
+    <div id="id01" class="modal">
+
+      <form class="col-md-4 modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           <br>
+          <a class="Welcome-To-Aman">{{'Welcome to SANED'| translate:user}}</a>
+        </div>
 
-          <!-- <app-navbarv2></app-navbarv2> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <label class="col-md text-left"><b>Email ID</b></label>
+              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="name" #name="ngModel">
+
+              <label class="col-md text-left"><b>Password</b> </label>
+              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
+                #password="ngModel">
+
+              <label class="col-md text-left">
+                <input type="checkbox" class="Rectangle-4 "> Remember me
+
+                <a onclick="document.getElementById('id02').style.display='block'" class="ml-5">Forgot
+                  password?</a></label>
+              <button class="w3-btn w3-red col-md-12" (click)="login(model)" style="background: red;
+                                   color: white;
+                                   height: 47px;"><a
+                  class="">Submit</a></button>
+              <p>New to Saned?<a routerLink="/register-form" class="Mask ml-2">
+                  <font color="#f34235">Register Here</font>
+                </a></p>
+            </div>
+          </div>
+
+        </div>
 
 
-          <div class="col-md-12">
-            <div class="card col-md-12" style="border-radius: 18px;margin-top: -125px;
-        background: white;">
-              <div class="">
-                <div class="row ml-4">
+      </form>
+    </div>
+    <div id="id02" style="display:none" class="modal">
 
-                  <div class="col-sm-6">
-                    <br><br>
-                    <div class="col-sm-9">
-                      <!-- <a routerLink="/amanservices">
-                        <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
-                               /assets/002-fire-extinguisher@3x.png 3x"
-                          class="fire-extinguisher " style="cursor: pointer;"> </a> -->
-                      <br>
-                      <br>
-                      <a class="WHAT-IS-Aman-">{{'WHAT IS AMAN ?'|translate:user}}</a>
-
-
-                      <p style="margin-left:-11px;font-size: 18px;" class="col-sm-12 text-justify "> {{'AMAN aims to
-                        integrate all
-                        existing
-                        Fire Alarm systems at all types of properties in Sharjah with the Civil Defense Control
-                        Room.'|translate:user}}
-                        <br>
-                        <br>
-                        <!-- <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
-                        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                  srcset="./assets/tail-left-copy@2x.png 2x,
-                          ./assets/tail-left-copy@3x.png 3x"
-                  class="tail-left-copy"></a> -->
-                      </p>
-                    </div>
-                  </div>
-                  <br>
-                  <!-- <div class="col-sm-1"></div> -->
-                  <div class="col-md-4">
-                    <br><br>
-                    <!-- <div class="col-sm-7"> -->
-                    <!-- <a routerLink="/salamaservices"> <img src="./assets/salama-logo.png" srcset="./assets/salama-logo@2x.png 2x,
-                               ./assets/salama-logo@3x.png 3x"
-                        class="salama-logo" style="cursor: pointer;"></a> -->
-                    <br>
-                    <br>
-                    <a class="benefits">{{'WHAT IS SALAMA ?'| translate:user}}</a>
-
-                    <p style="margin-left:-11px;font-size: 18px;" class="col-md-12 text-justify "> {{'SALAMA is a first
-                      of its kind
-                      Training
-                      Centre aiming to serve various segments in the Emirate of Sharjah' | translate:user }}.
-
-                      <br>
-                      <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
-                      <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
-                            srcset="./assets/tail-left-copy@2x.png 2x,
-                                    ./assets/tail-left-copy@3x.png 3x"
-                            class="tail-left-copy"></a> -->
-                    </p>
-                    <!-- </div> -->
-                  </div>
-                </div>
+      <form class="col-md-4 modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <br>
+          <a class="Welcome-To-Aman">{{'Forgot password'| translate:user}}</a>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <label class="col-md text-left"><b>Email</b></label>
+              <input type="text" class="w3-input" id="email" required [(ngModel)]="model.email" name="email" #name="ngModel"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+              <div [hidden]="name.email || name.pristine" class="alert" style="color: #f54b5e;">
+                Invalid Email Address
               </div>
-              <br>
-              <br>
+              <!-- <div class="form-group">
+                                                       <label>Email</label>
+                                                       <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                                       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                                           <div *ngIf="f.email.errors.required">Email is required</div>
+                                                           <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                                       </div>
+                                                   </div> -->
 
+              <label class="col-md text-left"><b>New Password</b> </label>
+              <input type="password" class="w3-input" id="password" required [(ngModel)]="model.password" name="password"
+                #password="ngModel">
 
+              <label class="col-md text-left"><b>Confirm Password</b></label>
+              <input type="password" class="w3-input" id="confirmpassword" required [(ngModel)]="model.confirmpassword"
+                name="name" #name="ngModel">
 
-
-              <section class="details-card">
-                <div class="container">
-                  <div class="row ">
-                    <div class="col-md-4">
-                      <div class="card-content">
-                        <div class="card-img">
-                          <img src="/assets/shutterstock-220781335.png" srcset="./assets/shutterstock-220781335@2x.png 2x,
-                                     ./assets/shutterstock-220781335@3x.png 3x"
-                            alt="">
-                          <a href="#" class="btn-card1">blog</a>
-                        </div>
-                        <div class="card-desc text-justify">
-                          <!-- <span class="blog"><h4>Blog</h4></span> -->
-                          <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
-                                  Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
-                                  or false in less than 120 seconds.'|translate:user}}</p> -->
-                          <!-- <a href="#" class="btn-card">blog</a>    -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card-content">
-                        <div class="card-img">
-
-                          <img src="/assets/shutterstock-775043446.png" srcset="./assets/shutterstock-775043446@2x.png 2x,
-                                     ./assets/shutterstock-775043446@3x.png 3x"
-                            alt="">
-                          <!-- <span><h4>News</h4></span> -->
-                          <a href="#" class="btn-card2" style="">News</a>
-                        </div>
-                        <div class="card-desc text-justify">
-
-                          <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
-                                  Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
-                                  or false in less than 120 seconds.'|translate:user}}</p> -->
-                          <!-- <a href="#" class="btn-card">Read</a>    -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card-content">
-                        <div class="card-img">
-                          <img src="/assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
-                                     ./assets/shutterstock-772324159@3x.png 3x"
-                            alt="">
-                          <!-- <span><h4>Linkedln</h4></span> -->
-                          <a href="#" class="btn-card3" style="">LinkedIn</a>
-                        </div>
-                        <div class="card-desc">
-
-                          <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
-                                  Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
-                                  or false in less than 120 seconds.'|translate:user}}</p> -->
-                          <!-- <a href="#" class="btn-card">Read</a>    -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              <button class="w3-btn w3-red col-md-12" onclick="document.getElementById('id03').style.display='block'"
+                (click)="forgetpassword(model)" style="background: red;
+                                   color: white;
+                                   height: 47px;"><a
+                  class="">Submit</a></button>
 
             </div>
           </div>
         </div>
-        <!-- =====footer  english start== -->
-        <div class="container1 col-md-12">
-            <br><br>
-            <div class="row">
-      
-              <div class="col-sm-2">
-                <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
-                 ./assests/logo-1-copy@3x.png 3x"
-                  class="img-thumbnail">
+
+
+      </form>
+    </div>
+    <!-- ===========otp start========= -->
+    <div id="id03" class="modal">
+
+      <form class="modal-content animate col-md-4" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="close">&times;</span>
+          <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
+          <h4>Enter One Time Password</h4>
+        </div>
+
+        <div class="">
+          <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password
+            has
+            been sent to your email address and mobile number</p>
+          <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
+          <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
+          <input type="text" class="form-control col-md-12 inline" id="otp" required [(ngModel)]="model.otp" name="name"
+            #name="ngModel">
+
+          <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
+
+          <!-- <div id="divOuter">
+                                                               <div id="divInner">
+                                                                   <input id="partitioned" type="text" maxlength="4" />
+                                                               </div>
+                                                           </div> -->
+          <!-- <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+                                   <input type="text" class=" partitioned" placeholder="0" maxlength="1" />
+                                   <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
+          <!-- <label for="psw"><b>Password</b></label>
+                                   <input type="password" placeholder="Enter Password" name="psw" required> -->
+
+          <button style="background-color: #ff0000;height: 47px;
+                                   color: white;"
+            class="w3-btn w3-red col-md-12" (click)="forgetotpverification(model)" type="submit">Submit</button>
+          <!-- <label>
+                                     <input type="checkbox" checked="checked" name="remember"> Remember me
+                                   </label> -->
+
+        </div>
+        <br><br><br>
+        <!-- <div class="container" style="background-color:#f1f1f1">
+                                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                   <span class="psw">Forgot <a href="#">password?</a></span>
+                                 </div> -->
+      </form>
+    </div>
+    <!-- ======otp end========== -->
+
+  </div>
+
+
+
+
+
+
+  <div class="mt">
+    <div class="row">
+
+      <div class="col-md-7">
+
+        <div class="full-bg-img">
+
+          <div class="container flex-center">
+
+            <div class="row flex-center pt-4 ">
+              <div class="col-md-12 text-center text-md-left margins">
+                <!-- <section class="logov2"></section> -->
+
+
+                <div class="white-text mt-2">
+                  <a class="h1-responsive Delivering-your-divi ft_18" data-wow-delay="0.3s">
+                    <font color="white"><b>Welcome to SANED</b> - We manage and run
+                      your real estate and technical facilities and
+                      support you in your core business with our
+                      wide range of services.</font>
+
+                  </a>
+                  <br>
+                  <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+
+                  <br>
+                  <!-- <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a> -->
+                  <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+                                                                srcset="./assets/tail-left-copy@2x.png 2x,
+                                                                        ./assets/tail-left-copy@3x.png 3x"
+                                                                class="tail-left-copy"></a> -->
+                </div>
               </div>
-      
-              <div class="col-md-2">
-                <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
-                <ul class="list-unstyled quick-links">
-      
-                  <li><a routerLink="/about-us" class="about">
-                      <font color="white">About Us</font>
-                    </a></li>
-                  <li><a routerLink="/amanservices" class="about">
-                      <font color="white">Services</font>
-                    </a></li>
-                  <li><a routerLink="/sitemap" class="about">
-                      <font color="white">Sitemap</font>
-                    </a></li>
-                  <li><a routerLink="/contactus" class="about">
-                      <font color="white">Contact Us</font>
-                    </a></li>
-                  <li><a routerLink="/privacy" class="about">
-                      <font color="white">Privacy Policy</font>
-                    </a></li>
-                </ul>
-              </div>
-      
-              <!-- <div class="col-sm-3">
-                   <h5 class="home">Support</h5>
-                   <ul class="list-unstyled quick-links">
-                     <li><a class="about"><font color="white">Privacy Policy</font></a></li>
-                     <li><a class="about"><font color="white">Disclaimer</font></a></li>
-                     <li><a class="about"><font color="white">Terms and Condition</font></a></li>
-                     <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
-        
-                   </ul>
-                 </div> -->
-              <div class="col-sm-2">
-                <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
-                <ul class="list-unstyled quick-links">
-                  <li>
-                    <p class="about">
-                      <font color="white">Tower 400 18th Floor,</font>
-                      <br>
-                      <font color="white"> Mina Road Sharjah,</font>
-                      <br>
-                      <font color="white"> PO Box 4638 Sharjah - UAE </font>
-                      <br>
-                      <font color="white">Tel: +971 6 597 2222</font>
-                      <br>
-                      <font color="white">Fax: +971 6 572 2331</font>
-                      <br>
-                      <font color="white">Email: helpdesk.hsg@apleona.com</font>
-                      <br>
-                      <a routerLink="login">
-                        <font color="white">www.saned.ae</font>
-                      </a>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-3">
-                <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
-                     ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-                  class="img-thumbnail">
-              </div>
-              <div class="col-sm-3">
-                <p style="color:white; font-family: Roboto;
-                font-size: 14px;">Follow us
-                  <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-                  <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-                  <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-                  <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-                  <h6 style="color:white;font-family: Roboto;
-                  font-size: 14px;">Subscribe to Our Newsletter</h6>
-                  <div class="input-group mb-3">
-      
-                    <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
-                      border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
-                      class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
-                      aria-describedby="basic-addon2">
-      
-                    <div class="input-group-append">
-      
-                      <button class="btn btn-outline-secondary" type="button" >
-                        <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="col-md-14" style="margin-left: -462px;color: white">Website in construction mode</div> 
-              </div>
-              <!-- <div class="col-md-2"></div> -->
-               
-              <hr class="col-md-8" style="background:white">
             </div>
-      
-      
-            <div class="footer">
-              <div>
-                <p style=" font-family: Roboto;
-                font-size: 12px;">By continuing past this page, you agree to our
-                  Terms of Service, Cookie Policy, Privacy Policy and
-                  Content Policies. © 2019.</p>
-              </div>
-      
-            </div>
-            <br>
           </div>
-        <!-- ================footer  english end== -->
-
-
-
+        </div>
       </div>
+      <br>
+
+      <hr style="color:red;">
+    </div>
+  </div>
+
+</section>
+
+<br>
+<br>
+<br>
+
+<nav class="navbar navbar-expand-md navbar-dark " dir="auto" style="margin-top: -150px;background: rgba(0, 0, 0, 0.27);">
 
 
-      <script>
-        // Get the modal
-        var modal = document.getElementById('id02');
+  <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+  <!-- </a> -->
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-      </script>
-      <router-outlet></router-outlet>
+  <div>
+    <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navigation mt-2 col-md-12 ml-5 navbar-nav mt_200 nav-bg mt-414 pt-120 ht_80 mt_208" style="font-size: 18px; color: black;">
+
+        <li class="nav-item pad_0 col-sm-2 mt_20 ">
+          <a routerLink="/login" class=" nav-link ">H<font style="text-transform: lowercase;">ome</font></a>
+        </li>
+
+        <li class="nav-item pad_0 col-sm-2 mt_20 wt_237">
+          <a routerLink="/about-us" class="nav-link">A<font style="text-transform: lowercase;">bout<font style="text-transform: uppercase;">U</font>
+              <font style="text-transform: lowercase;">s</font>
+            </font></a>
+        </li>
+
+        <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
+          <a>S<font style="text-transform: lowercase;">ervices</font></a>
+          <ul class="submenu" style="font-weight:bold;">
+            <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
+                </font></a></li>
+            <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item pad_0 col-sm-2 mt_20">
+          <a routerLink="/supplier-register" class="nav-link">S<font style="text-transform: lowercase;">uppliers</font></a>
+        </li>
+        <li class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
+          <a routerLink="/contactus" class="nav-link">C<font style="text-transform: lowercase;">ontact<font style="text-transform: uppercase;">U<font
+                  style="text-transform: lowercase;">s</font>
+              </font>
+            </font></a>
+        </li>
+        <li class="col-sm-2 mt_20">
+          <font style="color:white"><i class="fa fa-search " style="margin-top: -10px;
+                       "></i></font>
+        </li>
+
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
+
+
+<!-- <app-navbarv2></app-navbarv2> -->
+
+
+
+<div class="card col-md-14" style="border-radius: 18px;
+                          background: white;">
+
+  <div class="row ml-4">
+
+
+    <br><br>
+    <div class="col-md-6">
+      <!-- <a routerLink="/amanservices">
+                                          <img src="/assets/002-fire-extinguisher.png" srcset="/assets/002-fire-extinguisher@2x.png 2x,
+                                                 /assets/002-fire-extinguisher@3x.png 3x"
+                                            class="fire-extinguisher " style="cursor: pointer;"> </a> -->
+      <br>
+      <br>
+      <a class="WHAT-IS-Aman-">WHAT IS AMAN ?</a>
+
+      <br>
+      <br>
+
+      <p style="margin-left:-11px;font-size: 16px;font-family: Roboto" class="col-sm-12">
+        AMAN aims to integrate all
+        existing
+        Fire Alarm systems at all types of properties in Sharjah
+        with the Civil Defense Control
+        Room.
+        <br>
+        <br>
+        <!-- <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
+        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+                                    srcset="./assets/tail-left-copy@2x.png 2x,
+                                            ./assets/tail-left-copy@3x.png 3x"
+                                    class="tail-left-copy"></a> -->
+      </p>
+    </div>
+    <!-- <div class="col-md-2"></div> -->
+    <br>
+    <!-- <div class="col-sm-1"></div> -->
+    <div class="col-md-6">
+      <br>
+      <br>
+      <a class="benefits">WHAT IS SALAMA ?</a>
+      <br>
+      <br>
+      <p style="margin-left:-11px;font-size: 16px;font-family: Roboto" class="col-md-12 text-justify ">
+        SALAMA is a first
+        of its kind
+        Training
+        Centre aiming to serve various segments in the Emirate of Sharjah.
+
+        <br>
+        <!-- <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a> -->
+        <!-- <a href=""> <img  src="./assets/tail-left-copy.png"
+                                              srcset="./assets/tail-left-copy@2x.png 2x,
+                                                      ./assets/tail-left-copy@3x.png 3x"
+                                              class="tail-left-copy"></a> -->
+      </p>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+
+
+  <section class="details-card">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="/assets/shutterstock-220781335.png" srcset="./assets/shutterstock-220781335@2x.png 2x,
+                                                       ./assets/shutterstock-220781335@3x.png 3x"
+                alt="">
+              <a href="#" class="btn-card1">blog</a>
+            </div>
+            <div class="card-desc text-justify" style="height: 45px;">
+              <!-- <span class="blog"><h4>Blog</h4></span> -->
+              <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
+                                                    Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
+                                                    or false in less than 120 seconds.'|translate:user}}</p> -->
+              <!-- <a href="#" class="btn-card">blog</a>    -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-content">
+            <div class="card-img">
+
+              <img src="/assets/shutterstock-775043446.png" srcset="./assets/shutterstock-775043446@2x.png 2x,
+                                                       ./assets/shutterstock-775043446@3x.png 3x"
+                alt="">
+              <!-- <span><h4>News</h4></span> -->
+              <a href="#" class="btn-card2">News</a>
+            </div>
+            <div class="card-desc text-justify">
+
+              <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
+                                                    Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
+                                                    or false in less than 120 seconds.'|translate:user}}</p> -->
+              <!-- <a href="#" class="btn-card">Read</a>    -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="/assets/shutterstock-772324159.png" srcset="./assets/shutterstock-772324159@2x.png 2x,
+                                                       ./assets/shutterstock-772324159@3x.png 3x"
+                alt="">
+              <!-- <span><h4>Linkedln</h4></span> -->
+              <a href="#" class="btn-card3" style="">LinkedIn</a>
+            </div>
+            <div class="card-desc">
+
+              <!-- <p> {{'A cutting-edge building safety solution protecting lives and properties across the
+                                                    Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine
+                                                    or false in less than 120 seconds.'|translate:user}}</p> -->
+              <!-- <a href="#" class="btn-card">Read</a>    -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<br>
+<br>
+<br>
+
+<!--=====footer english start==-->
+<div class="container1 col-md-12">
+  <br><br>
+  <div class="row">
+
+    <div class="col-sm-2">
+      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+                                   ./assests/logo-1-copy@3x.png 3x"
+        class="img-responsive logo_wt">
+    </div>
+
+    <div class="col-md-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
+      <ul class="list-unstyled quick-links">
+
+        <li><a routerLink="/about-us" class="about">
+            <font color="white">AboutUs</font>
+          </a></li>
+        <li><a routerLink="/amanservices" class="about">
+            <font color="white">Services</font>
+          </a></li>
+        <li><a routerLink="/sitemap" class="about">
+            <font color="white">Sitemap</font>
+          </a></li>
+        <li><a routerLink="/contactus" class="about">
+            <font color="white">ContactUs</font>
+          </a></li>
+        <li><a routerLink="/privacy" class="about">
+            <font color="white">Privacy Policy</font>
+          </a></li>
+      </ul>
+    </div>
+
+    <!-- <div class="col-sm-3">
+                                     <h5 class="home">Support</h5>
+                                     <ul class="list-unstyled quick-links">
+                                       <li><a class="about"><font color="white">Privacy Policy</font></a></li>
+                                       <li><a class="about"><font color="white">Disclaimer</font></a></li>
+                                       <li><a class="about"><font color="white">Terms and Condition</font></a></li>
+                                       <li><a class="about"><font color="white">Protecting Lives and Property</font></a></li>
+                          
+                                     </ul>
+                                   </div> -->
+    <div class="col-sm-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
+      <ul class="list-unstyled quick-links">
+        <li>
+          <p class="about">
+            <font color="white">Tower 400 18th Floor,</font>
+            <br>
+            <font color="white"> Mina Road Sharjah,</font>
+            <br>
+            <font color="white"> PO Box 4648 Sharjah - UAE </font>
+            <br>
+            <font color="white">Phone: +971 6 506 6555</font>
+            <br>
+            <font color="white">Fax: +971 6 572 2331</font>
+            <br>
+            <font color="white">Email:helpdesk@saned.ae</font>
+            <br>
+            <a routerLink="login">
+              <font color="white">Website:www.saned.ae</font>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 ">
+      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+                                       ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
+        class="img-responsive map_wt">
+    </div>
+    <div class="col-sm-3 col-sm-2">
+      <p style="color:white; font-family: Roboto;
+                                  font-size: 14px;">Follow us
+        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+        <h6 style="color:white;font-family: Roboto;
+                                    font-size: 14px;">Subscribe to
+          Our
+          Newsletter</h6>
+        <div class="input-group mb-3">
+
+          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+                                        border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
+            class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+
+          <div class="input-group-append">
+
+            <button class="btn btn-outline-secondary" type="button">
+              <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-14" style="margin-left: -462px;color: white">Website in construction mode</div>
+    </div>
+    <!-- <div class="col-md-2"></div> -->
+
+    <hr class="col-md-8" style="background:white">
+  </div>
+
+
+  <div class="footer">
+    <div>
+      <p style=" font-family: Roboto;
+                                  font-size: 12px;">By continuing past this page,
+        you
+        agree
+        to our
+        Terms of Service, Cookie Policy, Privacy Policy and
+        Content Policies. © 2019.</p>
+    </div>
+
+  </div>
+  <br>
+</div>
+<!-- ================footer  english end== -->
+
+
+
+
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<router-outlet></router-outlet>

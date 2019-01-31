@@ -1,6 +1,7 @@
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
 <button (click)="switchLanguage('en')">English</button> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -9,212 +10,227 @@
 <!------ Include the above in your HEAD tag ---------->
 
 
-        <!--Main Navigation-->
-        <header>
+<!--Main Navigation-->
+<header>
 
-            <!--Navbar-->
-          
+  <!--Navbar-->
 
-            <!--Intro Section-->
-            <section class="view intro-2 hm-gradient">
-                <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+
+  <!--Intro Section-->
+  <section class="view intro-2 hm-gradient">
+    <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
                 assests/lawyer-today-1@3x.png 3x"
 class="NEM mt-3"> -->
-<div class="row">
-    <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-8">
         <img src="./assets/logv2-2.png" class="img-responsive">
-    </div>
-    <div class="col-md-4">
-            
-             
-        <input type="radio"  class="btn " (click)="switchLanguage('arabic')"> <font color="white">Arabic</font>
-      
-  <input type="radio" class="btn " (click)="switchLanguage('en')"> <font color="white"> English</font>
-
-<button class="buttonrreg">Register</button>
- 
-
-      <a class="btn" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
-      "><font color="white">LOGIN </font></a>
-
-      <div id="id01" class="modal">
-        
-        <form class="col-md-4 modal-content animate">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <br>
-            <a class="Welcome-To-Aman">{{'Welcome to Aman'| translate:user}}</a>
-          </div>
-      
-          <div class="container">
-            <div class="row">
-            <div class="col-md-12">
-            <label class="col-md text-left"><b>Email ID</b></label>
-            <input type="text"  class="form-control"   [(ngModel)]="email" name="ngModel" >
-          
-            <label class="col-md text-left"><b>Password</b> </label>
-            <input type="password"  class="form-control"   [(ngModel)]="password" >
-         
-            
-            <label class="col-md text-left">
-              <input type="checkbox" checked="" name="remember"> Remember me
-            </label>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-            <button type="submit" (click)="login(model)">Login</button>
-          </div>
-          </div>
-          </div>
-      
-          
-        </form>
       </div>
+      <div class="col-md-4">
+
+
+        <!-- <input type="radio"  class="btn " (click)="switchLanguage('arabic')"> <font color="white">Arabic</font>
       
-</div>
-</div>
-<div class="mt">
-  <div class="row">
-     
-<div class="col-md-7">
-    
-                <div class="full-bg-img">
-                   
-                    <div class="container flex-center">
-                       
-                        <div class="row flex-center pt-4 ">
-                            <div class="col-md-12 text-center text-md-left margins">
-                              <!-- <section class="logov2"></section> -->
-                              
-                              
-                              <div class="white-text mt-2">
-                                    <a class="h1-responsive Delivering-your-divi"  data-wow-delay="0.3s"><font color="white">{{'‘Welcome to SANED - We manage and run 
-                                        your real estate and technical facilities and 
-                                        support you in your core business with our 
-                                        wide range of services.”' | translate:user}}</font></a>
-                                        <br>
-                                        <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
-                                        
-                                        <br>
-                                        <a href=""><font color="red" class="Know-More">{{'Know more'|translate:user}} </font></a>
-                                        <a href=""> <img  src="./assets/tail-left-copy.png"
-                                         srcset="./assets/tail-left-copy@2x.png 2x,
-                                                 ./assets/tail-left-copy@3x.png 3x"
-                                         class="tail-left-copy"></a>
-                                    </div>  
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-<br>
+  <input type="radio" class="btn " (click)="switchLanguage('en')"> <font color="white"> English</font> -->
 
-                <hr style="color:red;">
-              </div>
-              </div>
-              
-            </section>
+        <button class="buttonrreg">Register</button>
 
-        </header>
-        <br>
-        <br> <br> <br>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-              <div class="col-sm-8 ">
-                  <img  src="./assets/002-fire-extinguisher.png"
-                  srcset="./assets/002-fire-extinguisher@2x.png 2x,
-                          ./assets/002-fire-extinguisher@3x.png 3x"
-                  class="fire-extinguisher">
-                  <br>
-                  <br>
-                  <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
+
+        <a class="btn" onclick="document.getElementById('id01').style.display='block'" style="font-family: Roboto-Regular
+      ">
+          <font color="white">LOGIN </font>
+        </a>
+
+        <div id="id01" class="modal">
+
+          <form class="col-md-4 modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <br>
+              <a class="Welcome-To-Aman">Welcome to Aman'</a>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="col-md text-left"><b>Email ID</b></label>
+                  <input type="text" class="form-control" [(ngModel)]="email" name="ngModel">
+
+                  <label class="col-md text-left"><b>Password</b> </label>
+                  <input type="password" class="form-control" [(ngModel)]="password">
+
+
+                  <label class="col-md text-left">
+                    <input type="checkbox" checked="" name="remember"> Remember me
+                  </label>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                  <button type="submit" (click)="login(model)">Login</button>
+                </div>
               </div>
-            
-              <p class="col-sm-12 text-justify " > {{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}
-             <br>
-             <br>
-                <a href=""><font color="red" class="Know-More">{{'Know more'| translate:user}} </font></a>
-            <a href=""> <img  src="./assets/tail-left-copy.png"
-             srcset="./assets/tail-left-copy@2x.png 2x,
-                     ./assets/tail-left-copy@3x.png 3x"
-             class="tail-left-copy"></a>
-            </p>
-          </div>
-          <br>
-          <!-- <div class="col-sm-1"></div> -->
-          <div class="col-md-6">
-              <div class="col-sm-5">
-                  <img  src="./assets/001-teacher.png"
-                  srcset="./assets/001-teacher@2x.png 2x,
-                          ./assets/001-teacher@3x.png 3x"
-                  class="teacher">
-                  <br>
-                  <br>
-                  <a class="benefits">{{'BENEFITS'| translate:user}}</a>
-                  </div>
-                  <p class="col-md-12 text-justify " > {{'Reduce the impact of any security, fire and life safety event.' | translate:user }}.
-                    <br> 
-                    {{'Maximize efficient safety monitoring of property and assets.' | translate:user}}
-                      <br>
-                      {{'Analyze data to help emergency services.'| translate:user}}
-                      <br>
-                      <br>
-                      <a href=""><font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font></a>
-                      <a href=""> <img  src="./assets/tail-left-copy.png"
-                       srcset="./assets/tail-left-copy@2x.png 2x,
-                               ./assets/tail-left-copy@3x.png 3x"
-                       class="tail-left-copy"></a>
-                    </p>
-                    </div>
+            </div>
+
+
+          </form>
         </div>
+
       </div>
-      <br>
-      <br>
-      <section class="our-webcoderskull padding-lg">
-          <div class="container">
-            <ul class="row">
-              <li class="col-4 col-md-4 col-lg-4">
-                  <div class="cnt-block equal-hight" style="height: 349px;">
-                    <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2.png" class="img-responsive" 
-                      srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2@2x.png 2x,
-                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2@3x.png 3x" alt=""></figure>
-                    <!-- <h3><a href="http://www.webcoderskull.com/">Guptam Holla</a></h3> -->
-                    <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
-                    <ul class="follow-us clearfix">
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
+    </div>
+    <div class="mt">
+      <div class="row">
+
+        <div class="col-md-7">
+
+          <div class="full-bg-img">
+
+            <div class="container flex-center">
+
+              <div class="row flex-center pt-4 ">
+                <div class="col-md-12 text-center text-md-left margins">
+                  <!-- <section class="logov2"></section> -->
+
+
+                  <div class="white-text mt-2">
+                    <a class="h1-responsive Delivering-your-divi" data-wow-delay="0.3s">
+                      <font color="white">‘Welcome to SANED - We manage and run
+                        your real estate and technical facilities and
+                        support you in your core business with our
+                        wide range of services.”'</font>
+                    </a>
+                    <br>
+                    <!-- <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s"> -->
+
+                    <br>
+                    <a href="">
+                      <font color="red" class="Know-More">{{'Know more'|translate:user}} </font>
+                    </a>
+                    <a href=""> <img src="./assets/tail-left-copy.png" srcset="./assets/tail-left-copy@2x.png 2x,
+                                                 ./assets/tail-left-copy@3x.png 3x"
+                        class="tail-left-copy"></a>
                   </div>
-              </li>
-              <li class="col-12 col-md-6 col-lg-4">
-                  <div class="cnt-block equal-hight" style="height: 349px;">
-                    <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3.png" 
-                      srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3@2x.png 2x,
-                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3@3x.png 3x" class="img-responsive" alt=""></figure>
-                    <!-- <h3><a href="#">Kappua Billa</a></h3> -->
-                    <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
-                    <ul class="follow-us clearfix">
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-              </li>
-              <li class="col-12 col-md-6 col-lg-4">
-                  <div class="cnt-block equal-hight" style="height: 349px;">
-                    <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4.png" 
-                      srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4@2x.png 2x,
-                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4@3x.png 3x" class="img-responsive" alt=""></figure>
-                    <!-- <h3><a href="http://www.webcoderskull.com/">Omin Goshu</a></h3> -->
-                    <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in less than 120 seconds.'|translate:user}}</p>
-                    <ul class="follow-us clearfix">
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-               </li>
-              <!-- <li class="col-12 col-md-6 col-lg-3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <hr style="color:red;">
+      </div>
+    </div>
+
+  </section>
+
+</header>
+<br>
+<br> <br> <br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-8 ">
+        <img src="./assets/002-fire-extinguisher.png" srcset="./assets/002-fire-extinguisher@2x.png 2x,
+                          ./assets/002-fire-extinguisher@3x.png 3x"
+          class="fire-extinguisher">
+        <br>
+        <br>
+        <a class="WHAT-IS-Aman-">{{'WHAT IS Aman ?'|translate:user}}</a>
+      </div>
+
+      <p class="col-sm-12 text-justify "> {{'A cutting-edge building safety solution protecting lives and properties
+        across the Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or
+        false in less than 120 seconds.'|translate:user}}
+        <br>
+        <br>
+        <a href="">
+          <font color="red" class="Know-More">{{'Know more'| translate:user}} </font>
+        </a>
+        <a href=""> <img src="./assets/tail-left-copy.png" srcset="./assets/tail-left-copy@2x.png 2x,
+                     ./assets/tail-left-copy@3x.png 3x"
+            class="tail-left-copy"></a>
+      </p>
+    </div>
+    <br>
+    <!-- <div class="col-sm-1"></div> -->
+    <div class="col-md-6">
+      <div class="col-sm-5">
+        <img src="./assets/001-teacher.png" srcset="./assets/001-teacher@2x.png 2x,
+                          ./assets/001-teacher@3x.png 3x"
+          class="teacher">
+        <br>
+        <br>
+        <a class="benefits">{{'BENEFITS'| translate:user}}</a>
+      </div>
+      <p class="col-md-12 text-justify "> {{'Reduce the impact of any security, fire and life safety event.' |
+        translate:user }}.
+        <br>
+        {{'Maximize efficient safety monitoring of property and assets.' | translate:user}}
+        <br>
+        {{'Analyze data to help emergency services.'| translate:user}}
+        <br>
+        <br>
+        <a href="">
+          <font color="#f34235" class="Know-More">{{'Know more'| translate:user}} </font>
+        </a>
+        <a href=""> <img src="./assets/tail-left-copy.png" srcset="./assets/tail-left-copy@2x.png 2x,
+                               ./assets/tail-left-copy@3x.png 3x"
+            class="tail-left-copy"></a>
+      </p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <ul class="row">
+      <li class="col-4 col-md-4 col-lg-4">
+        <div class="cnt-block equal-hight" style="height: 349px;">
+          <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2.png" class="img-responsive"
+              srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2@2x.png 2x,
+                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-2@3x.png 3x"
+              alt=""></figure>
+          <!-- <h3><a href="http://www.webcoderskull.com/">Guptam Holla</a></h3> -->
+          <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the
+            Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in
+            less than 120 seconds.'|translate:user}}</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4">
+        <div class="cnt-block equal-hight" style="height: 349px;">
+          <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3.png" srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3@2x.png 2x,
+                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-3@3x.png 3x"
+              class="img-responsive" alt=""></figure>
+          <!-- <h3><a href="#">Kappua Billa</a></h3> -->
+          <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the
+            Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in
+            less than 120 seconds.'|translate:user}}</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-4">
+        <div class="cnt-block equal-hight" style="height: 349px;">
+          <figure><img src="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4.png" srcset="./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4@2x.png 2x,
+                      ./assets/103-d-9-e-5-d-0-fe-6-48-be-8-ed-6-fb-8-eac-39-cbcf-copy-4@3x.png 3x"
+              class="img-responsive" alt=""></figure>
+          <!-- <h3><a href="http://www.webcoderskull.com/">Omin Goshu</a></h3> -->
+          <p class="text-justify">{{'A cutting-edge building safety solution protecting lives and properties across the
+            Sharjah through the Alarm Receiving Centre (ARC) operators who verify if an alarm is genuine or false in
+            less than 120 seconds.'|translate:user}}</p>
+          <ul class="follow-us clearfix">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </li>
+      <!-- <li class="col-12 col-md-6 col-lg-3">
                   <div class="cnt-block equal-hight" style="height: 349px;">
                     <figure><img src="http://www.webcoderskull.com/img/team2.png" class="img-responsive" alt=""></figure>
                     <h3><a href="http://www.webcoderskull.com/">NArman Bandhu</a></h3>
@@ -226,7 +242,6 @@ class="NEM mt-3"> -->
                     </ul>
                   </div>
               </li> -->
-            </ul>
-          </div>
-        </section>
-  
+    </ul>
+  </div>
+</section>

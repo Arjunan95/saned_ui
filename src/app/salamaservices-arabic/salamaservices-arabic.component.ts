@@ -8,39 +8,47 @@ import swal from 'sweetalert2';
   styleUrls: ['./salamaservices-arabic.component.css']
 })
 export class SalamaservicesArabicComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
 
   model: any = {};
   data: any = {};
-  constructor(private  apiService:  APIService,private router: Router) { }
+  Lang: any = {};
+  constructor(private apiService: APIService, private router: Router) { }
 
   ngOnInit() {
   }
 
-  newsletter(model){
+  newsletter(model) {
     this.apiService.newsletter(model).subscribe((response) => {
-        this.data = response;
-        console.log(this.data);
-        swal(this.data.Message+"<br>"+"اشتركت بنجاح في النشرة الإخبارية" );
+      this.data = response;
+      console.log(this.data);
+      swal(this.data.Message + "<br>" + "اشتركت بنجاح في النشرة الإخبارية");
     })
-};
-  
-  supplierregister(model){
-    this.apiService.supplierregister(model).subscribe((response) => {
-        this.data = response;
-        if(this.data.Message == "User Already Registered"){
-         
-            console.log("data=====>",this.data);
-            
-            swal(this.data.Message+"<br>"+"مستخدم مسجل بالفعل" );
+  };
 
-          
-          }
-else{
-swal("Please check your email")
-document.getElementById('id01').style.display='block'
-}
-        // this.router.navigate(['/login']);
-        
+  supplierregister(model) {
+    this.apiService.supplierregister(model).subscribe((response) => {
+      this.data = response;
+      if (this.data.Message == "User Already Registered") {
+
+        console.log("data=====>", this.data);
+
+        swal(this.data.Message + "<br>" + "مستخدم مسجل بالفعل");
+
+
+      }
+      else {
+        swal("Please check your email")
+        document.getElementById('id01').style.display = 'block'
+      }
+      // this.router.navigate(['/login']);
+
     });
-    
-};}
+
+  };
+}

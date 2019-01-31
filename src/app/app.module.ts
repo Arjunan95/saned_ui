@@ -43,6 +43,7 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PrivacyArabicComponent } from './privacy-arabic/privacy-arabic.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'register-form', component: RegisterFormComponent },
@@ -64,7 +65,7 @@ const routes: Routes = [
   { path: 'aboutus-arabic', component: AboutusArabicComponent },
   { path: 'contactus-arabic', component: ContactusArabicComponent },
   { path: 'supplier-register-arabic', component: SupplierRegisterArabicComponent },
-  { path: 'privacy-arabic', component: PrivacyArabicComponent }
+  { path: 'privacy-arabic', component: PrivacyArabicComponent },
 
 
 
@@ -121,7 +122,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SupplierRegisterArabicComponent,
     SitemapArabicComponent,
     PrivacyComponent,
-    PrivacyArabicComponent
+    PrivacyArabicComponent,
+
   ],
   providers: [
     {

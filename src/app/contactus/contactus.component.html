@@ -39,7 +39,7 @@
       margin: 0;
     }
     .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
+      /* background-color: red; */
     }
     .dropdown-content {
       display: block;
@@ -155,6 +155,7 @@
         padding: 0px;
         float: right;
     }
+    
     nav ul li{
         list-style: none;
     }
@@ -170,6 +171,7 @@
         padding: 0 20px;
         text-decoration: none;
         text-transform: uppercase;
+        font-family: Roboto;
         font-weight: bold;
         line-height: 50px;
     }
@@ -224,7 +226,7 @@
     letter-spacing: 0;
     }
     .about{
-      font-family: Roboto-Regular;
+      font-family: Roboto;
       font-size: 13px;
       line-height: 15px;
     letter-spacing: 0;
@@ -243,88 +245,126 @@
 
 
 <section class="view intro-2 hm-gradient">
-  <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
-        assests/lawyer-today-1@3x.png 3x"
-    class="NEM mt-3"> -->
-  <div class="">
+  <div class="row">
     <div class="col-md-1">
       <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
       <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
-                                                     ./assets/group@3x.png 3x"
+                                                             ./assets/group@3x.png 3x"
         class="img-responsive">
+    </div>
+    <div class="col-md-5"></div>
+    <div class="col-md-6 mt-5 text-right">
+      <input type="radio" checked />
+      <font style="color:#F90E35;font-size: 14px;">English</font>
 
+      &nbsp;
+      <input type="radio" style="margin-left: -9px;" routerLink="/contactus-arabic" />&nbsp;
+      <font color="white" style="font-size: 14px;">عربى</font>
 
+      &nbsp;
+      <button type="submit" style="background-color: #ff0000; height: 35px;
+                             width: 100px; padding: 2px 20px;margin-top: -2px;"
+        class="btn Rectangle-5-Copy">
+        <font color="white" style="font-family:Roboto;font-size:15px">Register</font>
+      </button>
+
+      <a class="btn mb-1">
+        <font color="white" style="font-family: Roboto;font-size: 15px;">Sign in </font>
+      </a>
 
     </div>
 
-  </div>
-  <div class="" style="margin-left: 926px;
-    margin-top: -118px;">
-    <input type="radio" checked>
-    <font style="color:#F90E35">English</font> &nbsp; &nbsp;
-    <input name="Lang" [(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang" routerLink="/contactus-arabic" />
-    <font color="white"> عربى
-    </font>&nbsp; &nbsp;
 
 
-    <button type="submit" style="background-color: #ff0000; width: min-content;padding: 8px 20px;" routerLink="register-form"
-      class="btn Rectangle-5-Copy">
-      <font color="white">Register</font>
-    </button>
-    <a class="btn mb-1" routerLink="login" style="font-family: Roboto-Regular;font-size: 21px;
-    ">
-      <font color="white" class="Sign-Out">Sign In </font>
-    </a>
-    <!-- <a class="btn mb-1" routerLink="/login" style="font-family: Roboto-Regular;font-size: 21px;
-  ">
-          <font color="white">Sign out </font>
-        </a> -->
+
+
+
   </div>
-  <br><br><br><br><br><br><br><br>
+  <!-- <img href="#" data-toggle="modal" data-target="#myModal" src="assests/lawyer-today-1.png" srcset="assests/lawyer-today-1@2x.png 2x,
+    assests/lawyer-today-1@3x.png 3x"
+class="NEM mt-3"> -->
+  <!-- <div class="full-bg-img"> -->
+  <!-- <div class="container flex-center"> -->
+  <!-- <div class="row flex-center pt-5 mt-3"> -->
+  <!-- <div class="col-md-6 text-center"> -->
+  <br><br><br>
   <div class="text-center">
     <h1>
-      <font color="white" style="font-size:50px">CONTACT US</font>
+      <font color="white" style="font-size: 50px;" class="Aman">Contact us</font>
     </h1>
 
   </div>
   <!-- </div> -->
 
+
   <!-- </div> -->
   <!-- </div> -->
   <!-- </div> -->
 </section>
-<nav style="    margin-top: -53px;background: rgba(0, 0, 0, 0.20); ">
-  <ul class="navigation" style="margin-right: 79px;">
-    <li><a routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a></li>
-    <li><a routerLink="/about-us">A<font style="text-transform: lowercase;">bout Us</font></a></li>
-    <li class="menu">
-      <a>S<font style="text-transform: lowercase;">ervices</font></a>
-      <ul class="submenu">
-        <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
-            </font></a></li>
-        <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
-          </a></li>
-        <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-                      <li style="background: red;"><a href="#">Link 4</a></li> -->
+<br>
+<br>
+<br>
+<br>
+
+<!-- =navbar= -->
+
+<nav class="navbar navbar-expand-md navbar-dark " dir="auto" style="margin-top: -150px;background: rgba(0, 0, 0, 0.27);">
+
+
+  <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+  <!-- </a> -->
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div>
+    <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navigation mt-2 col-md-12 ml-5 navbar-nav mt_200 nav-bg mt-414 pt-120 ht_80 mt_208" style="font-size: 18px; color: black;">
+
+        <li class="nav-item pad_0 col-sm-2 mt_20 ">
+          <a routerLink="/login" class=" nav-link ">H<font style="text-transform: lowercase;">ome</font></a>
+        </li>
+
+        <li class="nav-item pad_0 col-sm-2 mt_20 wt_237">
+          <a routerLink="/about-us" class="nav-link">A<font style="text-transform: lowercase;">bout<font style="text-transform: uppercase;">U</font>
+              <font style="text-transform: lowercase;">s</font>
+            </font></a>
+        </li>
+
+        <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
+          <a>S<font style="text-transform: lowercase;">ervices</font></a>
+          <ul class="submenu" style="font-weight:bold;">
+            <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
+                </font></a></li>
+            <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
+              </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item pad_0 col-sm-2 mt_20">
+          <a routerLink="/supplier-register" class="nav-link">S<font style="text-transform: lowercase;">uppliers</font></a>
+        </li>
+        <li class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
+          <a routerLink="/contactus" class="nav-link">C<font style="text-transform: lowercase;">ontact<font style="text-transform: uppercase;">U<font
+                  style="text-transform: lowercase;">s</font>
+              </font>
+            </font></a>
+        </li>
+        <li class="col-sm-2 mt_20">
+          <font style="color:white"><i class="fa fa-search " style="margin-top: -10px;
+                       "></i></font>
+        </li>
+
       </ul>
-    </li>
-    <li><a routerLink="supplier-register">S<font style="text-transform: lowercase;">uppliers</font></a></li>
-    <li><a routerLink="/contactus">C<font style="text-transform: lowercase;">ontact Us</font></a></li>
-    <!-- <li><a routerLink="/sitemap">S<font style="text-transform: lowercase;">itemap</font></a></li> -->
-    <li>
-      <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-                    margin-left: -43px;"></i></font>
-    </li>
+    </div>
 
 
-  </ul>
+  </div>
 </nav>
+<!-- ====navbar= -->
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
+<br><br>
 <div class="container">
   <br>
   <!-- <h3 class="text-center"><b>Contact Us</b></h3> -->
@@ -335,13 +375,13 @@
       <div class="col-md-5">
         <br><br>
         <h5 style="font-size: 24px;"><b>Company Address:</b></h5>
-        <p style="font-size: 18px;">
+        <p style="font-size: 16px;">
           Tower 400, 18th Floor,<br>
           Mina Road, Sharjah, <br>
-          PO Box 4638 Sharjah - UAE <br>
-          Tel: +971 6 597 2222<br>
+          PO Box 4648 Sharjah - UAE <br>
+          Phone: +971 6 506 6555<br>
           Fax: +971 6 572 2331<br>
-          Email: helpdesk.hsg@apleona.com<br>
+          Email: helpdesk@saned.ae<br>
           <a routerLink="login">www.saned.ae</a>
         </p>
 
@@ -357,38 +397,38 @@
 </div>
 <!-- =====footer  english start== -->
 <div class="container1 col-md-12">
-    <br><br>
-    <div class="row">
+  <br><br>
+  <div class="row">
 
-      <div class="col-sm-2">
-        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+    <div class="col-sm-2">
+      <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
          ./assests/logo-1-copy@3x.png 3x"
-          class="img-thumbnail">
-      </div>
+        class="img-thumbnail">
+    </div>
 
-      <div class="col-md-2">
-        <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
-        <ul class="list-unstyled quick-links">
+    <div class="col-md-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Navigations</h5>
+      <ul class="list-unstyled quick-links">
 
-          <li><a routerLink="/about-us" class="about">
-              <font color="white">About Us</font>
-            </a></li>
-          <li><a routerLink="/amanservices" class="about">
-              <font color="white">Services</font>
-            </a></li>
-          <li><a routerLink="/sitemap" class="about">
-              <font color="white">Sitemap</font>
-            </a></li>
-          <li><a routerLink="/contactus" class="about">
-              <font color="white">Contact Us</font>
-            </a></li>
-          <li><a routerLink="/privacy" class="about">
-              <font color="white">Privacy Policy</font>
-            </a></li>
-        </ul>
-      </div>
+        <li><a routerLink="/about-us" class="about">
+            <font color="white">AboutUs</font>
+          </a></li>
+        <li><a routerLink="/amanservices" class="about">
+            <font color="white">Services</font>
+          </a></li>
+        <li><a routerLink="/sitemap" class="about">
+            <font color="white">Sitemap</font>
+          </a></li>
+        <li><a routerLink="/contactus" class="about">
+            <font color="white">ContactUs</font>
+          </a></li>
+        <li><a routerLink="/privacy" class="about">
+            <font color="white">Privacy Policy</font>
+          </a></li>
+      </ul>
+    </div>
 
-      <!-- <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
            <h5 class="home">Support</h5>
            <ul class="list-unstyled quick-links">
              <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -398,77 +438,77 @@
 
            </ul>
          </div> -->
-      <div class="col-sm-2">
-        <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
-        <ul class="list-unstyled quick-links">
-          <li>
-            <p class="about">
-              <font color="white">Tower 400 18th Floor,</font>
-              <br>
-              <font color="white"> Mina Road Sharjah,</font>
-              <br>
-              <font color="white"> PO Box 4638 Sharjah - UAE </font>
-              <br>
-              <font color="white">Tel: +971 6 597 2222</font>
-              <br>
-              <font color="white">Fax: +971 6 572 2331</font>
-              <br>
-              <font color="white">Email: helpdesk.hsg@apleona.com</font>
-              <br>
-              <a routerLink="login">
-                <font color="white">www.saned.ae</font>
-              </a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+    <div class="col-sm-2">
+      <h5 class="home" style="color:white;font-family: Roboto;">Company Address:</h5>
+      <ul class="list-unstyled quick-links">
+        <li>
+          <p class="about">
+            <font color="white">Tower 400 18th Floor,</font>
+            <br>
+            <font color="white"> Mina Road Sharjah,</font>
+            <br>
+            <font color="white"> PO Box 4648 Sharjah - UAE </font>
+            <br>
+            <font color="white">Phone: +971 6 506 6555</font>
+            <br>
+            <font color="white">Fax: +971 6 572 2331</font>
+            <br>
+            <font color="white">Email:helpdesk@saned.ae</font>
+            <br>
+            <a routerLink="login">
+              <font color="white">Website:www.saned.ae</font>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3">
+      <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
              ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-          class="img-thumbnail">
-      </div>
-      <div class="col-sm-3">
-        <p style="color:white; font-family: Roboto;
+        class="img-thumbnail">
+    </div>
+    <div class="col-sm-3">
+      <p style="color:white; font-family: Roboto;
         font-size: 14px;">Follow us
-          <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-          <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-          <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-          <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-          <h6 style="color:white;font-family: Roboto;
+        <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+        <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+        <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+        <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+        <h6 style="color:white;font-family: Roboto;
           font-size: 14px;">Subscribe to Our Newsletter</h6>
-          <div class="input-group mb-3">
+        <div class="input-group mb-3">
 
-            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+          <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
               border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: Roboto"
-              class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
-              aria-describedby="basic-addon2">
+            class="form-control" required placeholder="Enter your mail id" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
 
-            <div class="input-group-append">
+          <div class="input-group-append">
 
-              <button class="btn btn-outline-secondary" type="button" >
-                <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
-              </button>
-            </div>
+            <button class="btn btn-outline-secondary" type="button">
+              <font style="color:#ff0000;font-family: Roboto">Subscribe</font>
+            </button>
           </div>
-          <div class="col-md-14" style="margin-left: -462px;">Website in construction mode</div> 
-      </div>
-      <!-- <div class="col-md-2"></div> -->
-       
-      <hr class="col-md-8" style="background:white">
+        </div>
+        <div class="col-md-14" style="margin-left: -462px;">Website in construction mode</div>
     </div>
+    <!-- <div class="col-md-2"></div> -->
 
-
-    <div class="footer">
-      <div>
-        <p style=" font-family: Roboto;
-        font-size: 12px;">By continuing past this page, you agree to our
-          Terms of Service, Cookie Policy, Privacy Policy and
-          Content Policies. © 2019.</p>
-      </div>
-
-    </div>
-    <br>
+    <hr class="col-md-8" style="background:white">
   </div>
+
+
+  <div class="footer">
+    <div>
+      <p style=" font-family: Roboto;
+        font-size: 12px;">By continuing past this page, you agree to our
+        Terms of Service, Cookie Policy, Privacy Policy and
+        Content Policies. © 2019.</p>
+    </div>
+
+  </div>
+  <br>
+</div>
 <!-- ================footer  english end== -->
 
 <!-- =======arabic -->

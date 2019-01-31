@@ -50,7 +50,7 @@
     }
     
     .navbar a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
+      /* background-color: red; */
     }
     
     .dropdown-content {
@@ -186,7 +186,7 @@
     nav ul li a{
         display:block;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 17px;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
@@ -283,7 +283,7 @@
   <!------ Include the above in your HEAD tag ---------->
   <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image1.png);height: 623px;">
 
-    <div class="" dir="rtl">
+    <div class="row" dir="rtl">
       <div class="col-md-1">
         <!-- <img src="./assets/logv2-2.png" class="img-responsive"> -->
         <img src="./assets/group.png" srcset="./assets/group@2x.png 2x,
@@ -293,27 +293,27 @@
 
 
       </div>
-      <div style="margin-left: 17px;margin-top: -150px" dir="ltl">
-        <br><br>
-        <a class="btn mb-1" routerLink="login" style="font-family: Roboto-Regular;font-size: 21px;
-      ">
-              <font color="white" class="Sign-Out">تسجيل الدخول </font>
-            </a>
-      <button button type="submit" style="background-color: #ff0000; width: 123px;padding: 8px 20px;" routerLink="/register-form-arabic"
-        class="btn Rectangle-5-Copy" routerLink="register-form-arabic">
-        <font color="white">تسجيل</font>
-      </button>
+      <div class="col-md-5"></div>
+      <div class="col-md-6 mt-5" dir="ltr">
+        &nbsp;
+        <a class="btn mb-1" routerLink="login-arabic" style=" font-family: GeezaPro;font-size: 14px;margin-left: -15px;">
+          <font color="white">تسجيل الدخول </font>
+        </a>
+        <button type="submit" style="background-color: #ff0000; width: min-content;padding: 4px 13px;height: 35px;
+          width: 100px;"
+          routerLink="register-form-arabic" class="btn Rectangle">
+          <font color="white">تسجيل</font>
+        </button>
 
-      &nbsp;
-      <font style="color:white">English</font> &nbsp;
-      <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"
-        routerLink="/contactus" />
+        &nbsp;
 
+        <font style="color:white">English</font>&nbsp;
+        <input name="Lang" style="color:#ff0000;" [(ngModel)]="Lang" type="radio" [value]="true" routerLink="/privacy"
+          [checked]="Lang" />&nbsp;
 
+        <font color="#F90E35"> عربى </font>
+        <input type="radio" checked>
 
-      <font color="#F90E35"> عربى
-      </font>
-      <input type="radio" checked />
 
       </div>
     </div>
@@ -335,27 +335,51 @@
     <!-- </div> -->
     <!-- </div> -->
   </div>
-  <nav style="margin-top: -201px;background: rgba(0, 0, 0, 0.20); ">
-    <ul class="navigation" style="margin-right: 255px;" dir="rtl">
-      <li><a routerLink="/login-arbic">الصفحة الرئيسية</a></li>
-      <li><a routerLink="/aboutus-arabic">معلومات عنا</a></li>
-      <li class="menu">
-        <a>خدمات</a>
-        <ul class="submenu">
-          <li style="background:  #252323;;"><a routerLink="/amanservices-arabic">تأمين </a></li>
-          <li style="background:  #252323;;"><a routerLink="/salamaservices-arabic">سلامة </a></li>
-          <!-- <li style="background: red;"><a href="#">Link 3</a></li>
-              <li style="background: red;"><a href="#">Link 4</a></li> -->
+  <nav class="navbar navbar-expand-md navbar-dark" dir="rtl" style="margin-top: -55px;background: rgba(0, 0, 0, 0.27);">
+
+
+    <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+    <!-- </a> -->
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div dir="ltr" class="mr-5">
+      <div class="collapse navbar-collapse mr-5" dir="rtl" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navigation mt-2 col-md-12 mr-5 navbar-nav nav-bg mt-414 pt-120" dir="rtl" style="font-size: 18px; color: black;">
+
+          <li class="nav-item col-md-3">
+
+            <a routerLink="/login-arbic" class=" nav-link pd_0 ">الصفحة الرئيسية</a>
+          </li><br>
+
+          <li class="nav-item col-md-3">
+            <a routerLink="/aboutus-arabic" class="nav-link">معلومات عنا</a>
+          </li><br>
+
+          <li class="menu nav-item col-md-2 mt_7">
+            <a>خدمات</a>
+            <ul class="submenu" style="font-weight:bold;">
+              <li style="background:  #252323;"><a routerLink="/amanservices-arabic">رجل</a></li>
+              <li style="background:  #252323;"><a routerLink="/salamaservices-arabic">سلامة
+                </a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item col-md-1">
+            <a routerLink="/supplier-register" class="nav-link">الموردين</a>
+          </li>
+          <li class="nav-item col-md-3">
+            <a routerLink="/contactus-arabic" class="nav-link">اتصل بنا</a>
+          </li>
+          <li dir="rtl">
+            <font style="color:white"><i class="fa fa-search ml-4" style="margin-top: -10px;
+                           "></i></font>
+          </li>
         </ul>
-      </li>
-      <li><a routerLink="supplier-register-arabic">الموردين</a></li>
-      <li><a routerLink="/contactus-arabic">اتصل بنا</a></li>
-      <!-- <li><a class="row" routerLink="/sitemap-arabic">خريطة الموقع</a></li> -->
-      <li>
-        <font style="color:white"><i class="fa fa-search" style="margin-top: -9px;
-            margin-right: -46px;"></i></font>
-      </li>
-    </ul>
+      </div>
+
+
+    </div>
   </nav>
   <br>
   <br>
@@ -366,24 +390,26 @@
   <br>
   <br><br>
   <br>
-  <div class="card col-md-11" style="border-radius: 18px;
-   background: white;color:#494949;margin-top: -208px;margin-left: 64px;">
+  <div class="card col-md-12" style="border-radius: 18px;
+   background: white;color:#494949;margin-top: -166px;" dir="rtl">
     <br>
     <br>
 
-    <h2 style="font-size: 36px;font-family: GeezaPro;color: black;margin-left: 842px;">سياسة خاصة</h2>
+
     <br>
 
     <div class="An-overview-of-da " dir="rtl">
-      <div class="col-sm-10 ml-4 text-justify">
 
+      <div class="col-sm-12 text-justify">
+        <h2 style="font-size: 36px;font-family: GeezaPro;color: black;">سياسة خاصة</h2>
         <div class="col-sm-12">
           <h4 style="font-size: 18px;font-family: GeezaPro;color: black;"> 1. نظرة عامة على حماية البيانات</h4>
           <br>
           <b style="font-size: 16px;font-family: GeezaPro;color: black;">جنرال لواء</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يقدم ما يلي نظرة عامة بسيطة على ما يحدث لمعلوماتك الشخصية عند زيارتك لموقعنا. المعلومات الشخصية هي أي
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يقدم ما يلي نظرة عامة بسيطة على ما يحدث
+            لمعلوماتك الشخصية عند زيارتك لموقعنا. المعلومات الشخصية هي أي
             بيانات يمكنك تحديد هويتك بها. يمكن العثور على معلومات تفصيلية حول موضوع حماية البيانات في سياسة الخصوصية
             الخاصة بنا الموجودة أدناه.</p>
         </div>
@@ -394,7 +420,8 @@
           <br>
           <br>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;">من المسؤول عن جمع البيانات على هذا الموقع؟</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">تتم معالجة البيانات التي تم جمعها على هذا الموقع من قبل مشغل الموقع. يمكن العثور على تفاصيل الاتصال الخاصة
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">تتم معالجة البيانات التي تم جمعها على هذا
+            الموقع من قبل مشغل الموقع. يمكن العثور على تفاصيل الاتصال الخاصة
             بالمشغل في الإشعار القانوني المطلوب في الموقع الإلكتروني.</p>
         </div>
 
@@ -402,9 +429,11 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;"> كيف نجمع بياناتك؟</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">Sيتم جمع البيانات عند تقديمها لنا. يمكن أن يكون هذا ، على سبيل المثال ، بيانات تقوم بإدخالها في نموذج جهة
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">Sيتم جمع البيانات عند تقديمها لنا. يمكن أن
+            يكون هذا ، على سبيل المثال ، بيانات تقوم بإدخالها في نموذج جهة
             اتصال.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> يتم جمع البيانات الأخرى تلقائيًا من خلال أنظمة تكنولوجيا المعلومات لدينا عند زيارة الموقع. هذه البيانات
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> يتم جمع البيانات الأخرى تلقائيًا من خلال
+            أنظمة تكنولوجيا المعلومات لدينا عند زيارة الموقع. هذه البيانات
             هي بيانات تقنية في المقام الأول مثل المتصفح ونظام التشغيل الذي تستخدمه أو عند الوصول إلى الصفحة. يتم جمع
             هذه البيانات تلقائيا بمجرد دخولك موقعنا.</p>
         </div>
@@ -413,12 +442,14 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;"> ما الذي نستخدمه لبياناتك؟</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يتم جمع جزء من البيانات لضمان حسن سير عمل الموقع. يمكن استخدام بيانات أخرى لتحليل كيفية استخدام الزائرين
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يتم جمع جزء من البيانات لضمان حسن سير عمل
+            الموقع. يمكن استخدام بيانات أخرى لتحليل كيفية استخدام الزائرين
             للموقع.</p>
         </div>
 
         <div class="col-sm-12">
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يحق لك دائمًا طلب معلومات حول بياناتك المخزنة ، وأصلها ، ومستلموها ، والغرض من جمعها دون مقابل. لديك أيضًا
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يحق لك دائمًا طلب معلومات حول بياناتك المخزنة
+            ، وأصلها ، ومستلموها ، والغرض من جمعها دون مقابل. لديك أيضًا
             الحق في طلب تصحيحه أو حظره أو حذفه. يمكنك الاتصال بنا في أي وقت باستخدام العنوان الوارد في الإشعار القانوني
             إذا كان لديك المزيد من الأسئلة حول مسألة الخصوصية وحماية البيانات. يمكنك أيضًا ، بالطبع ، تقديم شكوى إلى
             السلطات التنظيمية المختصة.</p>
@@ -428,11 +459,13 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;">التحليلات وأدوات الطرف الثالث</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">عند زيارة موقعنا على الإنترنت ، قد يتم إجراء التحليلات الإحصائية لسلوكك في ركوب الأمواج. هذا يحدث في
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">عند زيارة موقعنا على الإنترنت ، قد يتم إجراء
+            التحليلات الإحصائية لسلوكك في ركوب الأمواج. هذا يحدث في
             المقام الأول باستخدام ملفات تعريف الارتباط والتحليلات. عادةً ما يكون تحليل سلوك تصفح الإنترنت الخاص بك
             مجهولاً ، بمعنى أننا لن نتمكن من التعرف عليك من هذه البيانات. يمكنك الاعتراض على هذا التحليل أو منعه عن
             طريق عدم استخدام أدوات معينة. يمكن العثور على معلومات تفصيلية في سياسة الخصوصية التالية.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> يمكنك الاعتراض على هذا التحليل. سوف نعلمك أدناه حول كيفية ممارسة الخيارات المتاحة أمامك في هذا الصدد.</p>
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> يمكنك الاعتراض على هذا التحليل. سوف نعلمك
+            أدناه حول كيفية ممارسة الخيارات المتاحة أمامك في هذا الصدد.</p>
         </div>
 
 
@@ -443,21 +476,26 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;">حماية البيانات</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يأخذ مشغلي هذا الموقع حماية بياناتك الشخصية على محمل الجد. نتعامل مع بياناتك الشخصية بسرية ووفقًا للوائح
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يأخذ مشغلي هذا الموقع حماية بياناتك الشخصية
+            على محمل الجد. نتعامل مع بياناتك الشخصية بسرية ووفقًا للوائح
             القانونية لحماية البيانات وسياسة الخصوصية هذه.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا كنت تستخدم هذا الموقع ، فسيتم جمع العديد من البيانات الشخصية. المعلومات الشخصية هي أي بيانات يمكنك
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا كنت تستخدم هذا الموقع ، فسيتم جمع العديد
+            من البيانات الشخصية. المعلومات الشخصية هي أي بيانات يمكنك
             تحديد هويتك بها. سياسة الخصوصية هذه تشرح المعلومات التي نجمعها وما نستخدمها من أجلها. كما يشرح كيف ولأي غرض
             يحدث هذا.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يرجى ملاحظة أن البيانات التي يتم نقلها عبر الإنترنت (على سبيل المثال عبر البريد الإلكتروني) قد تكون عرضة
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يرجى ملاحظة أن البيانات التي يتم نقلها عبر
+            الإنترنت (على سبيل المثال عبر البريد الإلكتروني) قد تكون عرضة
             لخروقات أمنية. الحماية الكاملة لبياناتك من الوصول إلى طرف ثالث غير ممكن.</p>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إشعار يتعلق بالطرف المسؤول عن هذا الموقع</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> الطرف المسؤول عن معالجة البيانات على هذا الموقع هو:</p>
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> الطرف المسؤول عن معالجة البيانات على هذا
+            الموقع هو:</p>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;">Apleona GmbH,<br>
             An der Gehespitz 50,<br>
             63263 Neu-Isenburg</p>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;"> هاتف: +49 (0) 6102 45-3400,<br>
             البريد الإلكتروني: gehespitz50.hsg@apleona.com</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">الطرف المسؤول هو الشخص الطبيعي أو الاعتباري الذي يقرر وحده أو بالاشتراك مع آخرين أغراض ووسائل معالجة
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">الطرف المسؤول هو الشخص الطبيعي أو الاعتباري
+            الذي يقرر وحده أو بالاشتراك مع آخرين أغراض ووسائل معالجة
             البيانات الشخصية (الأسماء وعناوين البريد الإلكتروني وما إلى ذلك).</p>
         </div>
 
@@ -466,11 +504,13 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;"> إلغاء موافقتك على معالجة بياناتك</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> لا يمكن إجراء العديد من عمليات معالجة البيانات إلا بموافقتك الصريحة. يمكنك إلغاء موافقتك في أي وقت مع
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> لا يمكن إجراء العديد من عمليات معالجة
+            البيانات إلا بموافقتك الصريحة. يمكنك إلغاء موافقتك في أي وقت مع
             التأثير المستقبلي. البريد الإلكتروني غير الرسمي الذي يجعل هذا الطلب كافياً. قد تتم معالجة البيانات التي تتم
             معالجتها قبل استلام طلبك.</p>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;"> الحق في تقديم الشكاوى مع السلطات التنظيمية</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا كان هناك انتهاك لتشريع حماية البيانات ، يمكن للشخص المتضرر تقديم شكوى إلى السلطات التنظيمية المختصة.
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا كان هناك انتهاك لتشريع حماية البيانات ،
+            يمكن للشخص المتضرر تقديم شكوى إلى السلطات التنظيمية المختصة.
             السلطة التنظيمية المختصة للمسائل المتعلقة بتشريعات حماية البيانات هي مسؤول حماية البيانات في الدولة
             الألمانية التي يوجد مقر الشركة فيها. يمكن العثور على قائمة بمسؤولي حماية البيانات وتفاصيل الاتصال بهم على
             الرابط التالي: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.</p>
@@ -480,17 +520,20 @@
           <b style="font-size: 18px;font-family: GeezaPro;color: black;"> تشفير SSL أو TLS</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يستخدم هذا الموقع تشفير SSL أو TLS لأسباب أمنية ولحماية نقل المحتوى السري ، مثل الاستفسارات التي ترسلها
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يستخدم هذا الموقع تشفير SSL أو TLS لأسباب
+            أمنية ولحماية نقل المحتوى السري ، مثل الاستفسارات التي ترسلها
             إلينا كمشغل الموقع. يمكنك التعرف على اتصال مشفر في سطر العنوان بالمتصفح & الخاص بك عندما يتغير من & quot؛
             http: // & quot؛ إلى & quot؛ https: // & quot؛ ويتم عرض رمز القفل في شريط عناوين المتصفح.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">إذا تم تنشيط تشفير SSL أو TLS ، فإن البيانات التي تنقلها إلينا لا يمكن قراءتها بواسطة أطراف ثالثة.</p>
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">إذا تم تنشيط تشفير SSL أو TLS ، فإن البيانات
+            التي تنقلها إلينا لا يمكن قراءتها بواسطة أطراف ثالثة.</p>
         </div>
 
         <div class="col-sm-12">
           <b style="font-size: 18px;font-family: GeezaPro;color: black;">المعلومات ، الحظر ، الحذف</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> وفقًا لما يسمح به القانون ، لديك الحق في أن يتم تقديمك في أي وقت بمعلومات مجانية عن أي من بياناتك الشخصية
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> وفقًا لما يسمح به القانون ، لديك الحق في أن
+            يتم تقديمك في أي وقت بمعلومات مجانية عن أي من بياناتك الشخصية
             المخزنة وكذلك أصلها والمتلقي والغرض الذي تمت معالجته من أجله. لديك أيضًا الحق في تصحيح هذه البيانات أو
             حظرها أو حذفها. يمكنك الاتصال بنا في أي وقت باستخدام العنوان الوارد في إشعارنا القانوني إذا كان لديك المزيد
             من الأسئلة حول موضوع البيانات الشخصية.</p>
@@ -565,20 +608,24 @@
             عنوان IP <br>
             لن يتم دمج هذه البيانات مع بيانات من مصادر أخرى.
           </p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">أساس معالجة البيانات هو الفن. 6 (1) (و) DSGVO ، الذي يسمح بمعالجة البيانات للوفاء بعقد أو للتدابير الأولية
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">أساس معالجة البيانات هو الفن. 6 (1) (و) DSGVO
+            ، الذي يسمح بمعالجة البيانات للوفاء بعقد أو للتدابير الأولية
             للعقد.</p>
         </div>
         <div class="col-sm-12">
           <b style="font-size: 18px;font-family: GeezaPro;color: black;">نموذج الاتصال</b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا أرسلت إلينا أسئلة عبر نموذج الاتصال ، فسوف نجمع البيانات التي تم إدخالها في النموذج ، بما في ذلك
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> إذا أرسلت إلينا أسئلة عبر نموذج الاتصال ،
+            فسوف نجمع البيانات التي تم إدخالها في النموذج ، بما في ذلك
             تفاصيل الاتصال التي تقدمها ، للإجابة عن سؤالك وأي أسئلة تتعلق بالمتابعة. نحن لا نشارك هذه المعلومات دون
             إذنك.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> ولذلك ، سنقوم بمعالجة أي بيانات تقوم بإدخالها في نموذج الاتصال فقط بموافقتك على كل مادة. 6 (1) (أ) DSGVO.
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;"> ولذلك ، سنقوم بمعالجة أي بيانات تقوم بإدخالها
+            في نموذج الاتصال فقط بموافقتك على كل مادة. 6 (1) (أ) DSGVO.
             يمكنك إلغاء موافقتك في أي وقت. البريد الإلكتروني غير الرسمي الذي يجعل هذا الطلب كافياً. قد تتم معالجة
             البيانات التي تتم معالجتها قبل استلام طلبك.</p>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">سنحتفظ بالبيانات التي تقدمها في نموذج الاتصال إلى أن تطلب حذفها ، أو تلغي موافقتك على تخزينها ، أو لم يعد
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">سنحتفظ بالبيانات التي تقدمها في نموذج الاتصال
+            إلى أن تطلب حذفها ، أو تلغي موافقتك على تخزينها ، أو لم يعد
             الغرض من سعتها التخزينية (على سبيل المثال بعد تلبية طلبك). أي أحكام قانونية إلزامية ، لا سيما تلك المتعلقة
             بفترات الاحتفاظ الإلزامي للبيانات ، تظل غير متأثرة بهذا الحكم.</p>
         </div>
@@ -689,7 +736,8 @@
           </b>
           <br>
           <br>
-          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يستخدم موقعنا الإلكتروني الميزات التي توفرها شبكة XING. المزود هو XING AG، Dammtorstraße 29-32، 20354
+          <p style="font-size: 16px;font-family: GeezaPro;color: black;">يستخدم موقعنا الإلكتروني الميزات التي توفرها
+            شبكة XING. المزود هو XING AG، Dammtorstraße 29-32، 20354
             Hamburg، Germany.</p>
           <p style="font-size: 16px;font-family: GeezaPro;color: black;">
             في كل مرة يتم الوصول إلى إحدى صفحاتنا التي تحتوي على ميزات XING ، يقوم متصفحك بإنشاء اتصال مباشر بخوادم
@@ -753,38 +801,38 @@
 
   <!-- =============footer arabic start====== -->
   <div class="container1 col-md-12" dir="rtl">
-      <br><br>
-      <div class="row">
+    <br><br>
+    <div class="row">
 
-        <div class="col-sm-2">
-          <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
+      <div class="col-sm-2">
+        <img src="./assets/logo-1-copy.png" srcset="./assests/logo-1-copy@2x.png 2x,
            ./assests/logo-1-copy@3x.png 3x"
-            class="img-thumbnail">
-        </div>
+          class="img-thumbnail">
+      </div>
 
-        <div class="col-md-2">
-          <h5 class="navfooter" style="color:white">الملاحة</h5>
-          <ul class="list-unstyled quick-links footer1">
+      <div class="col-md-2">
+        <h5 class="navfooter" style="color:white">الملاحة</h5>
+        <ul class="list-unstyled quick-links footer1">
 
-            <li><a routerLink="/aboutus-arabic" class="about">
-                <font color="white">معلومات عنا</font>
-              </a></li>
-            <li><a routerLink="/amanservices-arabic">
-                <font color="white">خدمات</font>
-              </a></li>
-            <li><a routerLink="/sitemap-arabic">
-                <font color="white">خريطة الموقع</font>
-              </a></li>
-            <li><a routerLink="/contactus-arabic">
-                <font color="white">اتصل بنا</font>
-              </a></li>
-            <li><a routerLink="/privacy-arabic">
-                <font color="white">سياسة خاصة</font>
-              </a></li>
-          </ul>
-        </div>
+          <li><a routerLink="/aboutus-arabic" class="about">
+              <font color="white">معلومات عنا</font>
+            </a></li>
+          <li><a routerLink="/amanservices-arabic">
+              <font color="white">خدمات</font>
+            </a></li>
+          <li><a routerLink="/sitemap-arabic">
+              <font color="white">خريطة الموقع</font>
+            </a></li>
+          <li><a routerLink="/contactus-arabic">
+              <font color="white">اتصل بنا</font>
+            </a></li>
+          <li><a routerLink="/privacy-arabic">
+              <font color="white">سياسة خاصة</font>
+            </a></li>
+        </ul>
+      </div>
 
-        <!-- <div class="col-sm-3">
+      <!-- <div class="col-sm-3">
              <h5 class="home">Support</h5>
              <ul class="list-unstyled quick-links">
                <li><a class="about"><font color="white">Privacy Policy</font></a></li>
@@ -794,75 +842,75 @@
   
              </ul>
            </div> -->
-        <div class="col-md-3">
-          <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
-          <ul class="list-unstyled quick-links footer2">
-            <li>
-              <p class="about">
-                <font color="white">برج 400 18th أرضية,</font>
-                <br>
-                <font color="white"> طريق الميناء الشارقة,</font>
-                <br>
-                <font color="white">صندوق بريد 4638 الشارقة - الإمارات العربية المتحدة</font>
-                <br>
+      <div class="col-md-3">
+        <h5 class="" style="color:white;font-family: GeezaPro;">عنوان الشركة:</h5>
+        <ul class="list-unstyled quick-links footer2">
+          <li>
+            <p class="about">
+              <font color="white">برج 400 18 أرضية,</font>
+              <br>
+              <font color="white"> طريق الميناء الشارقة,</font>
+              <br>
+              <font color="white">صندوق بريد 4648 الشارقة - الإمارات العربية المتحدة</font>
+              <br>
 
-                <font color="white" dir="rtl"> الهاتف: 2222 597 6 971+ </font>
-                <br>
-                <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
-                <br>
-                <font color="white">البريد الإلكتروني: helpdesk.hsg@apleona.com</font>
-                <br>
-                <a routerLink="login-arabic">
-                  <font color="white">www.saned.ae</font>
-                </a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
+              <font color="white" dir="rtl"> رقم الهاتف: 6555 506 6 971+ </font>
+              <br>
+              <font color="white" dir="rtl"> الفاكس: 2331 572 6 971+ </font>
+              <br>
+              <font color="white">البريد الإلكتروني: helpdesk@saned.ae</font>
+              <br>
+              <a routerLink="login-arabic">
+                <font color="white">www.saned.ae</font>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <img src="./assets/screen-shot-2018-12-18-at-12-04-00-pm.png" srcset="./assests/screen-shot-2018-12-18-at-12-04-00-pm@2x.png 2x,
                ./assests/screen-shot-2018-12-18-at-12-04-00-pm@3x.png 3x"
-            class="img-thumbnail">
-        </div>
-        <div class="col-sm-3">
-          <p style="color:white;font-family: GeezaPro;">تابعنا
-            <a ><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
-            <a ><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
-            <a ><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
-            <a ><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
-            <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
-            <div class="input-group mb-3">
+          class="img-thumbnail">
+      </div>
+      <div class="col-sm-3">
+        <p style="color:white;font-family: GeezaPro;">تابعنا
+          <a><i class="fa fa-linkedin-square fa-3x social" style="color:#007bb5"></i></a>
+          <a><i class="fa fa-twitter-square fa-3x social" style="color:#55ACEE"></i></a>
+          <a><i class="fa fa-facebook-square fa-3x social" style="color:#3B5998"></i></a>
+          <a><i class="fa fa-instagram square fa-3x social" style="color:#55ACEE"></i></a>
+          <h6 style="color:white;font-family: GeezaPro;text-align: right;">اشترك في صحيفتنا الإخبارية</h6>
+          <div class="input-group mb-3">
 
-              <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
+            <input type="email" name="email_id" [(ngModel)]="model.email_id" #name="ngModel" id="email_id" style="background: black;
                 border-color: #6c757d;vertical-align:9px;color:#bbb;font-family: GeezaPro;"
-                class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-              <div class="input-group-append">
+              class="form-control" required placeholder="أدخل معرف البريد الخاص بك" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
 
-                <button class="btn btn-outline" style="border-color: white;" type="button" >
-                  <font style="color:#ff0000;">الاشتراك</font>
-                </button>
-              </div>
+              <button class="btn btn-outline" style="border-color: white;" type="button">
+                <font style="color:#ff0000;">الاشتراك</font>
+              </button>
             </div>
-        </div>
-        <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div> 
-        <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
+          </div>
       </div>
-
-
-      <div class="lastfoot text-center">
-        <div>
-          <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
-            فإنك توافق على
-            بنود الخدمة وسياسة
-            ملفات تعريف الارتباط وسياسة
-            الخصوصية
-            وسياسات المحتوى الخاصة بنا. © 2019.</p>
-        </div>
-
-      </div>
-      <br>
+      <div class="col-md-14" style="margin-right: 574px;">الموقع في وضع البناء</div>
+      <hr class="col-md-8" style="background:white;font-family: GeezaPro;">
     </div>
+
+
+    <div class="lastfoot text-center">
+      <div>
+        <p style="font-family: GeezaPro;color: #ffffff;" class="text-center">من خلال الاستمرار عبر هذه الصفحة ،
+          فإنك توافق على
+          بنود الخدمة وسياسة
+          ملفات تعريف الارتباط وسياسة
+          الخصوصية
+          وسياسات المحتوى الخاصة بنا. © 2019.</p>
+      </div>
+
+    </div>
+    <br>
+  </div>
 
   <!-- ========footer arabic end====== -->
 </div>

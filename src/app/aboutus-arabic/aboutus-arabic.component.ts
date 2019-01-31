@@ -10,20 +10,28 @@ import { SimpleGlobal } from 'ng2-simple-global';
   styleUrls: ['./aboutus-arabic.component.css']
 })
 export class AboutusArabicComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
+
   model: any = {};
   data: any = {};
-  constructor(private  apiService:  APIService,private router: Router,private sg: SimpleGlobal) { }
+  Lang: any = {};
+  constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }
 
   ngOnInit() {
   }
 
 
-  newsletter(model){
+  newsletter(model) {
     this.apiService.newsletter(model).subscribe((response) => {
-        this.data = response;
-        console.log(this.data);
-        swal(this.data.Message+"<br>"+"اشتركت بنجاح في النشرة الإخبارية" );
+      this.data = response;
+      console.log(this.data);
+      swal(this.data.Message + "<br>" + "اشتركت بنجاح في النشرة الإخبارية");
     })
-};
+  };
 
 }

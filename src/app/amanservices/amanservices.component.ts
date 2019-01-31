@@ -10,6 +10,12 @@ import { SimpleGlobal } from 'ng2-simple-global';
   styleUrls: ['./amanservices.component.css']
 })
 export class AmanservicesComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+      this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
   model: any = {};
   data: any = {};
   constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) { }

@@ -23,7 +23,8 @@ export class RegisterFormComponent implements OnInit {
   // model = new RegisterForm(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
   model: any = {};
   data: any = {};
-
+  submitted: any = {};
+  onSubmit: any = {};
   constructor(private apiService: APIService, private router: Router) { }
 
   ngOnInit() {

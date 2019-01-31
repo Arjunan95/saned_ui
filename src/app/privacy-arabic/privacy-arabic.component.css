@@ -1,49 +1,161 @@
 .intro-2 {
-    background: url("/assets/hero_image1.png")no-repeat center center;
-    background-size: cover;
-    height: 635px;
- }
- 
- .aboutus {
-    background: url("/assets/group-4.png")no-repeat center center;
-    /* background-size: cover; */
-    height: 330px;
-    border-radius: 18px;
-    
- }
-
-
- .spacer {
-  height: 100px;
+  background: url("/assets/hero_image1.png")no-repeat center center;
+  background-size: cover;
+  height: 635px;
 }
- .Who-We-Are-Aman-is-a {
-    width: 733px;
-    height: 459px;
-    font-family: Roboto;
-    font-size: 18px;
-    text-align: justify;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-  }
+
+.aboutus {
+  background: url("/assets/group-4.png")no-repeat center center;
+  /* background-size: cover; */
+  height: 330px;
+  border-radius: 18px;
   
-  .Who-We-Are-Aman-is-a .text-style-1 {
-    font-size: 24px;
-  }
-  .An-overview-of-da {
-    width: 1188px;
-    height: 100%;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-    margin-left: -135px;
-  }
+}
+
+
+.spacer {
+height: 100px;
+}
+.Who-We-Are-Aman-is-a {
   
+  height: 459px;
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.Who-We-Are-Aman-is-a .text-style-1 {
+  font-size: 24px;
+}
+.An-overview-of-da {
+  
+  height: 100%;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+
+}
+/* ===Mobile navbar start=========== */
+
+/* @media only screen and (max-width: 360px) {
+  .navbar-collapse {
+    margin-right: -65px ! important;
+    background-color: rgba(0, 0, 0, 0.65) ! important;
+    margin-left: 44px ! important;
+    margin-top: 7px ! important;
+    margin-bottom: -460px ! important;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.65)! important;
+    margin-right: -57px! important;
+    margin-left: 100px! important;
+    margin-top: 8px! important;
+    margin-bottom: -388px! important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-right: 74px;
+    ;
+    margin-left: -136px;
+    margin-top: 97px;
+    margin-bottom: -385px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-right: 118px;
+  
+    margin-left: -136px;
+    margin-top: 97px;
+    margin-bottom: -385px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.65)! important;
+    margin-right: -58px! important;
+    margin-left: 98px! important;
+    margin-top: -4px! important;
+    margin-bottom: -554px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    margin-left: -126px! important;
+    margin-top: 39px! important;
+    margin-right: 40 ! important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navbar-collapse { */
+     /* background-color: rgba(0, 0, 0, 0.65);  */
+    /* height: 607px;
+  }
+} */
+.pd_0{
+  padding-right: .0rem !important;
+    padding-left: .0rem !important;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px){
+  .nav-bg {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  .pt-120{
+    position: relative;
+    left: 158px;
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1022px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+
+
+  .pt-120{
+    position: relative;
+    left: 216px;
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 4rem!important;
+}
+
+
+
+
+li[_ngcontent-c1] {
+  float: left;
+  padding: 0 12px !important;
+}
+
+
+}
+/* =========Mobile navbar End========== */

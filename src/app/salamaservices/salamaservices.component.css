@@ -1,31 +1,37 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 .intro-2 {
+
+    /* background: url("/assets/aboutus1.png")no-repeat center center; */
+
     background: url("/assets/hero_image.png")no-repeat center center;
+
     background-size: cover;
     height: 635px;
-   }
-   .alert {
+ }
+ .alert {
     position: relative;
     /* padding: .75rem 1.25rem; */
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
-   }
-   .card{
+  }
+  .card{
     
     
     left:50%;
     transform:translate(-50%,-50%);
-    
+   
     min-height:400px;
     background:#fff;
     box-shadow:0 20px 50px rgba(0,0,0,.1);
     border-radius:10px;
     transition:0.5s;
-  }
-  .card:hover {
+}
+.card:hover {
     box-shadow:0 30px 70px rgba(0,0,0,.2);
-  }
-  .card .box {
+}
+.card .box {
     position:absolute;
     top:50%;
     left:0;
@@ -34,66 +40,61 @@
     padding:20px;
     box-sizing:border-box;
     width:100%;
-  }
-  .card .box .img {
+}
+.card .box .img {
     width:120px;
     height:120px;
     margin:0 auto;
     border-radius:50%;
     overflow:hidden;
-  }
-  .card .box .img img {
+}
+.card .box .img img {
     width:100%;
     height:100%;
-  }
-  .card .box h2 {
+}
+.card .box h2 {
     font-size:20px;
     color:#262626;
     margin:20px auto;
-  }
-  .card .box h2 span {
+}
+.card .box h2 span {
     font-size:14px;
     background:#e91e63;
     color:#fff;
     display:inline-block;
     padding:4px 10px;
     border-radius:15px;
-  }
-  .card .box p {
+}
+.card .box p {
     color:#262626;
-  }
-  .card .box span {
+}
+.card .box span {
     display:inline-flex;
-  }
-  .card .box ul {
+}
+.card .box ul {
     margin:0;
     padding:0;
-  }
-  .card .box ul li {
+}
+.card .box ul li {
     list-style:none;
     float:left;
-  }
-  .card .box ul li a {
+}
+.card .box ul li a {
     display:block;
     color:#aaa;
     margin:0 10px;
     font-size:20px;
     transition:0.5s;
     text-align:center;
-  }
-  .card .box ul li:hover a {
+}
+.card .box ul li:hover a {
     color:#e91e63;
     transform:rotateY(360deg);
-  }
-  .element.style{
-   
-      margin-top: -13%;
-  
-  }
-  /* =====align start===== */
-  .AMAN-is-a-first-of-i {
-    width: 496px;
-    height: 169px;
+}
+/* =============align start========== */
+.Register {
+    width: 68px;
+    height: 24px;
     font-family: Roboto;
     font-size: 18px;
     font-weight: normal;
@@ -101,78 +102,299 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    color: #ffffff;
+  }
+  .Rectangle-2 {
+    width: 123px;
+    height: 41px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    
+  }
+  .Sign-Out {
+    width: 70px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .Aman {
+    width: 170px;
+    height: 71px;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  /* ===========navbar start========= */
+ .Contact-Us {
+    width: 90px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Suppliers {
+    width: 77px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Services {
+    width: 70px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .About-Us-Copy {
+    width: 75px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+   .Home-Copy {
+    width: 49px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  
+  
+  /* ======navbar end===== */
+  .Description {
+    width: 123px;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
     color: var(--black);
+  }
+  .AMAN-is-a-first-of-i {
+    /* width: 496px;
+    height: 169px; */
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+  }
+  
+  .Register-Here {
+    width: 112px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
   }
   .Rectangle-5-Copy {
     width: 292px;
     height: 59px;
-    margin-top: 40px;
     border-radius: 8px;
     background-color: #f34235;
-    margin-left: -44px;
   }
-    /* ===========navbar start========= */
- .Contact-Us {
-  width: 90px;
-  height: 24px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
+  
+/* ======= align end=========== */
+/* ====================responsive================= */
+.mt_20{
+  margin-top: 0px;
 }
- .Suppliers {
-  width: 77px;
-  height: 24px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
+.wt_237{
+width: 237px;
 }
- .Services {
-  width: 70px;
-  height: 24px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
+.wt-con{
+width: 232px;
 }
- .About-Us-Copy {
-  width: 75px;
-  height: 24px;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
+.wt_140{
+width: 140% !important;
 }
- .Home-Copy {
-  width: 49px;
-  height: 24px;
-  font-family: Roboto;
+/* mobile media query */
+@media screen and (min-device-width: 320px) and (max-device-width: 760px){
+.nav-bg {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.pt-120{
+  position: relative;
+  right: 85px;
+}
+.mt-414{
+  margin-top: 0px !important;
+}
+.ft_18 {
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
 }
 
 
-/* ======navbar end===== */
-  /* =align end=========== */
+
+}
+/* css for ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1022px){
+.nav-bg {
+  /* background-color: rgba(0, 0, 0, 0.65) !important; */
+}
+.maxwt_19{
+  max-width: 19%;
+}
+.wt_135{
+width: 135px !important;
+}
+.map_wt{
+  width: 175px !important;
+}
+.logo_wt{
+width: 109px;
+}
+.col-sm-2{
+  width : 0% ! important;
+}
+
+.mt_20{
+  
+    margin-top: 4px !important; 
+  
+  shape-margin: 0px !important;
+}
+
+.ht_80{
+  height:54px !important
+}
+
+.pt-120{
+  position: relative;
+  right: 79px;
+}
+.mt-414{
+  margin-top:0px !important;
+}
+
+.ml-5, .mx-5 {
+  margin-left: 2.2rem !important;
+}
+
+.pad_0{
+padding:0 0px !important;
+}
+.ft_18 {
+  font-size: 30px;
+}
+
+.wt_106{
+  width: 106% !important;
+}
+
+
+}
+@media screen and (max-device-width: 1024px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+  .maxwt_19{
+    max-width: 19%;
+  }
+  .wt_135{
+width: 135px !important;
+  }
+  .map_wt{
+    width: 175px !important;
+  }
+  .ml_135{
+    margin-left: 0px !important;
+  }
+  .ml_16{
+    margin-left: -16px !important;
+  }
+.logo_wt{
+  width: 109px;
+}
+  .col-sm-2{
+    /* width : 0% ! important; */
+  }
+
+  .mt_20{
+    
+      margin-top: 4px !important; 
+    
+    shape-margin: 0px !important;
+  }
+
+  /* .ht_80{
+    height:54px !important
+  } */
+
+  .pt-120{
+    position: relative;
+    /* right: 79px; */
+  }
+  .mt-414{
+    margin-top:0px !important;
+  }
+
+  .ml-5, .mx-5 {
+    margin-left: 2.2rem !important;
+}
+
+.pad_0{
+padding:0 0px !important;
+}
+  .ft_18 {
+    font-size: 30px;
+  }
+
+  .wt_106{
+    width: 106% !important;
+  }
+
+
+}
+/* ==================mobile========= */

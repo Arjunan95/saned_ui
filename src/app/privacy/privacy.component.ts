@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./privacy.component.css']
 })
 export class PrivacyComponent implements OnInit {
+  navbarOpen = false;
+  model: any = {};
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
+
 
   constructor() { }
 

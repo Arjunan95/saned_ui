@@ -9,9 +9,21 @@ import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./supplier-register-arabic.component.css']
 })
 export class SupplierRegisterArabicComponent implements OnInit {
+  navbarOpen = false;
+
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+  localVar;
 
   model: any = {};
   data: any = {};
+  submitted: any = {};
+  newVar: any = {};
+  minDate: any = {};
+  emailotpverification: any = {};
+  onSubmit: any = {};
+  Lang: any = {};
   constructor(private apiService: APIService, private router: Router, private calendar: NgbCalendar) { }
 
   ngOnInit() {

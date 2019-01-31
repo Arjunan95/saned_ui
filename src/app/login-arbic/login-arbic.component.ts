@@ -11,7 +11,11 @@ import { SimpleGlobal } from 'ng2-simple-global';
     styleUrls: ['./login-arbic.component.css']
 })
 export class LoginArbicComponent implements OnInit {
+    navbarOpen = false;
 
+    toggleNavbar() {
+        this.navbarOpen = !this.navbarOpen;
+    }
     localVar;
 
 
@@ -21,6 +25,8 @@ export class LoginArbicComponent implements OnInit {
     // model = new RegisterForm(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
     model: any = {};
     data: any = {};
+    Lang: any = {};
+    user: any = {};
 
     constructor(private apiService: APIService, private router: Router, private sg: SimpleGlobal) {
 

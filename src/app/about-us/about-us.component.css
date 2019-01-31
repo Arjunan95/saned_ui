@@ -12,11 +12,165 @@
     
  }
  /* ===========aliign start============ */
+/* ====================responsive================= */
+.mt_20{
+  margin-top: 0px;
+}
+.wt_237{
+width: 237px;
+}
+.wt-con{
+width: 232px;
+}
+.wt_140{
+width: 140% !important;
+}
+/* mobile media query */
+@media screen and (min-device-width: 320px) and (max-device-width: 760px){
+.nav-bg {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.pt-120{
+  position: relative;
+  right: 134px;
+}
+.mt-414{
+  margin-top: 0px !important;
+}
+.ft_18 {
+  font-size: 18px;
+}
+
+
+
+}
+/* css for ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1022px){
+.nav-bg {
+  /* background-color: rgba(0, 0, 0, 0.65) !important; */
+}
+.maxwt_19{
+  max-width: 19%;
+}
+.wt_135{
+width: 135px !important;
+}
+.map_wt{
+  width: 175px !important;
+}
+.logo_wt{
+width: 109px;
+}
+.col-sm-2{
+  width : 0% ! important;
+}
+
+.mt_20{
+  
+    margin-top: 4px !important; 
+  
+  shape-margin: 0px !important;
+}
+
+.ht_80{
+  height:54px !important
+}
+
+.pt-120{
+  position: relative;
+  right: 79px;
+}
+.mt-414{
+  margin-top:0px !important;
+}
+
+.ml-5, .mx-5 {
+  margin-left: 2.2rem !important;
+}
+
+.pad_0{
+padding:0 0px !important;
+}
+.ft_18 {
+  font-size: 30px;
+}
+
+.wt_106{
+  width: 106% !important;
+}
+
+
+}
+@media screen and (max-device-width: 1024px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+  .maxwt_19{
+    max-width: 19%;
+  }
+  .wt_135{
+width: 135px !important;
+  }
+  .map_wt{
+    width: 175px !important;
+  }
+  .ml_135{
+    margin-left: 0px !important;
+  }
+  .ml_16{
+    margin-left: -16px !important;
+  }
+.logo_wt{
+  width: 109px;
+}
+  .col-sm-2{
+    /* width : 0% ! important; */
+  }
+
+  .mt_20{
+    
+      margin-top: 4px !important; 
+    
+    shape-margin: 0px !important;
+  }
+
+  /* .ht_80{
+    height:54px !important
+  } */
+
+  .pt-120{
+    position: relative;
+    /* right: 79px; */
+  }
+  .mt-414{
+    margin-top:0px !important;
+  }
+
+  .ml-5, .mx-5 {
+    margin-left: 2.2rem !important;
+}
+
+.pad_0{
+padding:0 0px !important;
+}
+  .ft_18 {
+    font-size: 30px;
+  }
+
+  .wt_106{
+    width: 106% !important;
+  }
+
+
+}
+/* =============mobile============ */
+
  .Sign-In {
   width: 57px;
   height: 24px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -94,8 +248,9 @@
 
 /* ===========navbar start========= */
 .Rectangle-2 {
-  width: 123px;
-  height: 41px;
+  height: 35px;
+    width: 100px;
+    padding: 0;
   border-radius: 5px;
   background-color: #ff0000;
 }
@@ -181,10 +336,10 @@
   color: var(--black);
 }
  .Utilizing-the-latest {
-  width: 575px;
+  /* width: 518px; */
   height: 100px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -193,10 +348,10 @@
   color: var(--black);
 }
  .To-be-among-the-best {
-  width: 519px;
+  /* width: 519px; */
   height: 81px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -205,7 +360,7 @@
   color: var(--black);
 }
  .Vision {
-  width: 51px;
+  width: 65px;
   height: 40px;
   font-family: Roboto;
   font-size: 18px;
@@ -217,16 +372,16 @@
   color: var(--black);
 }
  .Sharjah-Asset-Manage {
-  width: 535px;
+  /* width: 535px; */
   height: 283px;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black);
+  /* color: black */
 }
 .reg{
   background-color: #ff0000; 
@@ -243,10 +398,10 @@
   height: 100px;
 }
  .Who-We-Are-Aman-is-a {
-    width: 733px;
+    /* width: 733px; */
     height: 459px;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     font-weight: normal;
     font-style: normal;
