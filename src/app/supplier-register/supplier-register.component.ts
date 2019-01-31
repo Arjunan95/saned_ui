@@ -14,7 +14,7 @@ export class SupplierRegisterComponent implements OnInit {
   navbarOpen = false;
 
   toggleNavbar() {
-      this.navbarOpen = !this.navbarOpen;
+    this.navbarOpen = !this.navbarOpen;
   }
   localVar;
   model: any = {};
@@ -59,6 +59,7 @@ export class SupplierRegisterComponent implements OnInit {
     })
   }
   supplierregister(model) {
+    console.log("hello")
     this.apiService.supplierregister(model).subscribe((response) => {
       this.data = response;
       if (this.data.Message == "User Already Registered") {

@@ -572,7 +572,7 @@ span.psw {
 
 
 
-              <div id="submitted">
+              <div [hidden]="submitted">
                 <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                   <div class="row col-md-12">
                     <div class="form-group col-md-6">
