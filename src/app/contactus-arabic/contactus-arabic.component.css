@@ -133,40 +133,17 @@
     /* height: 607px;
   }
 } */
-.mt_7{
-  margin-top: 7px;
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px){
   .nav-bg {
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
 
+
+
+  
   .pt-120{
-    position: relative;
-    left: 158px;
-  }
-  .mt-414{
-    margin-top: 0px !important;
-  }
-
-  .wt-228{
-    width: 228px !important;
-  }
-
-}
-@media screen and (min-width: 768px) and (max-width: 1022px){
-  .nav-bg {
-    /* background-color: rgba(0, 0, 0, 0.65) !important; */
-  }
-
-.pd_0{
-  padding-right: .0rem !important;
-    padding-left: .0rem !important;
-}
-
-  .pt-120{
-    position: relative;
-    left: 213px;
+    position: relative !important;
+    left: 206px !important;
 
   }
   .mt-414{
@@ -175,6 +152,35 @@
 
   .mr-5, .mx-5 {
     margin-right: 4rem!important;
+}
+
+.pad_12{
+  padding: 0 12px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+  .nav-bg {
+    /* background-color: rgba(0, 0, 0, 0.65) !important; */
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .0rem !important;
+    padding-left: .0rem !important;
+}
+
+  .pt-120{
+    position: relative !important;
+    left: 232px 
+
+  }
+  .mt-414{
+    margin-top: 3px !important;
+  }
+
+  .mr-5, .mx-5 {
+    margin-right: 5rem!important;
 }
 
 
@@ -187,19 +193,17 @@ li[_ngcontent-c1] {
 
 
 }
+
 @media screen and (max-width: 1024px){
   .nav-bg {
     /* background-color: rgba(0, 0, 0, 0.65) !important; */
   }
 
-.pd_0{
-  padding-right: .0rem !important;
-    padding-left: .0rem !important;
-}
+
 
   .pt-120{
-    position: relative;
-    left: 213px;
+    position: relative !important;
+    left: 209px 
 
   }
   .mt-414{
