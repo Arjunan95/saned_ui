@@ -844,14 +844,14 @@
 
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .nav-bg {
     /* background-color: rgba(0, 0, 0, 0.65) !important; */
-  }
+  /* } */ 
 
 
 
-  .pt-120{
+  /* .pt-120{
     position: relative !important;
     left: 232px 
 
@@ -861,7 +861,7 @@
   }
 
   .mr-5, .mx-5 {
-    margin-right: 5rem!important;
+    margin-right: rem!important;
 }
 
 
@@ -873,7 +873,7 @@ li[_ngcontent-c1] {
 }
 
 
-}
+} */
 
 @media screen and (max-width: 1024px){
   .nav-bg {
@@ -884,7 +884,7 @@ li[_ngcontent-c1] {
 
   .pt-120{
     position: relative !important;
-    left: 232px 
+    left: 211px 
 
   }
   .mt-414{
