@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class APIService {
-    API_URL = 'https://sanedbackend.herokuapp.com';
+    API_URL = 'https://35.244.46.106:8083';
 
     constructor(private httpClient: HttpClient) { }
     createContact(contact) {
