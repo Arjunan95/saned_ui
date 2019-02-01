@@ -33,7 +33,7 @@ background-color: rgba(0, 0, 0, 0.65) !important;
 
 .pt-120{
 position: relative;
-left: 15px;
+left: 158px;
 }
 .mt-414{
 margin-top: 0px !important;
@@ -79,10 +79,13 @@ height:54px !important
 
 .pt-120{
 position: relative;
-left: 11px
+left: 185px
 }
 .mt-414{
 margin-top:0px !important;
+}
+.mr-5 {
+  margin-left: 3rem !important;
 }
 
 .ml-5, .mx-5 {

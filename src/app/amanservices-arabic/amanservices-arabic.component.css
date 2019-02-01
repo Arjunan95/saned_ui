@@ -322,7 +322,7 @@
   
   .pt-120{
     position: relative !important;
-    left: 206px !important;
+    left: 304px !important;
 
   }
   .mt-414{
@@ -344,7 +344,10 @@
     /* background-color: rgba(0, 0, 0, 0.65) !important; */
   }
 
-
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .0rem !important;
+    padding-left: .0rem !important;
+}
 
   .pt-120{
     position: relative !important;
@@ -379,7 +382,7 @@ li[_ngcontent-c1] {
 
   .pt-120{
     position: relative !important;
-    left: 189px 
+    left: 279px 
 
   }
   .mt-414{
@@ -387,7 +390,7 @@ li[_ngcontent-c1] {
   }
 
   .mr-5, .mx-5 {
-    margin-right: 4rem!important;
+    margin-right: 6rem!important;
 }
 
 
