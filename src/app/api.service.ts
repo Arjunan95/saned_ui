@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class APIService {
+    
     API_URL = 'http://35.244.46.106:8083';
 
     constructor(private httpClient: HttpClient) { }

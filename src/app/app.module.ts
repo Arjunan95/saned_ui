@@ -42,6 +42,7 @@ import { SitemapArabicComponent } from './sitemap-arabic/sitemap-arabic.componen
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PrivacyArabicComponent } from './privacy-arabic/privacy-arabic.component';
+import { NavbararabicComponent } from './navbararabic/navbararabic.component';
 
 
 const routes: Routes = [
@@ -66,6 +67,7 @@ const routes: Routes = [
   { path: 'contactus-arabic', component: ContactusArabicComponent },
   { path: 'supplier-register-arabic', component: SupplierRegisterArabicComponent },
   { path: 'privacy-arabic', component: PrivacyArabicComponent },
+  { path: 'navbararabic', component: NavbararabicComponent },
 
 
 
@@ -123,6 +125,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SitemapArabicComponent,
     PrivacyComponent,
     PrivacyArabicComponent,
+    NavbararabicComponent,
+    
 
   ],
   providers: [

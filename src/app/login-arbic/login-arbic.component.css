@@ -822,9 +822,12 @@
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
 
-
+.ft_22{
+  font-size: 22px
+}
 
   
+
   .pt-120{
     position: relative !important;
     left: 143px !important;

@@ -396,7 +396,7 @@ span.psw {
     <!------ Include the above in your HEAD tag ---------->
     <!-- <div class="view intro-2 hm-gradient" style="background: url(/assets/hero_image.png);height: 623px;">
      -->
-    <section class="view intro-2 hm-gradient">
+    <section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
       <div class="row">
         <div class="col-md-1">
 
@@ -448,58 +448,11 @@ span.psw {
       <!-- </div> -->
       <!-- </div> -->
     </section>
-    <nav class="navbar navbar-expand-md navbar-dark" dir="auto" style="margin-top: -55px;background: rgba(0, 0, 0, 0.27);">
+    <br>
+    <br>
+    <br>
 
-
-      <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
-      <!-- </a> -->
-      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="ml-5">
-        <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
-          <ul class="navigation col-md-12 ml-5 navbar-nav nav-bg pt-120 wt-228" style="font-size: 18px; color: black;">
-
-            <li class="nav-item pad_0 col-sm-2 mt_20 ">
-              <a routerLink="/login" class=" nav-link ">H<font style="text-transform: lowercase;">ome</font></a>
-            </li>
-
-            <li class="nav-item pad_0 col-sm-2 mt_20 wt_237">
-              <a routerLink="/about-us" class="nav-link">A<font style="text-transform: lowercase;">bout<font style="text-transform: uppercase;">U</font>
-                  <font style="text-transform: lowercase;">s</font>
-                </font></a>
-            </li>
-
-            <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
-              <a>S<font style="text-transform: lowercase;">ervices</font></a>
-              <ul class="submenu" style="font-weight:bold;">
-                <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
-                    </font></a></li>
-                <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
-                  </a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item pad_0 col-sm-2 mt_20">
-              <a routerLink="/supplier-register" class="nav-link">S<font style="text-transform: lowercase;">uppliers</font></a>
-            </li>
-            <li class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
-              <a routerLink="/contactus" class="nav-link">C<font style="text-transform: lowercase;">ontact<font style="text-transform: uppercase;">U<font
-                      style="text-transform: lowercase;">s</font>
-                  </font>
-                </font></a>
-            </li>
-            <li class="col-sm-2 mt_20">
-              <font style="color:white"><i class="fa fa-search " style="margin-top: -10px;
-                           "></i></font>
-            </li>
-
-          </ul>
-        </div>
-
-
-      </div>
-    </nav>
+    <app-navbar></app-navbar>
     <br>
     <br>
     <br>
@@ -516,17 +469,22 @@ span.psw {
       <form class="modal-content animate col-md-4" action="/action_page.php">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close">&times;</span>
+          <br>
+          <br>
           <!-- <img src="/assets/otp.png" alt="" class="avatar"> -->
           <h4>Enter One Time Password</h4>
         </div>
+
+
+
 
         <div class="">
           <p for="uname" style="font-size: 18px;text-align:justify" class="text-center">One Time Password has been sent
             to your email address and mobile number</p>
           <!-- <input type="password" class="w3-input" placeholder="Enter otp" name="uname" required> -->
           <!-- <input type="password" class="col-md-6 " placeholder="" maxlength="4" style="margin-left: 92px;border:white" /> -->
-          <input type="text" style="margin-left: 131px;" class="form-control col-md-4 inline" id="otp" required
-            [(ngModel)]="model.otp" name="name" #name="ngModel">
+          <input type="text" class="form-control col-md-12 inline" id="otp" required [(ngModel)]="model.otp" name="name"
+            #name="ngModel">
 
           <!-- <button type="submit" style="background-color: #ff0000;width: 94px;padding: 8px 10px;" onclick="document.getElementById('id03').style.display='block'" class="btn Rectangle-5-Copy inline" (click)="sendotp(model)">Send OTP</button>        -->
 
@@ -538,9 +496,10 @@ span.psw {
         <input type="text" class=" partitioned" placeholder="0" maxlength="1" /> -->
           <!-- <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required> -->
-
-          <button style="background-color: #ff0000;margin-left:71px;color: white" class="btn Rectangle-5-Copy" (click)="supplieremailotpverification(model)"
-            type="submit">Submit</button>
+          <div class="ml-3">
+            <button style="background-color: #ff0000;color: white" class="btn Rectangle-5-otp ml-5 center" (click)="supplieremailotpverification(model)"
+              type="submit">Submit</button>
+          </div>
           <!-- <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label> -->
@@ -553,12 +512,19 @@ span.psw {
       </div> -->
       </form>
     </div>
+
+
+
+
+
+
+
     <br><br><br><br><br>
     <div class=" col-md-12">
       <!-- <h3 class="col-sm-12 Welcome-to-Aman-port"><b>“Caring for the nation by helping protect lives and property from fire and life safety events is our primary goal.“</b></h3> -->
 
       <div class="card col-md-12" style="border-radius: 18px;
-    background: white;color:#494949;margin-top: -338px;">
+    background: white;color:#494949;margin-top: -321px;">
         <br>
         <div class="row">
           <div class="col-md-1"></div>
@@ -793,6 +759,8 @@ span.psw {
                         name="website_add" #websiteaddress="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
                     </div>
+
+                    <br><br>
 
 
 

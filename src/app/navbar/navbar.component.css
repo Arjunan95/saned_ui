@@ -1,247 +1,322 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-.Home {
-    width: 49px;
-    height: 24px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-  }
-
- 
-.navbar-icon-top .navbar-nav .nav-link > .fa {
-  position: relative;
-  width: 36px;
-  font-size: 24px;
+nav{
+  width: 100%;
+  height: 50px;
+  background:rgba(0,0,0,.8);
+  border-top: 1px solid rgba(255,255);
+  border-bottom: 1px solid rgba(255,255);
+  position: sticky;
+  top:0px;
+  z-index: 99;
 }
-
-.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
-  font-size: 0.75rem;
+.navigation .menu {
+  position: relative
+}
+.navigation .menu .submenu {
   position: absolute;
-  right: 0;
-  font-family: sans-serif;
+  /* width: 200px; */
+  /* -webkit-box-shadow: 0px 1px 1px #CCC; */
+  /* box-shadow: 0px 1px 1px #CCC; */
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+.navigation .menu:hover .submenu {
+  display: block;
+ 
+}
+.navigation .menu .submenu:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: #FFF transparent;
+  top: -6px;
+  right: 5px;
+
+}
+.nav ul li {
+color: white !important;
+display: none
+}
+.color_white{
+  color: white !important;
+}
+  /* ===========navbar start========= */
+.Rectangle-2 {
+  width: 123px;
+  height: 41px;
+  border-radius: 5px;
+  color:white !important;
+  font-family: Roboto !important;
+  font-size: 18px;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+ .Contact-Us {
+  width: 90px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Suppliers {
+  width: 77px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Services {
+  width: 70px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .About-Us-Copy {
+  width: 75px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+ .Home-Copy {
+  width: 49px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+/* ====================responsive================= */
+.mt_20{
+  margin-top: 0px;
+}
+.wt_237{
+width: 237px;
+}
+.wt-con{
+width: 232px;
+}
+.wt_140{
+width: 140% !important;
+}
+/* mobile media query */
+@media screen and (min-device-width: 320px) and (max-device-width: 760px){
+.nav-bg {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+.ml_mr{
+  margin-right: 35px !important;
+  margin-left: -22px !important;
+}
+.wt_237{
+
+  width: 99px;
+  }
+  .ml-5{
+    margin-left: 4.2rem !important;
+  }
+.pt-120{
+  position: relative;
+  right: 215px;
+}
+.mt-414{
+  margin-top: 0px !important;
+}
+.ft_18 {
+  font-size: 17px !important;
+}
+.ml_33{
+/* margin-left: -27px !important; */
 }
 
-.navbar-icon-top .navbar-nav .nav-link > .fa {
-  top: 3px;
-  line-height: 12px;
+
+}
+/* css for ipad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1022px){
+.nav-bg {
+  /* background-color: rgba(0, 0, 0, 0.65) !important; */
+}
+.maxwt_19{
+  max-width: 19%;
+}
+.wt_135{
+width: 135px !important;
+}
+.map_wt{
+  width: 175px !important;
+}
+.ml_135{
+  margin-left: 0px !important;
+}
+.ml_16{
+  margin-left: -16px !important;
+}
+.logo_wt{
+width: 109px;
+}
+.col-sm-2{
+  width : 0% ! important;
 }
 
-.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
-  top: -10px;
+.mt_20{
+  
+    margin-top: 4px !important; 
+  
+  shape-margin: 0px !important;
 }
 
-@media (min-width: 576px) {
-  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
-    text-align: center;
-    display: table-cell;
-    height: 70px;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
-    display: block;
-    width: 48px;
-    margin: 2px auto 4px auto;
-    top: 0;
-    line-height: 24px;
-  }
-
-  .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
-    top: -7px;
-  }
+.ht_80{
+  height:54px !important
 }
 
-@media (min-width: 768px) {
-  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
-    text-align: center;
-    display: table-cell;
-    height: 70px;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
-    display: block;
-    width: 48px;
-    margin: 2px auto 4px auto;
-    top: 0;
-    line-height: 24px;
-  }
-
-  .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
-    top: -7px;
-  }
+.pt-120{
+  position: relative;
+  left: 136px;
+}
+.mt-414{
+  margin-top:0px !important;
 }
 
-@media (min-width: 992px) {
-  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
-    text-align: center;
-    display: table-cell;
-    height: 70px;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
-    display: block;
-    width: 48px;
-    margin: 2px auto 4px auto;
-    top: 0;
-    line-height: 24px;
-  }
-
-  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
-    top: -7px;
-  }
+.ml-5, .mx-5 {
+  margin-left: -1.8rem !important;
 }
 
-@media (min-width: 1200px) {
-  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
-    text-align: center;
-    display: table-cell;
-    height: 70px;
-    vertical-align: middle;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
-    display: block;
-    width: 48px;
-    margin: 2px auto 4px auto;
-    top: 0;
-    line-height: 24px;
-  }
-
-  .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
-    top: -7px;
-  }
+.pad_0{
+padding:1 22px !important;
 }
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+.ft_18 {
+  font-size: 30px;
 }
 
-/* Set a style for all buttons */
-/* button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+.wt_106{
+  width: 106% !important;
+}
+
+
+}
+@media screen and (max-device-width: 1024px){
+.nav-bg {
+  /* background-color: rgba(0, 0, 0, 0.65) !important; */
+}
+.maxwt_19{
+  max-width: 19%;
+}
+
+.wt_135{
+width: 135px !important;
+}
+.map_wt{
+  width: 175px !important;
+}
+.ml_135{
+  margin-left: 0px !important;
+}
+  /* .ml_16{
+    margin-left: -16px !important;
+  } */
+.logo_wt{
+width: 109px;
+}
+.col-sm-2{
+  /* width : 0% ! important; */
+}
+
+.mt_20{
+  
+    margin-top: 4px !important; 
+  
+  shape-margin: 0px !important;
+}
+
+/* .ht_80{
+  height:54px !important
 } */
 
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+.pt-120{
   position: relative;
+  /* right: 79px; */
+}
+.mt-414{
+  margin-top:0px !important;
 }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
+/* 
+
+*/
+
+.pad_0{
+padding:1 22px !important;
+}
+.ft_18 {
+  font-size: 30px;
 }
 
-.container {
-  padding: 16px;
+.wt_106{
+  width: 106% !important;
 }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
+
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+/* css for ipad pro*/
+
+
+/* ======navbar end===== */
+/* 
+============dropdown style start============= */
+
+.show-on-hover:hover > ul.dropdown-menu {
+  display: block;    
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: grey !important;
+}
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
 }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
 
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
 
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
+/* 
+============dropdown style End============= */

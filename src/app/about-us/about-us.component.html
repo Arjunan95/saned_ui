@@ -1,10 +1,16 @@
 <!-- <button (click)="switchLanguage('arabic')">Arabic</button>
 <button (click)="switchLanguage('en')">English</button> -->
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+
+
 <style>
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   /* ==============footer style start ========= */
@@ -170,9 +176,11 @@ ul li a {
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+
 }
 .navigation .menu:hover .submenu {
-  display: block
+  display: block;
+ 
 }
 .navigation .menu .submenu:before {
   content: "";
@@ -182,21 +190,11 @@ ul li a {
   border-style: solid;
   border-color: #FFF transparent;
   top: -6px;
-  left: 5px
+  right: 5px;
+
 }
-.navigation .menu .submenu li {
-  padding: 5px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.navigation .menu .submenu li:hover {
-  background-color: #e74c3c;
-}
-.navigation .menu .submenu li:hover a {
-  color: #FFF;
-  /* padding: 0 11px; */
-}
+
+
 
 
 .dropdown:hover .dropdown-content {
@@ -263,7 +261,7 @@ nav ul li a{
 
 
 <!------ Include the above in your HEAD tag ---------->
-<section class="view intro-2 hm-gradient">
+<section class="view intro-2 hm-gradient" style="width:100%;height:100vh">
 
   <div class="row">
     <div class="col-md-1">
@@ -316,59 +314,8 @@ nav ul li a{
 
   <!-- </div> -->
 </section>
-<br> <br> <br> <br>
-<nav class="navbar navbar-expand-md navbar-dark" dir="auto" style="margin-top: -150px;background: rgba(0, 0, 0, 0.27);">
-
-
-  <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
-  <!-- </a> -->
-  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="ml-5">
-    <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navigation col-md-12 ml-5 navbar-nav nav-bg pt-120 wt-228" style="font-size: 18px; color: black;">
-
-        <li class="nav-item pad_0 col-sm-2 mt_20 ">
-          <a routerLink="/login" class=" nav-link ">H<font style="text-transform: lowercase;">ome</font></a>
-        </li>
-
-        <li class="nav-item pad_0 col-sm-2 mt_20 wt_237">
-          <a routerLink="/about-us" class="nav-link">A<font style="text-transform: lowercase;">bout<font style="text-transform: uppercase;">U</font>
-              <font style="text-transform: lowercase;">s</font>
-            </font></a>
-        </li>
-
-        <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
-          <a>S<font style="text-transform: lowercase;">ervices</font></a>
-          <ul class="submenu" style="font-weight:bold;">
-            <li style="background:  #252323;"><a routerLink="/amanservices">A<font style="text-transform: lowercase;">man
-                </font></a></li>
-            <li style="background:  #252323;"><a routerLink="/salamaservices">S<font style="text-transform: lowercase;">alama</font>
-              </a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item pad_0 col-sm-2 mt_20">
-          <a routerLink="/supplier-register" class="nav-link">S<font style="text-transform: lowercase;">uppliers</font></a>
-        </li>
-        <li class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
-          <a routerLink="/contactus" class="nav-link">C<font style="text-transform: lowercase;">ontact<font style="text-transform: uppercase;">U<font
-                  style="text-transform: lowercase;">s</font>
-              </font>
-            </font></a>
-        </li>
-        <li class="col-sm-2 mt_20">
-          <font style="color:white"><i class="fa fa-search " style="margin-top: -10px;
-                       "></i></font>
-        </li>
-
-      </ul>
-    </div>
-
-
-  </div>
-</nav>
+<br> <br><br>
+<app-navbar></app-navbar>
 <br>
 <br>
 <br>
@@ -387,10 +334,8 @@ nav ul li a{
     background: white;margin-top:-210px;">
     <br>
     <div class="row">
-      <div class="col-md-5 ml-2 Who-We-Are-Aman-is-a">
-        <!-- <h4><b>Who We Are</b></h4> -->
-        <br>
-        <div class="Sharjah-Asset-Manage">
+      <div class="col-md-6">
+        <div class="Sharjah-Asset-Manage text-justify">
           <p>
             Sharjah Asset Management Holding (SAMH), the investment arm of the government of Sharjah, and Apleona
             HSG
@@ -399,8 +344,6 @@ nav ul li a{
             private sectors in the Emirate of Sharjah.
 
           </p>
-          <!-- <h4><b>What We Do</b></h4> -->
-
           <p>
 
             The scope of the JV includes Integrated Facility Management, Small and Medium construction project
@@ -409,68 +352,41 @@ nav ul li a{
             Systems integration, landscaping, etc.
 
           </p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>
+
           <h3 class="Vision">Vision</h3>
           <p class="To-be-among-the-best">
             To be among the best facility management service providers in the Middle East, influencing the over all
             FM industry in high quality and modern practices.
           </p>
+
           <h3 class="Mission">Mission</h3>
           <p class="Utilizing-the-latest">
             Utilizing the latest worldwide technologies and the best human resources to achieve sustainable business
             and an enviable reputation in the local and regional markets.
 
           </p>
+          <div class="col-md-1">
+
+            <button type="submit" class="Rectangle-5-Copy">Register Here</button>
+            <br><br><br>
+          </div>
         </div>
       </div>
-      <div class="col-sm-1"></div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-
-
-
+      <div class="col-md-1"></div>
       <div class="col-md-5 view aboutus hm-gradient">
 
       </div>
 
-    </div>
-    <br><br><br>
-    <br><br><br>
-    <br><br>
-
-    <br><br> <br><br>
-    <div class=" col-md-12">
-      <div class="row">
-
-
-        <div class="col-md-7">
-
-          <button type="submit" class="Rectangle-5-Copy">Register Here</button>
-          <br><br><br>
-        </div>
-      </div>
 
     </div>
+
+
+
+
   </div>
 </div>
+<br>
+<br>
 <!-- =====footer  english start== -->
 <!-- =====footer  english start== -->
 <div class="container1 col-md-12">

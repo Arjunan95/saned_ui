@@ -1,5 +1,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
- /* ============Navbar start======= */
+ 
+
+.intro-2{
+  background: url(/assets/hero_image1.png)no-repeat center center;
+  background-size: cover;
+  /* height: 635px; */
+}
+
+
+
+
+/* ============Navbar start======= */
  .homeservice{
     width: 174px;
     height: 52px;

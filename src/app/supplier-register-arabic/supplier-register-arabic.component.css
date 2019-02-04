@@ -1,4 +1,11 @@
- /* ============Navbar start======= */
+.intro-2{
+  background: url(/assets/hero_image1.png)no-repeat center center;
+  background-size: cover;
+}
+
+
+
+/* ============Navbar start======= */
  .homeservice{
   width: 174px;
   height: 52px;

@@ -1,7 +1,7 @@
 .intro-2 {
     background: url("/assets/hero_image.png")no-repeat center center;
     background-size: cover;
-    height: 635px;
+    /* height: 635px; */
  }
  
  .aboutus {

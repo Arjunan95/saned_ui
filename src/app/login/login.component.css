@@ -750,7 +750,7 @@
     
     }
     /* ===========navbar start========= */
-  .Rectangle-2 {
+  /* .Rectangle-2 {
     width: 123px;
     height: 41px;
     border-radius: 5px;
@@ -815,7 +815,7 @@
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
-  }
+  } */
 /* ====================responsive================= */
   .mt_20{
     margin-top: 0px;
@@ -834,7 +834,10 @@
   .nav-bg {
     background-color: rgba(0, 0, 0, 0.65) !important;
   }
-
+  .ml_mr{
+    margin-right: 35px !important;
+    margin-left: -22px !important;
+  }
   .pt-120{
     position: relative;
     right: 90px;
@@ -843,9 +846,11 @@
     margin-top: 0px !important;
   }
   .ft_18 {
-    font-size: 18px;
+    font-size: 17px !important;
 }
-
+.ml_33{
+  /* margin-left: -27px !important; */
+}
 
 
 }
@@ -919,6 +924,7 @@ padding:0 0px !important;
   .maxwt_19{
     max-width: 19%;
   }
+ 
   .wt_135{
 width: 135px !important;
   }

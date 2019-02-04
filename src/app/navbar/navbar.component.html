@@ -1,4 +1,80 @@
-<!-- <div class="col-md-12 ft_right pt_absolute">
-        <input name="Lang"[(ngModel)]="Lang" type="radio" [value]="false" [checked]="!Lang"/> عربى
-        <input name="Lang"  [(ngModel)]="Lang" type="radio" [value]="true" [checked]="Lang"/> English
-    </div> -->
+
+
+
+
+
+<nav class="navbar navbar-expand-md navbar-dark" dir="auto" style="margin-top: -151px;background: rgba(0, 0, 0, 0.27);">
+
+
+    <!-- <a class="navbar-brand" routerLink="/login">H<font style="text-transform: lowercase;">ome</font></a> -->
+    <!-- </a> -->
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="ml-5">
+        <div class="collapse navbar-collapse ml-5" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navigation col-md-12 ml-5 navbar-nav nav-bg pt-120 wt-228" style="font-size: 18px; color: black;">
+
+                <li class="nav-item pad_0 col-sm-2 mt_20 ">
+                    <a routerLink="/login" class=" nav-link  Rectangle-2">Home</a>
+                </li>
+
+                <li class="nav-item pad_0 col-sm-2 mt_20 wt_237">
+                    <a routerLink="/about-us" class="nav-link Rectangle-2">About US
+                    </a>
+                </li>
+
+                <!-- <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
+                    <a class=" nav-link Rectangle-2">Services</a>
+                    <ul class="submenu  nav-link Rectangle-2" style="font-weight:bold;">
+                        <li style="background:  #252323;list-style: none;"><a routerLink="/amanservices" style="color:white">A<font
+                                    style="text-transform: lowercase;">man
+                                </font></a></li>
+                        <li style="background:  #252323;list-style: none;"><a routerLink="/salamaservices" style="color:white">S<font
+                                    style="text-transform: lowercase;">alama</font>
+                            </a></li>
+                    </ul>
+                </li> -->
+
+                <!-- =============bootstrap navbar=====start====== -->
+                <li class="menu nav-item pad_0 col-sm-2 mt_20 ml_135">
+                    <div class=" nav-link dropdown" style="margin-top: -9px;
+                    margin-left: -19px;">
+                        <button class="btn btn-primary-dark dropdown-toggle Rectangle-2" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="color:white">Services</font>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background:rgba(0, 0, 0, 0.63);">
+                            <!-- <li style="list-style: none;"><a routerLink="/amanservices" style="color:white">A<font style="text-transform: lowercase;">man
+                        </font></a></li>
+                <li style="list-style: none;"><a routerLink="/salamaservices" style="color:white">S<font style="text-transform: lowercase;">alama</font>
+                    </a></li> -->
+                            <a class="dropdown-item" routerLink="/amanservices">
+                                <font style="color:white">Aman</font>
+                            </a>
+                            <a class="dropdown-item" routerLink="/salamaservices">
+                                <font style="color:white">Salama</font>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- =============bootstrap navbar===end======== -->
+                <li class="nav-item pad_0 col-sm-2 mt_20 ">
+                    <a routerLink="/supplier-register" class="nav-link Rectangle-2">Suppliers</a>
+                </li>
+                <li class="nav-item pad_0 col-sm-2 maxwt_19 mt_20 wt-con wt_135 ml_16">
+                    <a routerLink="/contactus" class="nav-link Rectangle-2">Contact Us
+                    </a>
+                </li>
+                <li class="col-sm-2 mt_20">
+                    <font style="color:white"><i class="fa fa-search " style="margin-top: 12px;
+                             "></i></font>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+</nav>

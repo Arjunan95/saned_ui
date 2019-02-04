@@ -99,6 +99,8 @@ width: 109px;
 padding:0 0px !important;
 }
 .ft_18 {
+
+
   font-size: 30px;
 }
 
@@ -254,7 +256,7 @@ padding:0 0px !important;
 }
 
 /* ===========navbar start========= */
-.Rectangle-2 {
+/* .Rectangle-2 {
   height: 35px;
     width: 100px;
     padding: 0;
@@ -320,12 +322,12 @@ padding:0 0px !important;
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-}
+} */
 
 
 /* ======navbar end===== */
  .Rectangle-5-Copy {
-  width: 292px;
+  width: 239px;
   height: 59px;
   border-radius: 8px;
   background-color: #f34235;
@@ -380,7 +382,7 @@ padding:0 0px !important;
 }
  .Sharjah-Asset-Manage {
   /* width: 535px; */
-  height: 283px;
+  /* height: 283px; */
   font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
